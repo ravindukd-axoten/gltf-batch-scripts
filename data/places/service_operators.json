@@ -1,0 +1,16 @@
+{
+ "$schema": "../schemas/service_operators.schema.json",
+ "schema_version": 1,
+ "note": "Three fictional service-centre operators for the service kit (P224, research doc section 7). Names are placeholders: people decide what players read. Palettes and mark shapes are invented; never a real operator's name, logo or trade dress (brand rule, Art Bible). Each is a separate business on its own lot, never one court (agent 2026-11-21). Paint keys feed citylib/service_kit.py (sRGB hex into COLOR_0).",
+ "operators": {
+  "muthu": {"name": "Muthu Auto Care", "site_type": "garage", "look": "teal and cream with coral accent, red lifts, yellow floor lines (car service centre, photos 1, 3, 5, 6, 8)",
+   "lift": "#0F6E6A", "frame": "#0F6E6A", "mast": "#0F6E6A", "fascia": "#0F6E6A", "accent": "#E86F51", "cream": "#F2E8D5",
+   "portal": "#E86F51", "portal_d": "#B9533B", "neon": "#E86F51", "blue": "#0F6E6A", "white": "#F2F2EE", "mark": "disc", "mark_paint": "#F2E8D5", "wordmark": "MUTHU"},
+  "pena": {"name": "Pena Express Wash", "site_type": "car_wash", "look": "deep blue and white, magenta-red box portals, aqua neon (wash tunnel and hand-wash bays, photos 2, 4, 7, 9, 10, 11, 12)",
+   "lift": "#1E3F8F", "frame": "#1E3F8F", "mast": "#1E3F8F", "fascia": "#1E3F8F", "accent": "#3FE0E8", "cream": "#F2F2EE",
+   "portal": "#D62A5E", "portal_d": "#A81F47", "neon": "#3FE0E8", "blue": "#1E3F8F", "white": "#F2F2EE", "mark": "wedge", "mark_paint": "#3FE0E8", "wordmark": "PENA"},
+  "kumara": {"name": "Kumara Three-Wheel Works", "site_type": "tuk_works", "look": "mustard, black and signboard green (tuk repair shed and in-ground hoist, photos 14, 15, 16)",
+   "lift": "#E0A526", "frame": "#E0A526", "mast": "#1B1B1B", "fascia": "#2E7D4F", "accent": "#E0A526", "cream": "#F2E8D5",
+   "portal": "#E0A526", "portal_d": "#B5841C", "neon": "#E0A526", "blue": "#2E7D4F", "white": "#F2F2EE", "mark": "diamond", "mark_paint": "#E0A526", "wordmark": "KUMARA"}
+ }
+}

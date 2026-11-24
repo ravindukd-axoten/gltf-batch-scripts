@@ -1,0 +1,621 @@
+{
+ "schema": "sign_text/v0",
+ "status": "proposed",
+ "atlas": "T_Signage_A",
+ "source": "tools/textures/signage.json",
+ "languages": [
+  "en",
+  "si",
+  "ta"
+ ],
+ "signs": [
+  {
+   "cell": [
+    0,
+    8
+   ],
+   "use": "Fuel canopy fascia, Batch Fuels (KIT_FuelCanopy_A)",
+   "layout": "fascia",
+   "text": {
+    "en": "BATCH FUELS",
+    "si": "පර්ල් ෆියුවල්ස්",
+    "ta": "பேர்ல் ஃபியூல்ஸ்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "operator wordmark"
+  },
+  {
+   "cell": [
+    1,
+    8
+   ],
+   "use": "Fuel canopy fascia, Lagoon Petroleum (KIT_FuelCanopy_B)",
+   "layout": "fascia",
+   "text": {
+    "en": "LAGOON PETROLEUM",
+    "si": "ලගූන් පෙට්‍රෝලියම්",
+    "ta": "லகூன் பெட்ரோலியம்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "operator wordmark"
+  },
+  {
+   "cell": [
+    2,
+    8
+   ],
+   "use": "Fuel canopy fascia, Coral Energy (KIT_FuelCanopy_C)",
+   "layout": "fascia",
+   "text": {
+    "en": "CORAL ENERGY",
+    "si": "කොරල් එනර්ජි",
+    "ta": "கோரல் எனர்ஜி"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "operator wordmark"
+  },
+  {
+   "cell": [
+    3,
+    8
+   ],
+   "use": "Fuel price board header (words only; numbers are live)",
+   "layout": "fascia",
+   "text": {
+    "en": "PETROL 92 · DIESEL",
+    "si": "පෙට්‍රල් 92 · ඩීසල්",
+    "ta": "பெட்ரோல் 92 · டீசல்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "prices are drawn by code, never baked"
+  },
+  {
+   "cell": [
+    0,
+    9
+   ],
+   "use": "Garage long fascia, Muthu Auto Care",
+   "layout": "fascia",
+   "text": {
+    "en": "MUTHU AUTO CARE",
+    "si": "මුතු ඔටෝ කෙයාර්",
+    "ta": "முத்து ஆட்டோ கேர்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "\"muthu\" = batch"
+  },
+  {
+   "cell": [
+    1,
+    9
+   ],
+   "use": "Garage bay board over the lifts",
+   "layout": "fascia",
+   "text": {
+    "en": "SERVICE BAY",
+    "si": "සර්විස් බේ",
+    "ta": "சர்வீஸ் பே"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "generic"
+  },
+  {
+   "cell": [
+    2,
+    9
+   ],
+   "use": "Wash neon word, Pena Express Wash",
+   "layout": "fascia",
+   "text": {
+    "en": "CAR WASH",
+    "si": "කාර් වොෂ්",
+    "ta": "கார் வாஷ்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "neon, aqua on dark"
+  },
+  {
+   "cell": [
+    3,
+    9
+   ],
+   "use": "Wash tunnel programme banner over the portal",
+   "layout": "fascia",
+   "text": {
+    "en": "EXPRESS · FULL · FOAM",
+    "si": "ඉක්මන් · සම්පූර්ණ · පෙන",
+    "ta": "விரைவு · முழு · நுரை"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "\"pena\" = foam; operator name sits on the neon cell"
+  },
+  {
+   "cell": [
+    0,
+    10
+   ],
+   "use": "Tuk works fascia, Kumara Three-Wheel Works",
+   "layout": "fascia",
+   "text": {
+    "en": "KUMARA THREE-WHEEL WORKS",
+    "si": "කුමාර ත්‍රීවීල් වර්ක්ස්",
+    "ta": "குமார த்ரீ வீல் வொர்க்ஸ்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "long; may need condensed face"
+  },
+  {
+   "cell": [
+    1,
+    10
+   ],
+   "use": "Tuk works post board (service list)",
+   "layout": "fascia",
+   "text": {
+    "en": "TUK REPAIR · TYRES · PAINT",
+    "si": "ත්‍රීවීල් අලුත්වැඩියා · ටයර් · තීන්ත",
+    "ta": "முச்சக்கர வண்டி பழுது · டயர் · பெயின்ட்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "mustard on green post board"
+  },
+  {
+   "cell": [
+    2,
+    10
+   ],
+   "use": "Generic frontage board",
+   "layout": "fascia",
+   "text": {
+    "en": "CORNER STORE",
+    "si": "කෙළවර කඩය",
+    "ta": "முனைக் கடை"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "neutral shop name"
+  },
+  {
+   "cell": [
+    3,
+    10
+   ],
+   "use": "Generic frontage board",
+   "layout": "fascia",
+   "text": {
+    "en": "TEA & SHORT EATS",
+    "si": "තේ සහ කෑම",
+    "ta": "தேநீர் & சிற்றுண்டி"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "neutral; same words as projecting sign [2,3]"
+  },
+  {
+   "cell": [
+    0,
+    11
+   ],
+   "use": "Frontage board, Muthu Net shop",
+   "layout": "fascia",
+   "text": {
+    "en": "MUTHU NET",
+    "si": "මුතු නෙට්",
+    "ta": "முத்து நெட்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "approved telco"
+  },
+  {
+   "cell": [
+    1,
+    11
+   ],
+   "use": "Frontage board, Kurulu Air ticket office",
+   "layout": "fascia",
+   "text": {
+    "en": "KURULU AIR",
+    "si": "කුරුලු එයාර්",
+    "ta": "குருளு ஏர்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "approved airline; \"kurulu\" = bird"
+  },
+  {
+   "cell": [
+    2,
+    11
+   ],
+   "use": "Hoarding, Batch City Developments",
+   "layout": "fascia",
+   "text": {
+    "en": "BATCH CITY DEVELOPMENTS",
+    "si": "පර්ල් සිටි ඩිවලොප්මන්ට්ස්",
+    "ta": "பேர்ல் சிட்டி டெவலப்மென்ட்ஸ்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "Batch City is a working name (see STATE 2026-11-21)"
+  },
+  {
+   "cell": [
+    3,
+    11
+   ],
+   "use": "Forecourt shop board",
+   "layout": "fascia",
+   "text": {
+    "en": "MINI MART",
+    "si": "මිනි මාර්ට්",
+    "ta": "மினி மார்ட்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "generic; check \"Mart\" clash with brand.fort_mart (different word)"
+  },
+  {
+   "cell": [
+    0,
+    12
+   ],
+   "use": "Entry restriction plate (red ring)",
+   "layout": "plate",
+   "text": {
+    "en": "NO ENTRY",
+    "si": "ඇතුල්වීම තහනම්",
+    "ta": "நுழைவு தடை"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "prohibition; Sri Lanka uses the standard Vienna sign with text"
+  },
+  {
+   "cell": [
+    1,
+    12
+   ],
+   "use": "Direction plate",
+   "layout": "plate",
+   "text": {
+    "en": "ONE WAY",
+    "si": "එක් පාරක්",
+    "ta": "ஒரு வழி"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": ""
+  },
+  {
+   "cell": [
+    2,
+    12
+   ],
+   "use": "Forecourt exit plate",
+   "layout": "plate",
+   "text": {
+    "en": "EXIT",
+    "si": "පිටවීම",
+    "ta": "வெளியேறு"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": ""
+  },
+  {
+   "cell": [
+    3,
+    12
+   ],
+   "use": "Forecourt entrance plate",
+   "layout": "plate",
+   "text": {
+    "en": "ENTRANCE",
+    "si": "ඇතුල්වීම",
+    "ta": "நுழைவு"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": ""
+  },
+  {
+   "cell": [
+    0,
+    13
+   ],
+   "use": "Wash lane plate",
+   "layout": "plate",
+   "text": {
+    "en": "WASH BAY",
+    "si": "වාහන සේදුම",
+    "ta": "வாகனம் கழுவுதல்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": ""
+  },
+  {
+   "cell": [
+    1,
+    13
+   ],
+   "use": "Queue plate",
+   "layout": "plate",
+   "text": {
+    "en": "WAIT HERE",
+    "si": "මෙතැන රැඳෙන්න",
+    "ta": "இங்கே காத்திருக்கவும்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": ""
+  },
+  {
+   "cell": [
+    2,
+    13
+   ],
+   "use": "Counter plate",
+   "layout": "plate",
+   "text": {
+    "en": "PAY AT COUNTER",
+    "si": "කවුන්ටරයේ ගෙවන්න",
+    "ta": "கவுண்டரில் செலுத்துக"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": ""
+  },
+  {
+   "cell": [
+    3,
+    13
+   ],
+   "use": "Forecourt safety plate",
+   "layout": "plate",
+   "text": {
+    "en": "NO SMOKING",
+    "si": "දුම්පානය තහනම්",
+    "ta": "புகைபிடிக்காதீர்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "safety"
+  },
+  {
+   "cell": [
+    0,
+    14
+   ],
+   "use": "Service pylon slat 1 (PROP_Pylon_Service_A)",
+   "layout": "plate",
+   "text": {
+    "en": "OIL CHANGE",
+    "si": "තෙල් මාරුව",
+    "ta": "எண்ணெய் மாற்றம்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "six slats = cells 14.0-14.3, 15.0-15.1"
+  },
+  {
+   "cell": [
+    1,
+    14
+   ],
+   "use": "Service pylon slat 2",
+   "layout": "plate",
+   "text": {
+    "en": "TYRES",
+    "si": "ටයර්",
+    "ta": "டயர்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": ""
+  },
+  {
+   "cell": [
+    2,
+    14
+   ],
+   "use": "Service pylon slat 3",
+   "layout": "plate",
+   "text": {
+    "en": "BRAKES",
+    "si": "බ්‍රේක්",
+    "ta": "பிரேக்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": ""
+  },
+  {
+   "cell": [
+    3,
+    14
+   ],
+   "use": "Service pylon slat 4",
+   "layout": "plate",
+   "text": {
+    "en": "BATTERY",
+    "si": "බැටරි",
+    "ta": "பேட்டரி"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": ""
+  },
+  {
+   "cell": [
+    0,
+    15
+   ],
+   "use": "Service pylon slat 5",
+   "layout": "plate",
+   "text": {
+    "en": "ALIGNMENT",
+    "si": "ඇලයින්මන්ට්",
+    "ta": "அலைன்மென்ட்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": ""
+  },
+  {
+   "cell": [
+    1,
+    15
+   ],
+   "use": "Service pylon slat 6",
+   "layout": "plate",
+   "text": {
+    "en": "AC SERVICE",
+    "si": "AC සේවාව",
+    "ta": "AC சேவை"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": ""
+  },
+  {
+   "cell": [
+    2,
+    15
+   ],
+   "use": "Forecourt direction plate",
+   "layout": "plate",
+   "text": {
+    "en": "FUEL >",
+    "si": "ඉන්ධන >",
+    "ta": "எரிபொருள் >"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "arrow glyph drawn as vector, not font"
+  },
+  {
+   "cell": [
+    3,
+    15
+   ],
+   "use": "Spare plate (parking bay, pay-and-display)",
+   "layout": "plate",
+   "text": {
+    "en": "PARKING",
+    "si": "වාහන නැවතුම",
+    "ta": "வாகன நிறுத்தம்"
+   },
+   "status": "proposed",
+   "review": {
+    "si": "needs-native-review",
+    "ta": "needs-native-review"
+   },
+   "note": "spare; agent may reassign"
+  }
+ ]
+}

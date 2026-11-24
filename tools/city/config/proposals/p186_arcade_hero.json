@@ -1,0 +1,20 @@
+{
+  "_comment": "P186 placement PROPOSAL only; not read by any build. Merge into delta_face.json after agent review (do not edit delta_face.json from a lane).",
+  "landmarks": {
+    "529639570": "LMK_GreenCourt"
+  },
+  "hero_models": {
+    "HERO_GreenCourt_A": {
+      "builder": "frontage_kit/hero_build.py",
+      "glb": "tools/city/frontage_kit/glb/HERO_GreenCourt_A.glb",
+      "landmark": "LMK_GreenCourt",
+      "pivot": [131.99, -171.98],
+      "yaw_deg": -71.07,
+      "_pivot_note": "Virtual corner where the Delta Road (yaw -71.07) and Sir Mohamed Macan Markar Mw (yaw 17.88) facade lines of OSM way 529639570 meet; hero +X runs along Delta Road. The model assumes a 90 deg corner, the OSM one is 88.95 deg, so the Macan Markar front's far end sits about 1 m off its OSM line (inside the footprint tolerance)."
+    }
+  },
+  "arcade_runs": {
+    "_comment": "Survey (P188): the only surviving walk-under arcade on Delta Road is at Kollupitiya, west side, about 6.9095, 79.8502, about 45 m long. Proposed use of the kit pieces: 10 x KIT_Arcade_Colonial_A (45 m) there when the frontage reaches Kollupitiya, plus KIT_Arcade_Colonial_Corner_A wherever a run turns a convex street corner. Not in the vertical slice area; Delta Face Court itself is NOT an arcade (flush shops, recessed corner bay: built into the hero).",
+    "kollupitiya_west": {"lat": 6.9095, "lon": 79.8502, "length_m": 45.0, "piece": "KIT_Arcade_Colonial_A", "count": 10}
+  }
+}

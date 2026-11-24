@@ -1,0 +1,293 @@
+{
+ "_comment": "Spec-to-piece name map (P143): inventory row name -> generated pieces. Read by tools/inventory/build_row_manifest.py; rewritten by the generator, do not edit.",
+ "args": "blender -b --factory-startup -P tools/city/frontage_kit/build_generated.py -- --set sg",
+ "generator": "tools/city/frontage_kit/streetset.py",
+ "outputs_dir": "unity/BatchIsland/Assets/BatchIsland/Art/World/Kit/Signs",
+ "rows": {
+  "Backlit lightbox sign": [
+   "KIT_SG_Lightbox_A"
+  ],
+  "Bathing flag meaning board": [
+   "KIT_SG_BathingFlags_A"
+  ],
+  "Blue-painted sign post": [
+   "KIT_SG_SignPost_Blue_A"
+  ],
+  "Brown tourist / heritage sign (Delta Face Green, hotel)": [
+   "KIT_SG_TouristBrown_A"
+  ],
+  "Bus shelter poster box": [
+   "KIT_SG_ShelterPosterBox_A"
+  ],
+  "Bus stop plate (pole-mounted)": [
+   "KIT_SG_BusStopPlate_A"
+  ],
+  "CCTV in operation plate": [
+   "KIT_SG_CCTVPlate_A"
+  ],
+  "Corrugated construction hoarding with printed panels": [
+   "KIT_SG_CorrugatedHoarding_A"
+  ],
+  "Flex billboard on steel frame (roadside)": [
+   "KIT_SG_FlexBillboard_6x3",
+   "KIT_SG_FlexBillboard_9x4"
+  ],
+  "Frontage ad faces (P96)": [
+   "KIT_SG_AdFace_3x1",
+   "KIT_SG_AdFace_2x1",
+   "KIT_SG_AdFace_1x1"
+  ],
+  "Give-way sign (inverted triangle)": [
+   "KIT_SG_GiveWay_A"
+  ],
+  "Height limit sign (flyover / bridge)": [
+   "KIT_SG_HeightLimit_A"
+  ],
+  "KIT_AdFlag / KIT_AdAFrame / ad_wall zones": [
+   "KIT_SG_AdFlag_A",
+   "KIT_SG_AdAFrame_A",
+   "KIT_SG_AdWallZone_A"
+  ],
+  "Keep left sign on splitter nose": [
+   "KIT_SG_KeepLeft_A"
+  ],
+  "LED video screen (mall / junction)": [
+   "KIT_SG_LEDScreen_A"
+  ],
+  "Lamp-pole banner pair": [
+   "KIT_SG_LampBannerPair_A"
+  ],
+  "No U-turn / no right turn": [
+   "KIT_SG_NoUTurn_A",
+   "KIT_SG_NoRightTurn_B"
+  ],
+  "No stopping / no waiting sign": [
+   "KIT_SG_NoStopping_A",
+   "KIT_SG_NoWaiting_B"
+  ],
+  "No-entry sign": [
+   "KIT_SG_NoEntry_A"
+  ],
+  "One-way sign": [
+   "KIT_SG_OneWay_A"
+  ],
+  "Overhead direction sign gantry": [
+   "KIT_SG_DirectionGantry_A"
+  ],
+  "PROP_Chevron_01 (roundabout chevron board)": [
+   "KIT_SG_Chevron_A"
+  ],
+  "Police notice board (beach safety / no swimming)": [
+   "KIT_SG_PoliceNotice_A"
+  ],
+  "Round hanging shop sign": [
+   "KIT_SG_HangingRound_A"
+  ],
+  "Roundabout ahead / mandatory roundabout sign": [
+   "KIT_SG_RoundaboutAhead_A",
+   "KIT_SG_RoundaboutMandatory_A"
+  ],
+  "Signboard frame pieces (P96 frontage v3)": [
+   "KIT_SG_SignboardFrame_2x06",
+   "KIT_SG_SignboardFrame_3x08",
+   "KIT_SG_SignboardFrame_4x10"
+  ],
+  "Speed limit 50 / 40 / 30": [
+   "KIT_SG_SpeedLimit_A"
+  ],
+  "Street name plate (blue, trilingual)": [
+   "KIT_SG_StreetNamePlate_A"
+  ],
+  "Tower crown / podium ad slots (P103)": [
+   "KIT_SG_AdSlot_Crown_A",
+   "KIT_SG_AdSlot_Podium_B"
+  ],
+  "Unipole billboard (Delta Road)": [
+   "KIT_SG_Unipole_A"
+  ],
+  "Warning: pedestrians / school / slow": [
+   "KIT_SG_WarnPedestrians_A",
+   "KIT_SG_WarnSchool_B",
+   "KIT_SG_WarnSlow_C"
+  ]
+ },
+ "tris": {
+  "KIT_SG_AdAFrame_A": {
+   "lod0": 36,
+   "lod1": 36
+  },
+  "KIT_SG_AdFace_1x1": {
+   "lod0": 24,
+   "lod1": 24
+  },
+  "KIT_SG_AdFace_2x1": {
+   "lod0": 24,
+   "lod1": 24
+  },
+  "KIT_SG_AdFace_3x1": {
+   "lod0": 24,
+   "lod1": 24
+  },
+  "KIT_SG_AdFlag_A": {
+   "lod0": 76,
+   "lod1": 76
+  },
+  "KIT_SG_AdSlot_Crown_A": {
+   "lod0": 168,
+   "lod1": 88
+  },
+  "KIT_SG_AdSlot_Podium_B": {
+   "lod0": 168,
+   "lod1": 88
+  },
+  "KIT_SG_AdWallZone_A": {
+   "lod0": 24,
+   "lod1": 24
+  },
+  "KIT_SG_BathingFlags_A": {
+   "lod0": 140,
+   "lod1": 140
+  },
+  "KIT_SG_BusStopPlate_A": {
+   "lod0": 192,
+   "lod1": 192
+  },
+  "KIT_SG_CCTVPlate_A": {
+   "lod0": 92,
+   "lod1": 92
+  },
+  "KIT_SG_Chevron_A": {
+   "lod0": 92,
+   "lod1": 92
+  },
+  "KIT_SG_CorrugatedHoarding_A": {
+   "lod0": 468,
+   "lod1": 468
+  },
+  "KIT_SG_DirectionGantry_A": {
+   "lod0": 536,
+   "lod1": 408
+  },
+  "KIT_SG_FlexBillboard_6x3": {
+   "lod0": 144,
+   "lod1": 144
+  },
+  "KIT_SG_FlexBillboard_9x4": {
+   "lod0": 156,
+   "lod1": 156
+  },
+  "KIT_SG_GiveWay_A": {
+   "lod0": 44,
+   "lod1": 44
+  },
+  "KIT_SG_HangingRound_A": {
+   "lod0": 216,
+   "lod1": 216
+  },
+  "KIT_SG_HeightLimit_A": {
+   "lod0": 208,
+   "lod1": 208
+  },
+  "KIT_SG_KeepLeft_A": {
+   "lod0": 124,
+   "lod1": 124
+  },
+  "KIT_SG_LEDScreen_A": {
+   "lod0": 80,
+   "lod1": 48
+  },
+  "KIT_SG_LampBannerPair_A": {
+   "lod0": 84,
+   "lod1": 84
+  },
+  "KIT_SG_Lightbox_A": {
+   "lod0": 68,
+   "lod1": 36
+  },
+  "KIT_SG_NoEntry_A": {
+   "lod0": 116,
+   "lod1": 116
+  },
+  "KIT_SG_NoRightTurn_B": {
+   "lod0": 212,
+   "lod1": 212
+  },
+  "KIT_SG_NoStopping_A": {
+   "lod0": 204,
+   "lod1": 204
+  },
+  "KIT_SG_NoUTurn_A": {
+   "lod0": 236,
+   "lod1": 236
+  },
+  "KIT_SG_NoWaiting_B": {
+   "lod0": 192,
+   "lod1": 192
+  },
+  "KIT_SG_OneWay_A": {
+   "lod0": 60,
+   "lod1": 60
+  },
+  "KIT_SG_PoliceNotice_A": {
+   "lod0": 128,
+   "lod1": 128
+  },
+  "KIT_SG_RoundaboutAhead_A": {
+   "lod0": 128,
+   "lod1": 128
+  },
+  "KIT_SG_RoundaboutMandatory_A": {
+   "lod0": 164,
+   "lod1": 164
+  },
+  "KIT_SG_ShelterPosterBox_A": {
+   "lod0": 68,
+   "lod1": 36
+  },
+  "KIT_SG_SignPost_Blue_A": {
+   "lod0": 40,
+   "lod1": 40
+  },
+  "KIT_SG_SignboardFrame_2x06": {
+   "lod0": 212,
+   "lod1": 84
+  },
+  "KIT_SG_SignboardFrame_3x08": {
+   "lod0": 212,
+   "lod1": 84
+  },
+  "KIT_SG_SignboardFrame_4x10": {
+   "lod0": 212,
+   "lod1": 84
+  },
+  "KIT_SG_SpeedLimit_A": {
+   "lod0": 192,
+   "lod1": 192
+  },
+  "KIT_SG_StreetNamePlate_A": {
+   "lod0": 116,
+   "lod1": 116
+  },
+  "KIT_SG_TouristBrown_A": {
+   "lod0": 64,
+   "lod1": 64
+  },
+  "KIT_SG_Unipole_A": {
+   "lod0": 180,
+   "lod1": 180
+  },
+  "KIT_SG_WarnPedestrians_A": {
+   "lod0": 84,
+   "lod1": 84
+  },
+  "KIT_SG_WarnSchool_B": {
+   "lod0": 124,
+   "lod1": 124
+  },
+  "KIT_SG_WarnSlow_C": {
+   "lod0": 68,
+   "lod1": 68
+  }
+ },
+ "validator": "blender_qa:kit:low"
+}

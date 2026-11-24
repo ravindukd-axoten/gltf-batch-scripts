@@ -1,0 +1,465 @@
+{
+ "KIT_Drain_CoverSlabs_A": {
+  "lod0": 156,
+  "lod1": 60,
+  "budget": 200,
+  "row": "WS-0019",
+  "kind": "kit_small",
+  "size_m": [
+   2.7,
+   1.2,
+   0.148
+  ],
+  "materials": [
+   "MAT_Concrete_Weathered",
+   "MAT_StreetKit_A"
+  ],
+  "sockets": {}
+ },
+ "KIT_Drain_GutterGrate_A": {
+  "lod0": 20,
+  "lod1": null,
+  "budget": 60,
+  "row": "WS-0019",
+  "kind": "kit_small",
+  "size_m": [
+   2.0,
+   0.5,
+   0.08
+  ],
+  "materials": [
+   "MAT_StreetTrim_A"
+  ],
+  "sockets": {}
+ },
+ "KIT_Footpath_BrickTactile_A": {
+  "lod0": 102,
+  "lod1": 46,
+  "budget": 260,
+  "row": "WS-0071",
+  "kind": "kit_small",
+  "size_m": [
+   2.0,
+   3.3,
+   0.27
+  ],
+  "materials": [
+   "MAT_GreyCobble",
+   "MAT_HerringbonePaver",
+   "MAT_StreetKit_A",
+   "MAT_StreetTrim_A"
+  ],
+  "sockets": {}
+ },
+ "KIT_JunctionCorner_Signal_A": {
+  "lod0": 1162,
+  "lod1": 518,
+  "budget": 1500,
+  "row": "WS-0086",
+  "kind": "kit_large",
+  "size_m": [
+   12.1,
+   12.1,
+   1.78
+  ],
+  "materials": [
+   "MAT_PlazaPaver",
+   "MAT_StreetKit_A",
+   "MAT_StreetTrim_A"
+  ],
+  "sockets": {
+   "Signal_A": [
+    10.9,
+    0.6,
+    0.15
+   ],
+   "Signal_B": [
+    0.6,
+    10.9,
+    0.15
+   ],
+   "PushButton_A": [
+    10.9,
+    0.6,
+    1.05
+   ],
+   "PushButton_B": [
+    0.6,
+    10.9,
+    1.05
+   ],
+   "Zebra_A": [
+    9.0,
+    -3.0,
+    0.0
+   ],
+   "Zebra_B": [
+    -3.0,
+    9.0,
+    0.0
+   ],
+   "StripedBase": [
+    2.3573593128807144,
+    2.3573593128807144,
+    0.15
+   ]
+  }
+ },
+ "KIT_Kerb_Dropped_A": {
+  "lod0": 44,
+  "lod1": 28,
+  "budget": 120,
+  "row": "WS-0086",
+  "kind": "kit_small",
+  "size_m": [
+   3.0,
+   0.19,
+   0.25
+  ],
+  "materials": [
+   "MAT_StreetTrim_A"
+  ],
+  "sockets": {}
+ },
+ "KIT_Kerb_Straight_D_BlackWhite_A": {
+  "lod0": 36,
+  "lod1": null,
+  "budget": 64,
+  "row": "WS-0055",
+  "kind": "kit_small",
+  "size_m": [
+   1.0,
+   0.19,
+   0.25
+  ],
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "sockets": {}
+ },
+ "KIT_Kerb_Straight_D_Grey_A": {
+  "lod0": 20,
+  "lod1": null,
+  "budget": 64,
+  "row": "WS-0055",
+  "kind": "kit_small",
+  "size_m": [
+   1.0,
+   0.19,
+   0.25
+  ],
+  "materials": [
+   "MAT_StreetTrim_A"
+  ],
+  "sockets": {}
+ },
+ "KIT_Kerb_Straight_D_YellowBlack_A": {
+  "lod0": 36,
+  "lod1": null,
+  "budget": 64,
+  "row": "WS-0055",
+  "kind": "kit_small",
+  "size_m": [
+   1.0,
+   0.19,
+   0.25
+  ],
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "sockets": {}
+ },
+ "KIT_Kerb_Straight_D_Yellow_A": {
+  "lod0": 20,
+  "lod1": null,
+  "budget": 64,
+  "row": "WS-0055",
+  "kind": "kit_small",
+  "size_m": [
+   1.0,
+   0.19,
+   0.25
+  ],
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "sockets": {}
+ },
+ "KIT_RoadDeck_Concrete_A": {
+  "lod0": 64,
+  "lod1": 56,
+  "budget": 400,
+  "row": "WS-0005",
+  "kind": "kit_large",
+  "size_m": [
+   10.0,
+   8.5,
+   2.36
+  ],
+  "materials": [
+   "MAT_Concrete_Weathered"
+  ],
+  "sockets": {}
+ },
+ "KIT_RoadDeck_Joint_A": {
+  "lod0": 36,
+  "lod1": null,
+  "budget": 40,
+  "row": "WS-0005",
+  "kind": "marking",
+  "size_m": [
+   0.46,
+   7.5,
+   0.012
+  ],
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "sockets": {}
+ },
+ "KIT_RoadMarking_ArrowStraightLeft_A": {
+  "lod0": 2,
+  "lod1": null,
+  "budget": 2,
+  "row": "WS-0025",
+  "kind": "marking",
+  "size_m": [
+   1.4,
+   3.5,
+   0.0
+  ],
+  "materials": [
+   "MAT_RoadPaint_B"
+  ],
+  "sockets": {}
+ },
+ "KIT_RoadMarking_ArrowStraightRight_A": {
+  "lod0": 2,
+  "lod1": null,
+  "budget": 2,
+  "row": "WS-0025",
+  "kind": "marking",
+  "size_m": [
+   1.4,
+   3.5,
+   0.0
+  ],
+  "materials": [
+   "MAT_RoadPaint_B"
+  ],
+  "sockets": {}
+ },
+ "KIT_RoadMarking_Baladaksha_A": {
+  "lod0": 2,
+  "lod1": null,
+  "budget": 2,
+  "row": "WS-0043",
+  "kind": "marking",
+  "size_m": [
+   2.4,
+   6.0,
+   0.0
+  ],
+  "materials": [
+   "MAT_RoadPaint_B"
+  ],
+  "sockets": {}
+ },
+ "KIT_RoadMarking_BayEnd_A": {
+  "lod0": 2,
+  "lod1": null,
+  "budget": 2,
+  "row": "WS-0025",
+  "kind": "marking",
+  "size_m": [
+   1.0,
+   2.5,
+   0.0
+  ],
+  "materials": [
+   "MAT_RoadPaint_B"
+  ],
+  "sockets": {}
+ },
+ "KIT_RoadMarking_BoxHatch_A": {
+  "lod0": 2,
+  "lod1": null,
+  "budget": 2,
+  "row": "WS-0025",
+  "kind": "marking",
+  "size_m": [
+   3.2,
+   8.0,
+   0.0
+  ],
+  "materials": [
+   "MAT_RoadPaint_B"
+  ],
+  "sockets": {}
+ },
+ "KIT_RoadMarking_GiveWay_A": {
+  "lod0": 2,
+  "lod1": null,
+  "budget": 2,
+  "row": "WS-0025",
+  "kind": "marking",
+  "size_m": [
+   1.4,
+   3.5,
+   0.0
+  ],
+  "materials": [
+   "MAT_RoadPaint_B"
+  ],
+  "sockets": {}
+ },
+ "KIT_RoadMarking_Slow_A": {
+  "lod0": 2,
+  "lod1": null,
+  "budget": 2,
+  "row": "WS-0044",
+  "kind": "marking",
+  "size_m": [
+   2.0,
+   5.0,
+   0.0
+  ],
+  "materials": [
+   "MAT_RoadPaint_B"
+  ],
+  "sockets": {}
+ },
+ "KIT_RockShelfBelowThe_01": {
+  "lod0": 320,
+  "lod1": 80,
+  "budget": 400,
+  "row": "WS-0242",
+  "kind": "kit_small",
+  "size_m": [
+   20.0,
+   6.0,
+   1.696
+  ],
+  "materials": [
+   "MAT_RockArmour"
+  ],
+  "sockets": {}
+ },
+ "KIT_RoundaboutPlaza_Corner_A": {
+  "lod0": 366,
+  "lod1": 154,
+  "budget": 1500,
+  "row": "WS-0095",
+  "kind": "kit_large",
+  "size_m": [
+   17.1,
+   17.1,
+   0.25
+  ],
+  "materials": [
+   "MAT_HerringbonePaver",
+   "MAT_StreetTrim_A"
+  ],
+  "sockets": {
+   "StripedBase": [
+    4.407611844574881,
+    4.407611844574881,
+    0.15
+   ]
+  }
+ },
+ "KIT_SpeedHump_Painted_A": {
+  "lod0": 32,
+  "lod1": 20,
+  "budget": 40,
+  "row": "WS-0017",
+  "kind": "marking",
+  "size_m": [
+   3.5,
+   3.7,
+   0.095
+  ],
+  "materials": [
+   "MAT_RoadPaint_B"
+  ],
+  "sockets": {}
+ },
+ "KIT_SplitterIsland_Nose_A": {
+  "lod0": 507,
+  "lod1": 263,
+  "budget": 900,
+  "row": "WS-0095",
+  "kind": "kit_small",
+  "size_m": [
+   2.799,
+   9.198,
+   0.25
+  ],
+  "materials": [
+   "MAT_HerringbonePaver",
+   "MAT_StreetKit_A"
+  ],
+  "sockets": {
+   "Sign_KeepLeft": [
+    0.0,
+    8.0,
+    0.15
+   ],
+   "Bollard": [
+    0.0,
+    1.0,
+    0.15
+   ]
+  }
+ },
+ "KIT_UtilityCoverCluster_Road_A": {
+  "lod0": 70,
+  "lod1": null,
+  "budget": 120,
+  "row": "WS-0019",
+  "kind": "marking",
+  "size_m": [
+   1.8,
+   4.5,
+   0.039
+  ],
+  "materials": [
+   "MAT_RoadPaint_A",
+   "MAT_StreetKit_A",
+   "MAT_StreetTrim_A"
+  ],
+  "sockets": {}
+ },
+ "PROP_RoadStud_Amber_A": {
+  "lod0": 8,
+  "lod1": null,
+  "budget": 8,
+  "row": "WS-0018",
+  "kind": "prop_small",
+  "size_m": [
+   0.1,
+   0.1,
+   0.02
+  ],
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "sockets": {}
+ },
+ "PROP_RoadStud_White_A": {
+  "lod0": 8,
+  "lod1": null,
+  "budget": 8,
+  "row": "WS-0018",
+  "kind": "prop_small",
+  "size_m": [
+   0.1,
+   0.1,
+   0.02
+  ],
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "sockets": {}
+ }
+}

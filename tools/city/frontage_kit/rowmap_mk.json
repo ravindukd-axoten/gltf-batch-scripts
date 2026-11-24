@@ -1,0 +1,128 @@
+{
+ "_comment": "Spec-to-piece name map (P143): inventory row name -> generated pieces. Read by tools/inventory/build_row_manifest.py; rewritten by the generator, do not edit.",
+ "args": "blender -b --factory-startup -P tools/city/frontage_kit/build_generated.py -- --set mk",
+ "generator": "tools/city/frontage_kit/streetset.py",
+ "outputs_dir": "unity/BatchIsland/Assets/BatchIsland/Art/World/Kit/Markings",
+ "rows": {
+  "Angled parking strokes 60 deg every 2.5 m": [
+   "KIT_MK_AngledStrokes_60_A"
+  ],
+  "Arrow: lane-merge / lane-drop": [
+   "KIT_MK_ArrowMerge_A"
+  ],
+  "Arrows: ahead+left and ahead+right": [
+   "KIT_MK_ArrowAheadLeft_A",
+   "KIT_MK_ArrowAheadRight_B"
+  ],
+  "Bus bay box outline, yellow": [
+   "KIT_MK_BusBayBox_Yellow_A"
+  ],
+  "Centre line, painted double line": [
+   "KIT_MK_CentreDouble_A"
+  ],
+  "Centre line, solid white 0.15 m": [
+   "KIT_MK_CentreSolid_A"
+  ],
+  "Edge line, white solid 0.15 m": [
+   "KIT_MK_EdgeSolid_A"
+  ],
+  "Give-way line, dashed 0.4 m": [
+   "KIT_MK_GiveWayLine_A"
+  ],
+  "Give-way triangle marking (yield triangles)": [
+   "KIT_MK_YieldTriangles_A"
+  ],
+  "Hatched gore (white chevrons in outline)": [
+   "KIT_MK_HatchedGore_A"
+  ],
+  "Lane line, white dashed 0.15 m (3 m paint / 6 m gap)": [
+   "KIT_MK_LaneDash_3m6m_A"
+  ],
+  "No-stopping edge line, yellow solid 0.1 m, 0.3 m off kerb": [
+   "KIT_MK_NoStopEdge_Yellow_A"
+  ],
+  "Parallel bay marks, Beira Yard lay-bys": [
+   "KIT_MK_ParallelBays_A"
+  ],
+  "Roundabout ring line": [
+   "KIT_MK_RoundaboutRing_R15_Q"
+  ],
+  "Stop line, white 0.3 m": [
+   "KIT_MK_StopLine_A"
+  ],
+  "Yellow box junction hatch": [
+   "KIT_MK_BoxJunctionHatch_Yellow_A"
+  ]
+ },
+ "tris": {
+  "KIT_MK_AngledStrokes_60_A": {
+   "lod0": 60,
+   "lod1": 60
+  },
+  "KIT_MK_ArrowAheadLeft_A": {
+   "lod0": 40,
+   "lod1": 40
+  },
+  "KIT_MK_ArrowAheadRight_B": {
+   "lod0": 40,
+   "lod1": 40
+  },
+  "KIT_MK_ArrowMerge_A": {
+   "lod0": 44,
+   "lod1": 44
+  },
+  "KIT_MK_BoxJunctionHatch_Yellow_A": {
+   "lod0": 180,
+   "lod1": 180
+  },
+  "KIT_MK_BusBayBox_Yellow_A": {
+   "lod0": 48,
+   "lod1": 48
+  },
+  "KIT_MK_CentreDouble_A": {
+   "lod0": 24,
+   "lod1": 24
+  },
+  "KIT_MK_CentreSolid_A": {
+   "lod0": 12,
+   "lod1": 12
+  },
+  "KIT_MK_EdgeSolid_A": {
+   "lod0": 12,
+   "lod1": 12
+  },
+  "KIT_MK_GiveWayLine_A": {
+   "lod0": 48,
+   "lod1": 48
+  },
+  "KIT_MK_HatchedGore_A": {
+   "lod0": 168,
+   "lod1": 168
+  },
+  "KIT_MK_LaneDash_3m6m_A": {
+   "lod0": 36,
+   "lod1": 36
+  },
+  "KIT_MK_NoStopEdge_Yellow_A": {
+   "lod0": 12,
+   "lod1": 12
+  },
+  "KIT_MK_ParallelBays_A": {
+   "lod0": 60,
+   "lod1": 60
+  },
+  "KIT_MK_RoundaboutRing_R15_Q": {
+   "lod0": 296,
+   "lod1": 296
+  },
+  "KIT_MK_StopLine_A": {
+   "lod0": 12,
+   "lod1": 12
+  },
+  "KIT_MK_YieldTriangles_A": {
+   "lod0": 32,
+   "lod1": 32
+  }
+ },
+ "validator": "blender_qa:kit:low"
+}

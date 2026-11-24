@@ -1,0 +1,22 @@
+Copyright (c) 2026 Axoten. All rights reserved.
+
+No permission is granted to use, copy, modify, merge, publish, distribute, sublicense or sell any part of this repository,
+in source or built form, or to use it to train or evaluate machine-learning models. The only rights granted are those that
+GitHub's Terms of Service require for viewing and forking this repository on GitHub.
+
+Third-party parts
+
+The following parts keep their own licences and are not covered by the notice above. Each was checked against the
+asset provenance log; every other staged image, mesh and Blender file is original work of the copyright holder.
+
+- OpenStreetMap data: the four .osm extracts under tools/city/data/ (Overpass API, bases 2026-11-15, 2026-11-16 and
+  2026-11-23), and the geometry built from them. Open Database Licence 1.0, (c) OpenStreetMap contributors.
+  https://www.openstreetmap.org/copyright
+- Poly Haven scans (CC0 1.0, https://polyhaven.com/license): white_rough_plaster, concrete_wall_008, rusty_metal_02,
+  concrete_floor_worn_001 and asphalt_02, used as detail inside the trim sheets T_FrontageTrim_A*.png and
+  T_RoadEdgeTrim_A*.png.
+- Noto Sans Bold, SIL Open Font Licence 1.1 (https://openfontlicense.org): lettering rendered into the T_AdFace_*.png
+  images. The font file itself is not included.
+- Shapely 2.2.0, installed into tools/city/vendor/ by the workflow: BSD 3-Clause licence; it bundles GEOS (LGPL 2.1).
+  Both licence texts are kept in third_party/shapely/.
+- Any other vendored code keeps the licence file it came with.

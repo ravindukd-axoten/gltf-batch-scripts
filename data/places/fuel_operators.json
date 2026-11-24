@@ -1,0 +1,58 @@
+{
+ "$schema": "../schemas/fuel_operators.schema.json",
+ "schema_version": 1,
+ "note": "Three fictional fuel operators for the fuel kit (P207). Names are placeholders: people decide what players read. Palettes and mark shapes are invented; they must never copy a real operator's name, logo or full trade dress (brand rule, Art Bible). Paint keys feed citylib/fuel_kit.py (sRGB hex into COLOR_0).",
+ "operators": {
+  "batch": {
+   "name": "Batch Fuels",
+   "wordmark": "BATCH",
+   "look": "teal fascia, cream stripe, cream disc mark, slim round columns (long flat canopy, photos 2, 9)",
+   "fascia": "#157A78",
+   "stripe": "#F4F1E8",
+   "accent": "#0F5958",
+   "soffit": "#E6E4DE",
+   "column": "#F4F1E8",
+   "band": "#157A78",
+   "band2": "#F4F1E8",
+   "body": "#F4F1E8",
+   "skirt": "#157A78",
+   "letter": "#F4F1E8",
+   "mark": "disc",
+   "mark_paint": "#F4F1E8"
+  },
+  "lagoon": {
+   "name": "Lagoon Petroleum",
+   "wordmark": "LAGOON",
+   "look": "deep slate-green fascia with a marigold stripe, diamond mark, flared leaning columns, separate box hoods (curved canopy, photos 3, 5, 6, 8, 10)",
+   "fascia": "#24453F",
+   "stripe": "#E39A2B",
+   "accent": "#F4F1E8",
+   "soffit": "#E8E6E0",
+   "column": "#D9DAD5",
+   "band": "#24453F",
+   "band2": "#E39A2B",
+   "body": "#ECEAE2",
+   "skirt": "#24453F",
+   "letter": "#E39A2B",
+   "mark": "diamond",
+   "mark_paint": "#E39A2B"
+  },
+  "coral": {
+   "name": "Coral Energy",
+   "wordmark": "CORAL",
+   "look": "white fascia with coral-red bands, charcoal accent, wedge mark, square banded columns, angled dispenser frames (small site canopy, photos 12, 14, 16)",
+   "fascia": "#F4F1E8",
+   "stripe": "#C7432F",
+   "accent": "#5A5D61",
+   "soffit": "#DCDDDA",
+   "column": "#F4F1E8",
+   "band": "#C7432F",
+   "band2": "#5A5D61",
+   "body": "#F4F1E8",
+   "skirt": "#C7432F",
+   "letter": "#5A5D61",
+   "mark": "wedge",
+   "mark_paint": "#C7432F"
+  }
+ }
+}

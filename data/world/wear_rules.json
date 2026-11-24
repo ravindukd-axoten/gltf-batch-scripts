@@ -1,0 +1,546 @@
+{
+  "$schema": "../schemas/wear_rules.schema.json",
+  "schema_version": 1,
+  "status": "proposed",
+  "description": "How worn each district and street class is, as data (Art Bible 'Materials', TDD 'Wear and decay channels', task W2). Read by tools/city through citylib/wear_rules.py; the instance seeds come from citylib/decay.py (stable FNV hash of the instance id), so rebuilds are identical. Levels are 0..1 and feed the COLOR_1 channels (R dirt, G edge wear, B damp on walls or rust on metal, A age seed). Numbers are proposed until the agent signs the look (people decide the look; agents propose).",
+  "street_classes": [
+    "primary",
+    "secondary",
+    "service",
+    "pedestrian",
+    "promenade"
+  ],
+  "jitter": 0.15,
+  "low_tier_road_decal_quads_per_cell": 200,
+  "projected_decals_visible": {
+    "low": 0,
+    "medium": 16,
+    "high": 64
+  },
+  "condition_order": [
+    "port_city",
+    "delta_face_green",
+    "delta_face_seafront",
+    "kollupitiya",
+    "fort",
+    "pettah"
+  ],
+  "districts": {
+    "port_city": {
+      "label": "Batch City (reclaimed land, new build)",
+      "condition_rank": 0,
+      "classes": {
+        "primary": {
+          "age_years": [
+            0,
+            4
+          ],
+          "dirt": 0.06,
+          "damp": 0.05,
+          "rust": 0.03,
+          "edge_wear": 0.05,
+          "decals_per_100m": {
+            "road": 1,
+            "kerb": 1,
+            "wall": 0,
+            "metal": 0
+          }
+        },
+        "secondary": {
+          "age_years": [
+            0,
+            4
+          ],
+          "dirt": 0.08,
+          "damp": 0.06,
+          "rust": 0.04,
+          "edge_wear": 0.06,
+          "decals_per_100m": {
+            "road": 1,
+            "kerb": 1,
+            "wall": 1,
+            "metal": 0
+          }
+        },
+        "service": {
+          "age_years": [
+            0,
+            5
+          ],
+          "dirt": 0.12,
+          "damp": 0.08,
+          "rust": 0.05,
+          "edge_wear": 0.08,
+          "decals_per_100m": {
+            "road": 2,
+            "kerb": 1,
+            "wall": 1,
+            "metal": 1
+          }
+        },
+        "pedestrian": {
+          "age_years": [
+            0,
+            4
+          ],
+          "dirt": 0.06,
+          "damp": 0.05,
+          "rust": 0.03,
+          "edge_wear": 0.05,
+          "decals_per_100m": {
+            "road": 0,
+            "kerb": 1,
+            "wall": 0,
+            "metal": 0
+          }
+        },
+        "promenade": {
+          "age_years": [
+            0,
+            4
+          ],
+          "dirt": 0.08,
+          "damp": 0.06,
+          "rust": 0.06,
+          "edge_wear": 0.06,
+          "decals_per_100m": {
+            "road": 0,
+            "kerb": 1,
+            "wall": 0,
+            "metal": 1
+          }
+        }
+      }
+    },
+    "delta_face_green": {
+      "label": "Delta Face Green (renovated lawn, road and promenade)",
+      "condition_rank": 1,
+      "classes": {
+        "primary": {
+          "age_years": [
+            2,
+            10
+          ],
+          "dirt": 0.14,
+          "damp": 0.1,
+          "rust": 0.06,
+          "edge_wear": 0.12,
+          "decals_per_100m": {
+            "road": 3,
+            "kerb": 2,
+            "wall": 1,
+            "metal": 1
+          }
+        },
+        "secondary": {
+          "age_years": [
+            3,
+            12
+          ],
+          "dirt": 0.18,
+          "damp": 0.12,
+          "rust": 0.08,
+          "edge_wear": 0.15,
+          "decals_per_100m": {
+            "road": 3,
+            "kerb": 2,
+            "wall": 2,
+            "metal": 1
+          }
+        },
+        "service": {
+          "age_years": [
+            4,
+            14
+          ],
+          "dirt": 0.24,
+          "damp": 0.16,
+          "rust": 0.1,
+          "edge_wear": 0.2,
+          "decals_per_100m": {
+            "road": 4,
+            "kerb": 2,
+            "wall": 2,
+            "metal": 2
+          }
+        },
+        "pedestrian": {
+          "age_years": [
+            2,
+            10
+          ],
+          "dirt": 0.16,
+          "damp": 0.12,
+          "rust": 0.06,
+          "edge_wear": 0.12,
+          "decals_per_100m": {
+            "road": 1,
+            "kerb": 2,
+            "wall": 1,
+            "metal": 1
+          }
+        },
+        "promenade": {
+          "age_years": [
+            3,
+            12
+          ],
+          "dirt": 0.2,
+          "damp": 0.16,
+          "rust": 0.14,
+          "edge_wear": 0.16,
+          "decals_per_100m": {
+            "road": 1,
+            "kerb": 3,
+            "wall": 1,
+            "metal": 2
+          }
+        }
+      }
+    },
+    "delta_face_seafront": {
+      "label": "Delta Face seafront (hotels, promenade, seawall; salt air)",
+      "condition_rank": 2,
+      "classes": {
+        "primary": {
+          "age_years": [
+            4,
+            16
+          ],
+          "dirt": 0.2,
+          "damp": 0.2,
+          "rust": 0.14,
+          "edge_wear": 0.18,
+          "decals_per_100m": {
+            "road": 4,
+            "kerb": 3,
+            "wall": 2,
+            "metal": 2
+          }
+        },
+        "secondary": {
+          "age_years": [
+            5,
+            18
+          ],
+          "dirt": 0.24,
+          "damp": 0.22,
+          "rust": 0.16,
+          "edge_wear": 0.22,
+          "decals_per_100m": {
+            "road": 4,
+            "kerb": 3,
+            "wall": 3,
+            "metal": 2
+          }
+        },
+        "service": {
+          "age_years": [
+            6,
+            20
+          ],
+          "dirt": 0.3,
+          "damp": 0.26,
+          "rust": 0.2,
+          "edge_wear": 0.26,
+          "decals_per_100m": {
+            "road": 5,
+            "kerb": 3,
+            "wall": 3,
+            "metal": 3
+          }
+        },
+        "pedestrian": {
+          "age_years": [
+            4,
+            16
+          ],
+          "dirt": 0.22,
+          "damp": 0.22,
+          "rust": 0.14,
+          "edge_wear": 0.18,
+          "decals_per_100m": {
+            "road": 2,
+            "kerb": 3,
+            "wall": 2,
+            "metal": 2
+          }
+        },
+        "promenade": {
+          "age_years": [
+            5,
+            18
+          ],
+          "dirt": 0.26,
+          "damp": 0.26,
+          "rust": 0.22,
+          "edge_wear": 0.22,
+          "decals_per_100m": {
+            "road": 2,
+            "kerb": 4,
+            "wall": 2,
+            "metal": 3
+          }
+        }
+      }
+    },
+    "kollupitiya": {
+      "label": "Kollupitiya and Baladaksha Mw (busy mixed-use, 1970s-2000s stock)",
+      "condition_rank": 3,
+      "classes": {
+        "primary": {
+          "age_years": [
+            6,
+            25
+          ],
+          "dirt": 0.34,
+          "damp": 0.3,
+          "rust": 0.2,
+          "edge_wear": 0.28,
+          "decals_per_100m": {
+            "road": 6,
+            "kerb": 4,
+            "wall": 4,
+            "metal": 3
+          }
+        },
+        "secondary": {
+          "age_years": [
+            8,
+            30
+          ],
+          "dirt": 0.4,
+          "damp": 0.34,
+          "rust": 0.24,
+          "edge_wear": 0.32,
+          "decals_per_100m": {
+            "road": 7,
+            "kerb": 4,
+            "wall": 5,
+            "metal": 3
+          }
+        },
+        "service": {
+          "age_years": [
+            10,
+            35
+          ],
+          "dirt": 0.48,
+          "damp": 0.4,
+          "rust": 0.3,
+          "edge_wear": 0.38,
+          "decals_per_100m": {
+            "road": 8,
+            "kerb": 5,
+            "wall": 6,
+            "metal": 4
+          }
+        },
+        "pedestrian": {
+          "age_years": [
+            6,
+            25
+          ],
+          "dirt": 0.38,
+          "damp": 0.34,
+          "rust": 0.22,
+          "edge_wear": 0.3,
+          "decals_per_100m": {
+            "road": 3,
+            "kerb": 4,
+            "wall": 4,
+            "metal": 3
+          }
+        },
+        "promenade": {
+          "age_years": [
+            6,
+            22
+          ],
+          "dirt": 0.36,
+          "damp": 0.32,
+          "rust": 0.26,
+          "edge_wear": 0.28,
+          "decals_per_100m": {
+            "road": 3,
+            "kerb": 4,
+            "wall": 3,
+            "metal": 3
+          }
+        }
+      }
+    },
+    "fort": {
+      "label": "Old Fort (colonial stock, partly restored, partly neglected)",
+      "condition_rank": 4,
+      "classes": {
+        "primary": {
+          "age_years": [
+            10,
+            40
+          ],
+          "dirt": 0.44,
+          "damp": 0.42,
+          "rust": 0.28,
+          "edge_wear": 0.38,
+          "decals_per_100m": {
+            "road": 8,
+            "kerb": 5,
+            "wall": 6,
+            "metal": 4
+          }
+        },
+        "secondary": {
+          "age_years": [
+            14,
+            60
+          ],
+          "dirt": 0.52,
+          "damp": 0.48,
+          "rust": 0.32,
+          "edge_wear": 0.44,
+          "decals_per_100m": {
+            "road": 9,
+            "kerb": 6,
+            "wall": 8,
+            "metal": 5
+          }
+        },
+        "service": {
+          "age_years": [
+            18,
+            80
+          ],
+          "dirt": 0.6,
+          "damp": 0.54,
+          "rust": 0.38,
+          "edge_wear": 0.5,
+          "decals_per_100m": {
+            "road": 10,
+            "kerb": 6,
+            "wall": 9,
+            "metal": 6
+          }
+        },
+        "pedestrian": {
+          "age_years": [
+            12,
+            50
+          ],
+          "dirt": 0.5,
+          "damp": 0.46,
+          "rust": 0.3,
+          "edge_wear": 0.4,
+          "decals_per_100m": {
+            "road": 4,
+            "kerb": 6,
+            "wall": 7,
+            "metal": 4
+          }
+        },
+        "promenade": {
+          "age_years": [
+            10,
+            40
+          ],
+          "dirt": 0.46,
+          "damp": 0.44,
+          "rust": 0.32,
+          "edge_wear": 0.38,
+          "decals_per_100m": {
+            "road": 4,
+            "kerb": 5,
+            "wall": 5,
+            "metal": 4
+          }
+        }
+      }
+    },
+    "pettah": {
+      "label": "Pettah (dense wholesale market district, heaviest wear)",
+      "condition_rank": 5,
+      "classes": {
+        "primary": {
+          "age_years": [
+            12,
+            50
+          ],
+          "dirt": 0.58,
+          "damp": 0.52,
+          "rust": 0.36,
+          "edge_wear": 0.5,
+          "decals_per_100m": {
+            "road": 11,
+            "kerb": 7,
+            "wall": 9,
+            "metal": 6
+          }
+        },
+        "secondary": {
+          "age_years": [
+            15,
+            70
+          ],
+          "dirt": 0.66,
+          "damp": 0.58,
+          "rust": 0.42,
+          "edge_wear": 0.56,
+          "decals_per_100m": {
+            "road": 12,
+            "kerb": 8,
+            "wall": 11,
+            "metal": 7
+          }
+        },
+        "service": {
+          "age_years": [
+            20,
+            90
+          ],
+          "dirt": 0.76,
+          "damp": 0.66,
+          "rust": 0.5,
+          "edge_wear": 0.62,
+          "decals_per_100m": {
+            "road": 14,
+            "kerb": 9,
+            "wall": 13,
+            "metal": 8
+          }
+        },
+        "pedestrian": {
+          "age_years": [
+            14,
+            60
+          ],
+          "dirt": 0.68,
+          "damp": 0.6,
+          "rust": 0.44,
+          "edge_wear": 0.56,
+          "decals_per_100m": {
+            "road": 6,
+            "kerb": 8,
+            "wall": 11,
+            "metal": 7
+          }
+        },
+        "promenade": {
+          "age_years": [
+            12,
+            50
+          ],
+          "dirt": 0.6,
+          "damp": 0.54,
+          "rust": 0.4,
+          "edge_wear": 0.5,
+          "decals_per_100m": {
+            "road": 5,
+            "kerb": 7,
+            "wall": 8,
+            "metal": 6
+          }
+        }
+      }
+    }
+  }
+}

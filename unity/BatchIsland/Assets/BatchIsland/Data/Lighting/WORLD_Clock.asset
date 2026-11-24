@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb66cb7e1e2949faaceb4f448b4cd219, type: 3}
+  m_Name: WORLD_Clock
+  m_EditorClassIdentifier:
+  DayLengthSeconds: 2880
+  EpochUnixMs: 1763337600000
+  EpochHour: 6
+  Keys:
+  - Hour: 5.5
+    Preset: {fileID: 11400000, guid: d12b09601c96245b1947f314891377f6, type: 2}
+  - Hour: 7.5
+    Preset: {fileID: 11400000, guid: c6f2c26adc068451c869ce96b9f80072, type: 2}
+  - Hour: 15.5
+    Preset: {fileID: 11400000, guid: c6f2c26adc068451c869ce96b9f80072, type: 2}
+  - Hour: 17.5
+    Preset: {fileID: 11400000, guid: 2c21dd8baaeb548208a6278232de8780, type: 2}
+  - Hour: 18.5
+    Preset: {fileID: 11400000, guid: 2c21dd8baaeb548208a6278232de8780, type: 2}
+  - Hour: 19.5
+    Preset: {fileID: 11400000, guid: d12b09601c96245b1947f314891377f6, type: 2}
+  SmoothBlend: 1
+  TickSeconds: 0.5
+  InitialWeatherId: clear
+  WeatherTransitionSeconds: 20
+  Weather:
+  - Id: clear
+    RainLevel: 0
+    RainIntensity: 0
+    SunIntensityScale: 1
+    ShadowStrengthScale: 1
+    FogDensityScale: 1
+    CloudCoverageAdd: 0
+    SaturationAdd: 0
+  - Id: partly_cloudy
+    RainLevel: 0
+    RainIntensity: 0
+    SunIntensityScale: 0.9
+    ShadowStrengthScale: 0.9
+    FogDensityScale: 1
+    CloudCoverageAdd: 0.1
+    SaturationAdd: 0
+  - Id: overcast
+    RainLevel: 0
+    RainIntensity: 0
+    SunIntensityScale: 0.45
+    ShadowStrengthScale: 0.4
+    FogDensityScale: 1.3
+    CloudCoverageAdd: 0.4
+    SaturationAdd: -15
+  - Id: light_rain
+    RainLevel: 1
+    RainIntensity: 0.4
+    SunIntensityScale: 0.3
+    ShadowStrengthScale: 0.25
+    FogDensityScale: 1.8
+    CloudCoverageAdd: 0.5
+    SaturationAdd: -25
+  - Id: heavy_rain
+    RainLevel: 2
+    RainIntensity: 0.8
+    SunIntensityScale: 0.2
+    ShadowStrengthScale: 0.15
+    FogDensityScale: 2.5
+    CloudCoverageAdd: 0.5
+    SaturationAdd: -35
+  - Id: thunderstorm
+    RainLevel: 3
+    RainIntensity: 1
+    SunIntensityScale: 0.12
+    ShadowStrengthScale: 0.1
+    FogDensityScale: 3
+    CloudCoverageAdd: 0.5
+    SaturationAdd: -40

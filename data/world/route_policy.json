@@ -1,0 +1,12 @@
+{
+  "$schema": "../schemas/route_policy.schema.json",
+  "_comment": "WP-0507 PROPOSAL. Client GPS route display only: the server's route_distance stays the authority for fares. Off-route needs 25 m for 2 s before a re-solve so a wide road does not flicker the line; snap_max_m stops a route being drawn from a point far from any road. solve_budget_ms is the Floor budget from the work package.",
+  "schema_version": 1,
+  "id": "route_policy",
+  "status": "proposal",
+  "snap_max_m": 150,
+  "off_route_m": 25,
+  "off_route_s": 2.0,
+  "solve_budget_ms": 5,
+  "snap_grid_m": 64
+}

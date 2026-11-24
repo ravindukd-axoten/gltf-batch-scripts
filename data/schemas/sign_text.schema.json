@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sign_text.schema.json",
+  "title": "Sign text proposal: si/ta/en strings for atlas sign panels (placeholder, needs native review)",
+  "type": "object",
+  "required": ["schema", "status", "atlas", "source", "languages", "signs"],
+  "properties": {
+    "schema": {"const": "sign_text/v0"},
+    "status": {"type": "string"},
+    "atlas": {"type": "string"},
+    "source": {"type": "string"},
+    "languages": {},
+    "signs": {}
+  }
+}

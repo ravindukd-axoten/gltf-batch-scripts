@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1661f79924145fdaa768785a47c8a5, type: 3}
+  m_Name: LIGHT_BlueHour
+  m_EditorClassIdentifier: BatchIsland.Runtime::BatchIsland.Lighting.LightingPreset
+  SunElevation: 38
+  SunAzimuth: 255
+  SunColor: {r: 0.62, g: 0.68, b: 0.92, a: 1}
+  SunIntensity: 0.35
+  ShadowStrength: 1
+  GroundShadowKeys: {x: 0, y: 0, z: 1}
+  ApvScenario: BlueHour
+  SkyZenith: {r: 0.17, g: 0.31, b: 0.6, a: 1}
+  SkyHorizon: {r: 0.62, g: 0.68, b: 0.84, a: 1}
+  SkyGround: {r: 0.22, g: 0.24, b: 0.32, a: 1}
+  ZenithExponent: 0.45
+  GroundExponent: 0.5
+  HazeFalloff: 30
+  HazeStrength: 0.7
+  SunDiscColor: {r: 0, g: 0, b: 0, a: 1}
+  SunDiscSize: 1
+  SunDiscSoftness: 0.25
+  SunGlowColor: {r: 1, g: 0.56, b: 0.38, a: 1}
+  SunGlowPower: 28
+  SunGlowIntensity: 0
+  HorizonGlowPower: 4
+  HorizonGlowIntensity: 0.28
+  HorizonGlowSpread: 0.4
+  CloudLit: {r: 0.78, g: 0.78, b: 0.88, a: 1}
+  CloudShadow: {r: 0.3, g: 0.33, b: 0.48, a: 1}
+  CloudCoverage: 0.5
+  CloudSoftness: 0.2
+  CloudScale: 0.3
+  CloudOpacity: 0.8
+  CloudScroll: {x: 0.003, y: 0.001}
+  SeaTint: {r: 0.78, g: 0.84, b: 1, a: 1}
+  SeaReflection: 1
+  SeaGlitter: 0.6
+  SeaFoam: 0.8
+  SeaBodyLight: 0.3
+  LampGlow: 4
+  LampHalo: 1.2
+  AmbientSky: {r: 0.26, g: 0.33, b: 0.56, a: 1}
+  AmbientEquator: {r: 0.26, g: 0.27, b: 0.4, a: 1}
+  AmbientGround: {r: 0.14, g: 0.13, b: 0.16, a: 1}
+  AmbientSunSide: 0.15
+  FogColor: {r: 0.36, g: 0.42, b: 0.6, a: 1}
+  FogDensity: 0.0006
+  PostExposure: 0
+  Contrast: 14
+  Saturation: 10
+  ColorFilter: {r: 1, g: 1, b: 1, a: 1}
+  Temperature: -6
+  Tint: 2
+  Shadows: {x: 0.98, y: 0.98, z: 1.06, w: 0}
+  Midtones: {x: 1, y: 1, z: 1, w: 0}
+  Highlights: {x: 1, y: 0.98, z: 0.94, w: 0}

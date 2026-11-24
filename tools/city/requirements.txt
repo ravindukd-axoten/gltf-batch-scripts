@@ -1,0 +1,3 @@
+# Third-party packages for the city pipeline, installed into tools/city/vendor for Blender's bundled Python.
+# numpy comes with Blender (5.3 ships numpy 2.3.4); do not reinstall it.
+shapely==2.2.0

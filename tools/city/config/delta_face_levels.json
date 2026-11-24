@@ -1,0 +1,1667 @@
+{
+  "_doc": "Delta Face terrain levels (SLICE3; agent 2026-11-16: 'Delta Face is not flat'). Read by citylib/terrain.py through delta_face.json 'levels_file'. 'datum' overrides layout.Heights (metres above mean sea level). 'areas' offset the ground surfaces (pavements, lawns, plots; never the carriageway) by dz from the plot datum (road + kerb = 3.95 m): ramp_m > 0 ramps smoothly back to the datum outside the polygon, ramp_m = 0 is a hard step with a wall face (edge 'terrace' = white render, 'retaining' = rubble stone). Areas apply in file order; the first one wins where they overlap. Polygons are in the named hero's own frame (u along the north wing, v across it) or 'world'. Every height is an ESTIMATE from the photos (scale from people, cars, kerbs, steps and balustrades) until a survey or DEM replaces it.",
+  "datum": {
+    "road": 3.8,
+    "kerb": 0.15,
+    "promenade_step": -0.95,
+    "_sources": {
+      "road": "Delta Face is low ground: the carriageway about 3-4 m above mean sea level; kept from V1 (ESTIMATE, no survey).",
+      "kerb": "agent h08, h16, gf_22: the granite kerb about a hand-span high next to a car wheel (ESTIMATE 0.15 m).",
+      "promenade_step": "HEIGHTS 2026-11-24 (ESTIMATE): promenade below the PLOT datum = the Green's 0.3 m below the roadside pavement (layer_levels delta_face_green_sunk) + gf_10's four ~16 cm steps from the Green down to the promenade (0.65 m); was -0.65 when the Green sat at datum. With beach_top 0.6 the seawall face is 3.95-0.95-0.6 = 2.4 m (gf_03/gf_04: 2.3-3.0 m)."
+    }
+  },
+  "areas": [
+    {
+      "name": "north_flight_foot",
+      "frame": "world",
+      "poly": [
+        [
+          -143.909,
+          463.396
+        ],
+        [
+          -148.541,
+          476.614
+        ],
+        [
+          -154.203,
+          474.63
+        ],
+        [
+          -149.571,
+          461.412
+        ]
+      ],
+      "dz": -0.8,
+      "_dz_doc": "P117 critic round 1: measured_values r4.steps.north_end_flight_rise_m 0.8 +-0.2 m (5 risers of 0.16 m, origin/claude/p121-measure-verify) at the flight opposite One Delta Face; a 6 m landing at the foot of the 14 m flight, ramping over 10 m into the 0.3 m foot strip and its own ramp (ramp_to below), only into the Green (same ramp_clip as north_steps_foot).",
+      "ramp_m": 10.0,
+      "ramp_to": "below",
+      "edge": "none",
+      "ramp_clip": [
+        [
+          -136.75,
+          442.91
+        ],
+        [
+          -142.69,
+          442.82
+        ],
+        [
+          -142.75,
+          442.06
+        ],
+        [
+          -141.5,
+          441.41
+        ],
+        [
+          -128.12,
+          417.48
+        ],
+        [
+          -139.14,
+          411.32
+        ],
+        [
+          -139.76,
+          403.02
+        ],
+        [
+          -152.28,
+          403.97
+        ],
+        [
+          -163.03,
+          397.96
+        ],
+        [
+          -167.01,
+          405.08
+        ],
+        [
+          -340.53,
+          418.2
+        ],
+        [
+          -341.01,
+          422.33
+        ],
+        [
+          -188.79,
+          470.5
+        ],
+        [
+          -199.56,
+          497.2
+        ],
+        [
+          -206.72,
+          511.4
+        ],
+        [
+          -213.16,
+          521.39
+        ],
+        [
+          -219.81,
+          530.09
+        ],
+        [
+          -243.08,
+          554.13
+        ],
+        [
+          -214.33,
+          581.95
+        ],
+        [
+          -189.45,
+          556.24
+        ],
+        [
+          -180.41,
+          544.41
+        ],
+        [
+          -171.95,
+          531.29
+        ],
+        [
+          -163.18,
+          513.88
+        ],
+        [
+          -153.09,
+          489.57
+        ],
+        [
+          -137.39,
+          444.8
+        ],
+        [
+          -142.1,
+          443.32
+        ]
+      ],
+      "source": "measured_values r4.steps.north_end_flight_risers (5, high), r4.steps.north_end_flight_rise_m (0.8 m, medium), r4.steps.north_end_flight_width_m (14 m, medium-low); map_refs 03_one_delta_face_front",
+      "estimate": true
+    },
+    {
+      "name": "north_steps_foot",
+      "frame": "world",
+      "poly": [
+        [
+          -133.53,
+          414.45
+        ],
+        [
+          -146.0,
+          436.76
+        ],
+        [
+          -147.42,
+          437.5
+        ],
+        [
+          -172.86,
+          439.42
+        ],
+        [
+          -172.93,
+          440.06
+        ],
+        [
+          -148.48,
+          447.8
+        ],
+        [
+          -148.38,
+          448.94
+        ],
+        [
+          -145.43,
+          448.98
+        ],
+        [
+          -158.89,
+          487.36
+        ],
+        [
+          -168.82,
+          511.3
+        ],
+        [
+          -177.34,
+          528.21
+        ],
+        [
+          -185.49,
+          540.85
+        ],
+        [
+          -194.16,
+          552.19
+        ],
+        [
+          -218.79,
+          577.64
+        ],
+        [
+          -214.33,
+          581.95
+        ],
+        [
+          -215.19,
+          581.11
+        ],
+        [
+          -190.36,
+          555.46
+        ],
+        [
+          -181.39,
+          543.72
+        ],
+        [
+          -172.99,
+          530.69
+        ],
+        [
+          -164.27,
+          513.38
+        ],
+        [
+          -154.21,
+          489.14
+        ],
+        [
+          -138.94,
+          445.58
+        ],
+        [
+          -148.05,
+          442.56
+        ],
+        [
+          -143.94,
+          442.25
+        ],
+        [
+          -144.02,
+          441.36
+        ],
+        [
+          -142.37,
+          440.51
+        ],
+        [
+          -129.16,
+          416.89
+        ],
+        [
+          -128.12,
+          417.48
+        ]
+      ],
+      "dz": -0.3,
+      "_dz_doc": "P117 / B3: 0.3 m below the roadside paver strip, measured_values.json green.road_side_drop_m (0-0.45 m, confidence medium). HEIGHTS 2026-11-24: the whole Green now sits at this level (layer_levels delta_face_green_sunk), so the strip ramps into it (ramp_to below) instead of back up to the datum.",
+      "ramp_m": 15.0,
+      "edge": "none",
+      "ramp_clip": [
+        [
+          -136.75,
+          442.91
+        ],
+        [
+          -142.69,
+          442.82
+        ],
+        [
+          -142.75,
+          442.06
+        ],
+        [
+          -141.5,
+          441.41
+        ],
+        [
+          -128.12,
+          417.48
+        ],
+        [
+          -139.14,
+          411.32
+        ],
+        [
+          -139.76,
+          403.02
+        ],
+        [
+          -152.28,
+          403.97
+        ],
+        [
+          -163.03,
+          397.96
+        ],
+        [
+          -167.01,
+          405.08
+        ],
+        [
+          -340.53,
+          418.2
+        ],
+        [
+          -341.01,
+          422.33
+        ],
+        [
+          -188.79,
+          470.5
+        ],
+        [
+          -199.56,
+          497.2
+        ],
+        [
+          -206.72,
+          511.4
+        ],
+        [
+          -213.16,
+          521.39
+        ],
+        [
+          -219.81,
+          530.09
+        ],
+        [
+          -243.08,
+          554.13
+        ],
+        [
+          -214.33,
+          581.95
+        ],
+        [
+          -189.45,
+          556.24
+        ],
+        [
+          -180.41,
+          544.41
+        ],
+        [
+          -171.95,
+          531.29
+        ],
+        [
+          -163.18,
+          513.88
+        ],
+        [
+          -153.09,
+          489.57
+        ],
+        [
+          -137.39,
+          444.8
+        ],
+        [
+          -142.1,
+          443.32
+        ]
+      ],
+      "source": "DELTA_FACE_MEASURED.md 'North end steps' (map_refs 03, 04: the Green sits below the roadside paver strip by One Delta Face, with steps down to it); P87: a 5 m level strip at the foot of the steps, ramping back up to the Green datum over 15 m, only into the Green (ramp_clip), never onto the pavement",
+      "estimate": true,
+      "ramp_to": "below"
+    },
+    {
+      "name": "hotel_sea_terrace",
+      "frame": "HERO_SeafaceHotel",
+      "poly": [
+        [
+          -30.0,
+          -49.0
+        ],
+        [
+          -9.4,
+          -49.0
+        ],
+        [
+          -9.4,
+          36.0
+        ],
+        [
+          -30.0,
+          36.0
+        ]
+      ],
+      "dz": 0.6,
+      "ramp_m": 0.0,
+      "edge": "terrace",
+      "source": "agent h18 (the black-and-white checker terrace is level with the veranda floor), gf_20 (raised green court beside the seafront wing, its edge about chest height above the lawn walkers), h03 (the walled court west of the seafront wing)",
+      "estimate": true
+    },
+    {
+      "name": "hotel_pool_deck",
+      "frame": "HERO_SeafaceHotel",
+      "poly": [
+        [
+          -90.0,
+          -76.0
+        ],
+        [
+          -46.0,
+          -76.0
+        ],
+        [
+          -46.0,
+          -44.0
+        ],
+        [
+          -90.0,
+          -44.0
+        ]
+      ],
+      "dz": -0.6,
+      "ramp_m": 0.0,
+      "edge": "terrace",
+      "source": "gf_20 (the pool deck with its white umbrellas sits a step below the lawn, left), h03 (pool south-west of the lawn)",
+      "estimate": true
+    },
+    {
+      "name": "hotel_service_court",
+      "frame": "HERO_SeafaceHotel",
+      "poly": [
+        [
+          26.0,
+          -61.0
+        ],
+        [
+          43.0,
+          -61.0
+        ],
+        [
+          43.0,
+          -31.0
+        ],
+        [
+          26.0,
+          -31.0
+        ]
+      ],
+      "dz": 0.35,
+      "ramp_m": 2.5,
+      "source": "gf_22 (the cobbled court rises gently from the gate: about a kerb and a half above the pavement)",
+      "estimate": true
+    },
+    {
+      "name": "hotel_forecourt",
+      "frame": "HERO_SeafaceHotel",
+      "poly": [
+        [
+          -40.0,
+          50.0
+        ],
+        [
+          44.0,
+          50.0
+        ],
+        [
+          44.0,
+          72.0
+        ],
+        [
+          -40.0,
+          72.0
+        ]
+      ],
+      "dz": 0.3,
+      "ramp_m": 3.0,
+      "source": "h05, h07, h01 (the porte-cochere forecourt is a level paved apron a little above the street, entered by ramps)",
+      "estimate": true
+    },
+    {
+      "name": "hotel_sea_lawn",
+      "frame": "HERO_SeafaceHotel",
+      "poly": [
+        [
+          -100.0,
+          -80.0
+        ],
+        [
+          -30.0,
+          -80.0
+        ],
+        [
+          -30.0,
+          64.0
+        ],
+        [
+          -100.0,
+          64.0
+        ]
+      ],
+      "dz": -0.35,
+      "ramp_m": 0.0,
+      "edge": "terrace",
+      "source": "gf_20, agent h04, h06, h18 (the lawn runs to the rubble seawall about 3.5 m above the surf; a step below the terrace)",
+      "estimate": true
+    },
+    {
+      "name": "green_mound_1",
+      "frame": "world",
+      "poly": [
+        [
+          -34.1,
+          57.8
+        ],
+        [
+          -28.5,
+          57.8
+        ],
+        [
+          -22.1,
+          54.4
+        ],
+        [
+          -15.2,
+          47.9
+        ],
+        [
+          -8.2,
+          38.5
+        ],
+        [
+          -1.4,
+          26.7
+        ],
+        [
+          4.8,
+          13.2
+        ],
+        [
+          10.1,
+          -1.5
+        ],
+        [
+          14.3,
+          -16.5
+        ],
+        [
+          17.2,
+          -31.1
+        ],
+        [
+          18.5,
+          -44.6
+        ],
+        [
+          18.3,
+          -56.3
+        ],
+        [
+          16.5,
+          -65.7
+        ],
+        [
+          13.2,
+          -72.1
+        ],
+        [
+          8.7,
+          -75.5
+        ],
+        [
+          3.1,
+          -75.4
+        ],
+        [
+          -3.3,
+          -72.0
+        ],
+        [
+          -10.2,
+          -65.5
+        ],
+        [
+          -17.2,
+          -56.1
+        ],
+        [
+          -24.0,
+          -44.3
+        ],
+        [
+          -30.2,
+          -30.8
+        ],
+        [
+          -35.6,
+          -16.2
+        ],
+        [
+          -39.8,
+          -1.1
+        ],
+        [
+          -42.6,
+          13.5
+        ],
+        [
+          -43.9,
+          27.0
+        ],
+        [
+          -43.7,
+          38.7
+        ],
+        [
+          -41.9,
+          48.0
+        ],
+        [
+          -38.7,
+          54.5
+        ]
+      ],
+      "dz": 0.0,
+      "ramp_m": 18.0,
+      "source": "agent 2026-11-17 ('the Green is not flat'), gf_09, gf_12, Google aerials: broad shallow mounds and worn hollows; ESTIMATE, no survey. Polygon placed by distance along the Green's long axis (s from the south end) and across it (q from the sea edge); kept clear of the promenade edge so the four steps keep their height.",
+      "estimate": true,
+      "ramp_to": "below",
+      "_dz_doc": "HEIGHTS 2026-11-24: re-based on the sunk Green (old offset - 0.3 m), ramping into the Green level (ESTIMATE)."
+    },
+    {
+      "name": "green_swale_1",
+      "frame": "world",
+      "poly": [
+        [
+          -77.3,
+          159.5
+        ],
+        [
+          -73.0,
+          159.3
+        ],
+        [
+          -68.1,
+          156.2
+        ],
+        [
+          -62.6,
+          150.5
+        ],
+        [
+          -57.0,
+          142.3
+        ],
+        [
+          -51.5,
+          132.1
+        ],
+        [
+          -46.3,
+          120.5
+        ],
+        [
+          -41.8,
+          107.9
+        ],
+        [
+          -38.2,
+          95.0
+        ],
+        [
+          -35.6,
+          82.5
+        ],
+        [
+          -34.1,
+          71.1
+        ],
+        [
+          -33.9,
+          61.1
+        ],
+        [
+          -35.0,
+          53.3
+        ],
+        [
+          -37.2,
+          47.9
+        ],
+        [
+          -40.6,
+          45.2
+        ],
+        [
+          -44.9,
+          45.5
+        ],
+        [
+          -49.9,
+          48.5
+        ],
+        [
+          -55.3,
+          54.3
+        ],
+        [
+          -60.9,
+          62.4
+        ],
+        [
+          -66.4,
+          72.6
+        ],
+        [
+          -71.6,
+          84.3
+        ],
+        [
+          -76.1,
+          96.9
+        ],
+        [
+          -79.8,
+          109.7
+        ],
+        [
+          -82.4,
+          122.2
+        ],
+        [
+          -83.8,
+          133.7
+        ],
+        [
+          -84.0,
+          143.6
+        ],
+        [
+          -82.9,
+          151.4
+        ],
+        [
+          -80.7,
+          156.8
+        ]
+      ],
+      "dz": -0.6,
+      "ramp_m": 15.0,
+      "source": "agent 2026-11-17 ('the Green is not flat'), gf_09, gf_12, Google aerials: broad shallow mounds and worn hollows; ESTIMATE, no survey. Polygon placed by distance along the Green's long axis (s from the south end) and across it (q from the sea edge); kept clear of the promenade edge so the four steps keep their height.",
+      "estimate": true,
+      "ramp_to": "below",
+      "_dz_doc": "HEIGHTS 2026-11-24: re-based on the sunk Green (old offset - 0.3 m), ramping into the Green level (ESTIMATE)."
+    },
+    {
+      "name": "green_mound_2",
+      "frame": "world",
+      "poly": [
+        [
+          -123.2,
+          302.3
+        ],
+        [
+          -118.4,
+          301.7
+        ],
+        [
+          -112.5,
+          297.4
+        ],
+        [
+          -106.0,
+          289.5
+        ],
+        [
+          -99.1,
+          278.4
+        ],
+        [
+          -92.2,
+          264.7
+        ],
+        [
+          -85.6,
+          249.0
+        ],
+        [
+          -79.7,
+          232.2
+        ],
+        [
+          -74.7,
+          215.1
+        ],
+        [
+          -71.0,
+          198.6
+        ],
+        [
+          -68.6,
+          183.4
+        ],
+        [
+          -67.7,
+          170.4
+        ],
+        [
+          -68.4,
+          160.2
+        ],
+        [
+          -70.6,
+          153.2
+        ],
+        [
+          -74.3,
+          150.0
+        ],
+        [
+          -79.1,
+          150.5
+        ],
+        [
+          -84.9,
+          154.9
+        ],
+        [
+          -91.5,
+          162.8
+        ],
+        [
+          -98.4,
+          173.9
+        ],
+        [
+          -105.3,
+          187.6
+        ],
+        [
+          -111.9,
+          203.2
+        ],
+        [
+          -117.8,
+          220.0
+        ],
+        [
+          -122.7,
+          237.1
+        ],
+        [
+          -126.5,
+          253.7
+        ],
+        [
+          -128.9,
+          268.8
+        ],
+        [
+          -129.8,
+          281.9
+        ],
+        [
+          -129.1,
+          292.1
+        ],
+        [
+          -126.8,
+          299.0
+        ]
+      ],
+      "dz": -0.05,
+      "ramp_m": 15.0,
+      "source": "agent 2026-11-17 ('the Green is not flat'), gf_09, gf_12, Google aerials: broad shallow mounds and worn hollows; ESTIMATE, no survey. Polygon placed by distance along the Green's long axis (s from the south end) and across it (q from the sea edge); kept clear of the promenade edge so the four steps keep their height.",
+      "estimate": true,
+      "ramp_to": "below",
+      "_dz_doc": "HEIGHTS 2026-11-24: re-based on the sunk Green (old offset - 0.3 m), ramping into the Green level (ESTIMATE)."
+    },
+    {
+      "name": "green_swale_2",
+      "frame": "world",
+      "poly": [
+        [
+          -164.7,
+          415.0
+        ],
+        [
+          -161.2,
+          414.3
+        ],
+        [
+          -156.8,
+          410.3
+        ],
+        [
+          -151.7,
+          403.1
+        ],
+        [
+          -146.2,
+          393.3
+        ],
+        [
+          -140.6,
+          381.1
+        ],
+        [
+          -135.1,
+          367.4
+        ],
+        [
+          -130.0,
+          352.6
+        ],
+        [
+          -125.5,
+          337.7
+        ],
+        [
+          -122.0,
+          323.3
+        ],
+        [
+          -119.5,
+          310.2
+        ],
+        [
+          -118.2,
+          298.9
+        ],
+        [
+          -118.2,
+          290.2
+        ],
+        [
+          -119.4,
+          284.3
+        ],
+        [
+          -121.9,
+          281.7
+        ],
+        [
+          -125.4,
+          282.4
+        ],
+        [
+          -129.8,
+          286.5
+        ],
+        [
+          -134.8,
+          293.6
+        ],
+        [
+          -140.3,
+          303.5
+        ],
+        [
+          -146.0,
+          315.6
+        ],
+        [
+          -151.5,
+          329.4
+        ],
+        [
+          -156.6,
+          344.1
+        ],
+        [
+          -161.0,
+          359.0
+        ],
+        [
+          -164.6,
+          373.4
+        ],
+        [
+          -167.1,
+          386.6
+        ],
+        [
+          -168.3,
+          397.8
+        ],
+        [
+          -168.4,
+          406.5
+        ],
+        [
+          -167.1,
+          412.4
+        ]
+      ],
+      "dz": -0.55,
+      "ramp_m": 12.0,
+      "source": "agent 2026-11-17 ('the Green is not flat'), gf_09, gf_12, Google aerials: broad shallow mounds and worn hollows; ESTIMATE, no survey. Polygon placed by distance along the Green's long axis (s from the south end) and across it (q from the sea edge); kept clear of the promenade edge so the four steps keep their height.",
+      "estimate": true,
+      "ramp_to": "below",
+      "_dz_doc": "HEIGHTS 2026-11-24: re-based on the sunk Green (old offset - 0.3 m), ramping into the Green level (ESTIMATE)."
+    },
+    {
+      "name": "green_mound_3",
+      "frame": "world",
+      "poly": [
+        [
+          -201.4,
+          529.2
+        ],
+        [
+          -197.6,
+          528.9
+        ],
+        [
+          -193.0,
+          525.7
+        ],
+        [
+          -187.9,
+          519.8
+        ],
+        [
+          -182.6,
+          511.6
+        ],
+        [
+          -177.3,
+          501.3
+        ],
+        [
+          -172.3,
+          489.6
+        ],
+        [
+          -167.8,
+          477.0
+        ],
+        [
+          -164.1,
+          464.2
+        ],
+        [
+          -161.4,
+          451.7
+        ],
+        [
+          -159.7,
+          440.3
+        ],
+        [
+          -159.2,
+          430.5
+        ],
+        [
+          -159.9,
+          422.8
+        ],
+        [
+          -161.8,
+          417.5
+        ],
+        [
+          -164.7,
+          415.0
+        ],
+        [
+          -168.5,
+          415.3
+        ],
+        [
+          -173.1,
+          418.5
+        ],
+        [
+          -178.2,
+          424.4
+        ],
+        [
+          -183.5,
+          432.7
+        ],
+        [
+          -188.8,
+          442.9
+        ],
+        [
+          -193.8,
+          454.6
+        ],
+        [
+          -198.3,
+          467.2
+        ],
+        [
+          -202.0,
+          480.1
+        ],
+        [
+          -204.7,
+          492.5
+        ],
+        [
+          -206.4,
+          503.9
+        ],
+        [
+          -206.9,
+          513.7
+        ],
+        [
+          -206.2,
+          521.5
+        ],
+        [
+          -204.3,
+          526.7
+        ]
+      ],
+      "dz": 0.0,
+      "ramp_m": 14.0,
+      "source": "agent 2026-11-17 ('the Green is not flat'), gf_09, gf_12, Google aerials: broad shallow mounds and worn hollows; ESTIMATE, no survey. Polygon placed by distance along the Green's long axis (s from the south end) and across it (q from the sea edge); kept clear of the promenade edge so the four steps keep their height.",
+      "estimate": true,
+      "ramp_to": "below",
+      "_dz_doc": "HEIGHTS 2026-11-24: re-based on the sunk Green (old offset - 0.3 m), ramping into the Green level (ESTIMATE)."
+    },
+    {
+      "name": "green_swale_3",
+      "frame": "world",
+      "poly": [
+        [
+          -238.5,
+          611.9
+        ],
+        [
+          -236.1,
+          611.6
+        ],
+        [
+          -233.1,
+          609.4
+        ],
+        [
+          -229.9,
+          605.5
+        ],
+        [
+          -226.4,
+          599.9
+        ],
+        [
+          -223.0,
+          593.1
+        ],
+        [
+          -219.7,
+          585.2
+        ],
+        [
+          -216.7,
+          576.8
+        ],
+        [
+          -214.2,
+          568.3
+        ],
+        [
+          -212.4,
+          560.0
+        ],
+        [
+          -211.2,
+          552.4
+        ],
+        [
+          -210.7,
+          545.9
+        ],
+        [
+          -211.1,
+          540.8
+        ],
+        [
+          -212.2,
+          537.3
+        ],
+        [
+          -214.0,
+          535.7
+        ],
+        [
+          -216.4,
+          536.0
+        ],
+        [
+          -219.3,
+          538.1
+        ],
+        [
+          -222.6,
+          542.1
+        ],
+        [
+          -226.1,
+          547.6
+        ],
+        [
+          -229.5,
+          554.5
+        ],
+        [
+          -232.8,
+          562.3
+        ],
+        [
+          -235.8,
+          570.7
+        ],
+        [
+          -238.2,
+          579.3
+        ],
+        [
+          -240.1,
+          587.5
+        ],
+        [
+          -241.3,
+          595.1
+        ],
+        [
+          -241.7,
+          601.6
+        ],
+        [
+          -241.4,
+          606.8
+        ],
+        [
+          -240.3,
+          610.2
+        ]
+      ],
+      "dz": -0.5,
+      "ramp_m": 8.0,
+      "source": "agent 2026-11-17 ('the Green is not flat'), gf_09, gf_12, Google aerials: broad shallow mounds and worn hollows; ESTIMATE, no survey. Polygon placed by distance along the Green's long axis (s from the south end) and across it (q from the sea edge); kept clear of the promenade edge so the four steps keep their height.",
+      "estimate": true,
+      "ramp_to": "below",
+      "_dz_doc": "HEIGHTS 2026-11-24: re-based on the sunk Green (old offset - 0.3 m), ramping into the Green level (ESTIMATE)."
+    }
+  ],
+  "spots": [
+    {
+      "name": "delta_road_at_hotel_gate",
+      "frame": "HERO_SeafaceHotel",
+      "at": [
+        52.0,
+        -45.0
+      ],
+      "surface": "road",
+      "z": 3.8,
+      "source": "datum",
+      "estimate": true
+    },
+    {
+      "name": "pavement_at_hotel_gate",
+      "frame": "HERO_SeafaceHotel",
+      "at": [
+        47.5,
+        -45.0
+      ],
+      "surface": "ground",
+      "z": 3.95,
+      "source": "gf_22, h08",
+      "estimate": true
+    },
+    {
+      "name": "hotel_veranda_floor",
+      "frame": "HERO_SeafaceHotel",
+      "at": [
+        -20.0,
+        0.0
+      ],
+      "surface": "ground",
+      "z": 4.55,
+      "source": "agent h18; hero plinth 0.75 m above the road",
+      "estimate": true
+    },
+    {
+      "name": "hotel_sea_lawn",
+      "frame": "HERO_SeafaceHotel",
+      "at": [
+        -50.0,
+        10.0
+      ],
+      "surface": "ground",
+      "z": 3.6,
+      "source": "gf_20, h04",
+      "estimate": true
+    },
+    {
+      "name": "hotel_pool_deck",
+      "frame": "HERO_SeafaceHotel",
+      "at": [
+        -55.0,
+        -60.0
+      ],
+      "surface": "ground",
+      "z": 3.35,
+      "source": "gf_20",
+      "estimate": true
+    },
+    {
+      "name": "hotel_service_court",
+      "frame": "HERO_SeafaceHotel",
+      "at": [
+        35.0,
+        -45.0
+      ],
+      "surface": "ground",
+      "z": 4.3,
+      "source": "gf_22",
+      "estimate": true
+    },
+    {
+      "name": "hotel_forecourt",
+      "frame": "HERO_SeafaceHotel",
+      "at": [
+        0.0,
+        65.0
+      ],
+      "surface": "ground",
+      "z": 4.25,
+      "source": "h05, h07",
+      "estimate": true
+    }
+  ],
+  "features": {
+    "hotel_sea_balustrade": {
+      "_doc": "low white balustraded sea wall on the seawall top, about 1.5 m inland of the OSM coastline (agent h04, h06, h18, gf_20)",
+      "frame": "HERO_SeafaceHotel",
+      "line": [
+        [
+          -71.0,
+          63.0
+        ],
+        [
+          -71.0,
+          40.0
+        ],
+        [
+          -64.3,
+          9.0
+        ],
+        [
+          -64.3,
+          -18.0
+        ],
+        [
+          -66.2,
+          -27.0
+        ],
+        [
+          -63.3,
+          -32.0
+        ],
+        [
+          -60.3,
+          -70.0
+        ],
+        [
+          -60.3,
+          -76.0
+        ]
+      ]
+    }
+  },
+  "step_runs": [
+    {
+      "_doc": "P87 (citylib/level_edges.py): a stair profile swept along `line` (the top edge, world x east / y north), going down to the `down` side by `steps` treads of `tread_m`; the rise follows the terrain at the top and foot, so it lands on north_steps_foot. Cut out of the ground; risers and tread backs carry baked contact shade.",
+      "name": "north_edge_low_a",
+      "line": [
+        [
+          -128.12,
+          417.48
+        ],
+        [
+          -141.5,
+          441.41
+        ],
+        [
+          -142.75,
+          442.06
+        ],
+        [
+          -142.69,
+          442.82
+        ],
+        [
+          -136.75,
+          442.91
+        ],
+        [
+          -142.1,
+          443.32
+        ],
+        [
+          -137.39,
+          444.8
+        ],
+        [
+          -143.909,
+          463.396
+        ]
+      ],
+      "down": "left",
+      "steps": 1,
+      "tread_m": 0.3,
+      "material": "MAT_Concrete_Weathered",
+      "source": "P117 / B3: measured_values.json r2.north_steps.form (no 205 m flight: a level paver strip with a low edge along the road, and opposite the One Delta Face entrance one short, wide flight of about 3 risers down to the Green; map_refs 03, confidence medium-low) and green.road_side_drop_m / r2.green.road_side_drop_m (0.3 m; north_steps_foot.dz). The low edge: one 0.3 m riser with a 0.3 m coping tread (ESTIMATE, tier C).",
+      "estimate": true
+    },
+    {
+      "name": "north_flight_one_delta_face",
+      "line": [
+        [
+          -143.909,
+          463.396
+        ],
+        [
+          -148.541,
+          476.614
+        ]
+      ],
+      "down": "left",
+      "steps": 5,
+      "tread_m": 0.4,
+      "material": "MAT_Concrete_Weathered",
+      "source": "P117 / B3: measured_values.json r2.north_steps.form (no 205 m flight: a level paver strip with a low edge along the road, and opposite the One Delta Face entrance one short, wide flight of about 3 risers down to the Green; map_refs 03, confidence medium-low) and green.road_side_drop_m / r2.green.road_side_drop_m (0.3 m; north_steps_foot.dz). The flight: 12 m wide (10-15 m in the entry), 3 risers of 0.1 m over the 0.3 m drop, 0.4 m treads, centred at y 470 on the Green edge opposite the mall entrance (ESTIMATE: the entry reads 0.45-0.5 m for the flight; open measurement).",
+      "estimate": true,
+      "_r4_doc": "P117 critic round 1: 5 risers, 14 m wide (measured_values r4.steps.north_end_flight_risers / _width_m); rise 0.8 m from areas[north_flight_foot]."
+    },
+    {
+      "name": "north_edge_low_b",
+      "line": [
+        [
+          -148.541,
+          476.614
+        ],
+        [
+          -153.09,
+          489.57
+        ],
+        [
+          -163.18,
+          513.88
+        ],
+        [
+          -171.95,
+          531.29
+        ],
+        [
+          -180.41,
+          544.41
+        ],
+        [
+          -189.45,
+          556.24
+        ],
+        [
+          -214.33,
+          581.95
+        ]
+      ],
+      "down": "left",
+      "steps": 1,
+      "tread_m": 0.3,
+      "material": "MAT_Concrete_Weathered",
+      "source": "P117 / B3: measured_values.json r2.north_steps.form (no 205 m flight: a level paver strip with a low edge along the road, and opposite the One Delta Face entrance one short, wide flight of about 3 risers down to the Green; map_refs 03, confidence medium-low) and green.road_side_drop_m / r2.green.road_side_drop_m (0.3 m; north_steps_foot.dz). The low edge, north of the flight.",
+      "estimate": true
+    }
+  ],
+  "contact_shade": {
+    "_doc": "P87 (citylib/level_edges.py, research advanced-features-plan B5): contact shade baked into COLOR_0.A where a floor meets a level edge. Floor alpha = 1 - strength * (1 - vis), vis = 0.5 * (1 + d / sqrt(d^2 + h^2)) for a point d m in front of a wall h m high; bands_m are the strip edges on the promenade (0.65 m Green wall), seawall_bands_m on the sand from the seawall toe (2.9 m; toe seawall_toe_m in front of the seawall line, KIT_Seawall_Rubble batter + toe); wall_foot_alpha on the foot corners of the retaining-wall faces. promenade_drive_m: the Delta Face Drive asphalt strip along the seawall on the promenade (DELTA_FACE_MEASURED.md layer 5: brick about 5 m, asphalt about 4 m, tier C). 0 ms on Low: PaintedLit reads COLOR_0.A through _VertexAO.",
+    "strength": 1.0,
+    "bands_m": [
+      1.2
+    ],
+    "seawall_bands_m": [
+      2.6
+    ],
+    "seawall_toe_m": 1.25,
+    "wall_foot_alpha": 0.6,
+    "promenade_drive_m": 6.5,
+    "_promenade_drive_doc": "P117 / B3: 6.5 m, measured_values.json promenade.drive_asphalt_m (confidence medium-low), inside the 15.5 m promenade (promenade.seawall_to_green_m). Was 4.0."
+  },
+  "layer_levels": [
+    {
+      "name": "delta_face_green_sunk",
+      "layer": "green",
+      "park_names": [
+        "Delta Face Green"
+      ],
+      "dz": -0.3,
+      "edge": "terrace",
+      "relief": true,
+      "estimate": true,
+      "source": "Agent r8 (2026-11-23): the Green is a few steps below the A2. measured_values.json green.road_side_drop_m 0.3 m (range 0-0.45, confidence medium; OSM 'down' steps every 75-80 m from the roadside pavement), the north_steps_foot strip and the one-riser north_edge_low step runs; 2 x 0.15 m risers. Below the road surface by 0.15 m, below the pavement by 0.3 m (ESTIMATE, no survey)."
+    },
+    {
+      "name": "base_one_delta_face",
+      "layer": "building_base",
+      "osm_ids": [
+        839411964,
+        839411971,
+        839411972,
+        705103818
+      ],
+      "apron_m": 6.0,
+      "keep_off_road_m": 3.0,
+      "dz": 0.45,
+      "edge": "terrace",
+      "estimate": true,
+      "source": "map_refs 03 (OGF front) and sv_13: the mall and towers stand on a landscaped podium forecourt with low planter walls a few steps above the A2 pavement; 3 risers 0.45 m (ESTIMATE)."
+    },
+    {
+      "name": "base_shangri_la",
+      "layer": "building_base",
+      "osm_ids": [
+        839411973
+      ],
+      "apron_m": 6.0,
+      "keep_off_road_m": 3.0,
+      "dz": 0.6,
+      "edge": "terrace",
+      "estimate": true,
+      "source": "Shangri-La hotel tower on its podium beside OGF (map_refs 02/04): raised forecourt and drop-off above the street; 4 risers 0.6 m (ESTIMATE)."
+    },
+    {
+      "name": "base_itc_ratnadipa",
+      "layer": "building_base",
+      "osm_ids": [
+        839411969,
+        839411970
+      ],
+      "apron_m": 8.0,
+      "keep_off_road_m": 3.0,
+      "dz": 0.6,
+      "edge": "terrace",
+      "estimate": true,
+      "source": "ITC Ratnadipa (agent_itc 06/08, map_refs 08): towers on a podium with a hedge and low wall to the Green side, curved drop-off forecourt facing the road; 0.6 m pad (ESTIMATE)."
+    },
+    {
+      "name": "base_taj_samudra",
+      "layer": "building_base",
+      "osm_ids": [
+        341944267
+      ],
+      "apron_m": 10.0,
+      "keep_off_road_m": 4.0,
+      "dz": 0.9,
+      "edge": "none",
+      "ramp_m": 8.0,
+      "estimate": true,
+      "source": "Taj Samudra (agent aerials a2/b1): the hotel stands back from the A2 behind its lawn on a raised pad reached by a sloping drive to the porte-cochere; 0.9 m pad ramped over 8 m (ESTIMATE, agent to confirm)."
+    }
+  ],
+  "grades": [
+    {
+      "name": "new_baladaksha_mw",
+      "ways": [
+        749015601
+      ],
+      "half_width_m": 10.0,
+      "falloff_m": 25.0,
+      "end_fade_m": 20.0,
+      "estimate": true,
+      "profile": [
+        [
+          0,
+          0.3
+        ],
+        [
+          150,
+          1.2
+        ],
+        [
+          480,
+          1.2
+        ],
+        [
+          640,
+          0.6
+        ],
+        [
+          880,
+          1.5
+        ],
+        [
+          960,
+          1.5
+        ],
+        [
+          1073,
+          0.0
+        ]
+      ],
+      "source": "Agent r8: Baladaksha Mawatha is not flat. Rises off the Centre Road junction, runs above the lake on its retaining edge (os_16 lake low wall), dips at the bend and climbs to the steel-railed causeway north of the Akbar oval (os_12) before falling to the oval. Max slope ~1.6% (ESTIMATE: no DEM resolves it; SRTM 30 m too coarse)."
+    },
+    {
+      "name": "centre_rd_inlet_bridge_nb",
+      "ways": [
+        553338377
+      ],
+      "half_width_m": 14.0,
+      "falloff_m": 15.0,
+      "end_fade_m": 30.0,
+      "estimate": true,
+      "profile": [
+        [
+          0,
+          0.4
+        ],
+        [
+          33,
+          0.9
+        ],
+        [
+          66,
+          0.4
+        ]
+      ],
+      "source": "Delta Face Centre Road crosses the Beira lake inlet on a short bridge: a hump of ~0.9 m over the 66 m span, both carriageways (ESTIMATE)."
+    },
+    {
+      "name": "centre_rd_inlet_bridge_sb",
+      "ways": [
+        553338380
+      ],
+      "half_width_m": 14.0,
+      "falloff_m": 15.0,
+      "end_fade_m": 30.0,
+      "estimate": true,
+      "profile": [
+        [
+          0,
+          0.4
+        ],
+        [
+          33,
+          0.9
+        ],
+        [
+          66,
+          0.4
+        ]
+      ],
+      "source": "Same bridge, the other carriageway (ESTIMATE)."
+    }
+  ]
+}

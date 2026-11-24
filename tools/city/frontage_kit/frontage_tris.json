@@ -1,0 +1,182 @@
+{
+ "KIT_AdBracket_1x2_A": {
+  "lod0": 88,
+  "lod1": 76
+ },
+ "KIT_AdFascia_4x1_A": {
+  "lod0": 74,
+  "lod1": 50
+ },
+ "KIT_AdRoof_2x1_A": {
+  "lod0": 110,
+  "lod1": 50
+ },
+ "KIT_AdRoof_3x1_A": {
+  "lod0": 146,
+  "lod1": 62
+ },
+ "KIT_Arcade_Colonial_A": {
+  "lod0": 1946,
+  "lod1": 560
+ },
+ "KIT_Arcade_Colonial_Corner_A": {
+  "lod0": 2004,
+  "lod1": 340
+ },
+ "KIT_Parapet_Cornice_A": {
+  "lod0": 276,
+  "lod1": 36
+ },
+ "KIT_Parapet_Cornice_B": {
+  "lod0": 800,
+  "lod1": 248
+ },
+ "KIT_Parapet_Cornice_C": {
+  "lod0": 792,
+  "lod1": 72
+ },
+ "KIT_Parapet_Cornice_D": {
+  "lod0": 198,
+  "lod1": 108
+ },
+ "KIT_Shopfront_Arched_A": {
+  "lod0": 941,
+  "lod1": 216
+ },
+ "KIT_Shopfront_Arched_B": {
+  "lod0": 1129,
+  "lod1": 336
+ },
+ "KIT_Shopfront_CornerColonial_A": {
+  "lod0": 456,
+  "lod1": 48
+ },
+ "KIT_Shopfront_Corner_A": {
+  "lod0": 412,
+  "lod1": 48
+ },
+ "KIT_Shopfront_Glazed_A": {
+  "lod0": 1124,
+  "lod1": 364
+ },
+ "KIT_Shopfront_Glazed_B": {
+  "lod0": 1242,
+  "lod1": 340
+ },
+ "KIT_Shopfront_Glazed_C": {
+  "lod0": 1404,
+  "lod1": 412
+ },
+ "KIT_Shopfront_Shutter_A": {
+  "lod0": 1216,
+  "lod1": 424
+ },
+ "KIT_Shopfront_Shutter_B": {
+  "lod0": 1068,
+  "lod1": 304
+ },
+ "KIT_Shopfront_Shutter_C": {
+  "lod0": 1292,
+  "lod1": 432
+ },
+ "KIT_Shopfront_Shutter_D": {
+  "lod0": 1140,
+  "lod1": 428
+ },
+ "KIT_Upper_Colonial_A": {
+  "lod0": 1290,
+  "lod1": 300
+ },
+ "KIT_Upper_Colonial_B": {
+  "lod0": 1336,
+  "lod1": 360
+ },
+ "KIT_Upper_Colonial_C": {
+  "lod0": 1383,
+  "lod1": 312
+ },
+ "KIT_Upper_Colonial_D": {
+  "lod0": 1368,
+  "lod1": 352
+ },
+ "KIT_Upper_Modern_A": {
+  "lod0": 664,
+  "lod1": 152
+ },
+ "KIT_Upper_Modern_B": {
+  "lod0": 936,
+  "lod1": 308
+ },
+ "KIT_Upper_Modern_C": {
+  "lod0": 856,
+  "lod1": 252
+ },
+ "KIT_Upper_Modern_D": {
+  "lod0": 1056,
+  "lod1": 304
+ },
+ "KIT_Upper_Shophouse_A": {
+  "lod0": 696,
+  "lod1": 204
+ },
+ "KIT_Upper_Shophouse_B": {
+  "lod0": 1264,
+  "lod1": 280
+ },
+ "KIT_Upper_Shophouse_C": {
+  "lod0": 1168,
+  "lod1": 440
+ },
+ "KIT_Upper_Shophouse_D": {
+  "lod0": 810,
+  "lod1": 320
+ },
+ "KIT_WallPlaster_GroundColonial_A": {
+  "lod0": 252,
+  "lod1": 36
+ },
+ "KIT_WallPlaster_GroundColonial_B": {
+  "lod0": 516,
+  "lod1": 108
+ },
+ "KIT_WallPlaster_GroundColonial_C": {
+  "lod0": 384,
+  "lod1": 88
+ },
+ "KIT_WallPlaster_GroundColonial_D": {
+  "lod0": 426,
+  "lod1": 116
+ },
+ "KIT_WallPlaster_Ground_A": {
+  "lod0": 252,
+  "lod1": 36
+ },
+ "KIT_WallPlaster_Ground_B": {
+  "lod0": 516,
+  "lod1": 108
+ },
+ "KIT_WallPlaster_Ground_C": {
+  "lod0": 372,
+  "lod1": 88
+ },
+ "KIT_WallPlaster_Ground_D": {
+  "lod0": 426,
+  "lod1": 116
+ },
+ "KIT_WallPlaster_Upper_A": {
+  "lod0": 192,
+  "lod1": 24
+ },
+ "KIT_WallPlaster_Upper_B": {
+  "lod0": 456,
+  "lod1": 96
+ },
+ "KIT_WallPlaster_Upper_C": {
+  "lod0": 312,
+  "lod1": 76
+ },
+ "KIT_WallPlaster_Upper_D": {
+  "lod0": 366,
+  "lod1": 104
+ }
+}

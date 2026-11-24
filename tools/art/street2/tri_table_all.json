@@ -1,0 +1,567 @@
+{
+ "KIT_Shopfront_Pettah_A1": {
+  "LOD0": 926,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 352
+ },
+ "KIT_Shopfront_Pettah_B2": {
+  "LOD0": 1378,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 400
+ },
+ "KIT_Shopfront_Pettah_C3": {
+  "LOD0": 822,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 336
+ },
+ "KIT_Shopfront_Pettah_A4": {
+  "LOD0": 878,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 324
+ },
+ "KIT_Shopfront_Pettah_B5": {
+  "LOD0": 1378,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 400
+ },
+ "KIT_Shopfront_Pettah_A6": {
+  "LOD0": 878,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 324
+ },
+ "PROP_Kade_Fruit_A": {
+  "LOD0": 1464,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 474
+ },
+ "PROP_Kade_Fruit_B": {
+  "LOD0": 1464,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 474
+ },
+ "PROP_Kade_Drinks_A": {
+  "LOD0": 556,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 276
+ },
+ "PROP_BusShelter_A": {
+  "LOD0": 332,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 216
+ },
+ "PROP_LampPost_Banner_A": {
+  "LOD0": 264,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 138
+ },
+ "PROP_LampPost_Banner_B": {
+  "LOD0": 264,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 138
+ },
+ "PROP_LampPost_Twin_Seafront": {
+  "LOD0": 200,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 128
+ },
+ "PROP_BusHalt_CTB_A": {
+  "LOD0": 180,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 72
+ },
+ "PROP_Kiosk_Booth_A": {
+  "LOD0": 96,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 60
+ },
+ "PROP_Bin_Street_A": {
+  "LOD0": 132,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 40
+ },
+ "PROP_Bin_Street_Twin": {
+  "LOD0": 276,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 92
+ },
+ "PROP_Bollard_BW": {
+  "LOD0": 84,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 32
+ },
+ "PROP_Bench_Promenade_A": {
+  "LOD0": 120,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 84
+ },
+ "PROP_PowerPole_A": {
+  "LOD0": 380,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 76
+ },
+ "PROP_CableSwag_25m": {
+  "LOD0": 582,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 180
+ },
+ "DECAL_Crossing_7m": {
+  "LOD0": 18,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 10
+ },
+ "DECAL_RoadMarkings_12m": {
+  "LOD0": 15,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "PROP_SeawallRailing_4m": {
+  "LOD0": 408,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 180
+ },
+ "PROP_KerbRamp_A": {
+  "LOD0": 44,
+  "material": "MAT_StreetKit_E"
+ },
+ "PROP_Bunting_10m": {
+  "LOD0": 140,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 70
+ },
+ "PROP_Bench_Wall_3m": {
+  "LOD0": 108,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 60
+ },
+ "PROP_Bin_Trio": {
+  "LOD0": 108,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 72
+ },
+ "PROP_Bollard_Chain_Pair": {
+  "LOD0": 148,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 82
+ },
+ "DECAL_Manhole_Round": {
+  "LOD0": 124,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 56
+ },
+ "DECAL_Manhole_Utility": {
+  "LOD0": 72,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 24
+ },
+ "PROP_RoadGully_A": {
+  "LOD0": 144,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 84
+ },
+ "PROP_DrainRun_6m": {
+  "LOD0": 108,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 72
+ },
+ "PROP_Cone_A": {
+  "LOD0": 72,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 42
+ },
+ "PROP_ConeRow_5": {
+  "LOD0": 360,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 210
+ },
+ "PROP_Barrier_CTB": {
+  "LOD0": 96,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 72
+ },
+ "PROP_Barrier_Jersey": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 36
+ },
+ "DECAL_ParkingBays_4": {
+  "LOD0": 12,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 10
+ },
+ "PROP_TukStand_A": {
+  "LOD0": 162,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 86
+ },
+ "PROP_VendorCart_A": {
+  "LOD0": 512,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 180
+ },
+ "PROP_VendorCart_B": {
+  "LOD0": 512,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 180
+ },
+ "PROP_RoadBlock_Red": {
+  "LOD0": 20,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 8
+ },
+ "PROP_RubbishBags_A": {
+  "LOD0": 160,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 80
+ },
+ "PROP_SeawallTrim_4m": {
+  "LOD0": 660,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 276
+ },
+ "PROP_FlagPole_A": {
+  "LOD0": 80,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 60
+ },
+ "SIGN_Fascia_00": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_01": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_02": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_03": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_04": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_05": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_06": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_07": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_08": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_09": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_10": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_11": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Blade_A": {
+  "LOD0": 24,
+  "material": "MAT_StreetKit_E"
+ },
+ "SIGN_Blade_B": {
+  "LOD0": 24,
+  "material": "MAT_StreetKit_E"
+ },
+ "SIGN_Hoarding_A": {
+  "LOD0": 48,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 28
+ },
+ "SIGN_Fascia_12": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_13": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_14": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_15": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_16": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_17": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_18": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_19": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_20": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_21": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_22": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_23": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_24": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_25": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_26": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_27": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_28": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Fascia_29": {
+  "LOD0": 60,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 12
+ },
+ "SIGN_Blade_C": {
+  "LOD0": 24,
+  "material": "MAT_StreetKit_E"
+ },
+ "SIGN_Blade_D": {
+  "LOD0": 24,
+  "material": "MAT_StreetKit_E"
+ },
+ "SIGN_Blade_E": {
+  "LOD0": 24,
+  "material": "MAT_StreetKit_E"
+ },
+ "SIGN_Blade_F": {
+  "LOD0": 24,
+  "material": "MAT_StreetKit_E"
+ },
+ "SIGN_Hoarding_B": {
+  "LOD0": 48,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 28
+ },
+ "SIGN_Hoarding_C": {
+  "LOD0": 48,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 28
+ },
+ "AWN_Shop_Fixed_A": {
+  "LOD0": 52,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 40
+ },
+ "AWN_Shop_Fixed_B": {
+  "LOD0": 52,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 40
+ },
+ "AWN_Shop_Fixed_C": {
+  "LOD0": 52,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 40
+ },
+ "AWN_Shop_Fixed_D": {
+  "LOD0": 52,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 40
+ },
+ "AWN_Shop_Folding_A": {
+  "LOD0": 96,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 52
+ },
+ "AWN_Shop_Folding_B": {
+  "LOD0": 96,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 52
+ },
+ "AWN_Shop_Folding_C": {
+  "LOD0": 96,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 52
+ },
+ "AWN_Stall_Tent_A": {
+  "LOD0": 112,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 56
+ },
+ "AWN_Stall_Tent_B": {
+  "LOD0": 112,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 56
+ },
+ "AWN_Stall_Tent_C": {
+  "LOD0": 112,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 56
+ },
+ "PROP_ACUnit_Wall": {
+  "LOD0": 86,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 36
+ },
+ "PROP_SatDish_A": {
+  "LOD0": 62,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 28
+ },
+ "PROP_TVAerial_A": {
+  "LOD0": 110,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 80
+ },
+ "PROP_MeterBoard_A": {
+  "LOD0": 68,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 24
+ },
+ "PROP_WaterTank_Roof_x2": {
+  "LOD0": 320,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 168
+ },
+ "PROP_WaterTank_Roof_x1": {
+  "LOD0": 164,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 84
+ },
+ "PROP_TeaStall_A": {
+  "LOD0": 266,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 108
+ },
+ "PROP_PlasticChairs_Set": {
+  "LOD0": 352,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 132
+ },
+ "PROP_StreetNamePost_A": {
+  "LOD0": 68,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 24
+ },
+ "PROP_SeawallTrim_Grey_4m": {
+  "LOD0": 672,
+  "material": "MAT_StreetKit_E",
+  "LOD1": 276
+ },
+ "DECAL_Wet_A": {
+  "LOD0": 2,
+  "material": "MAT_StreetDecal_Wet"
+ },
+ "DECAL_Wet_B": {
+  "LOD0": 2,
+  "material": "MAT_StreetDecal_Wet"
+ },
+ "DECAL_Wet_C": {
+  "LOD0": 2,
+  "material": "MAT_StreetDecal_Wet"
+ },
+ "DECAL_Oil_A": {
+  "LOD0": 2,
+  "material": "MAT_StreetDecal_Grime"
+ },
+ "DECAL_TyreTracks_6m": {
+  "LOD0": 2,
+  "material": "MAT_StreetDecal_Grime"
+ },
+ "DECAL_KerbDirt_6m": {
+  "LOD0": 2,
+  "material": "MAT_StreetDecal_Grime"
+ },
+ "DECAL_PatchRepair_A": {
+  "LOD0": 2,
+  "material": "MAT_StreetDecal_Grime"
+ },
+ "DECAL_Cracks_A": {
+  "LOD0": 2,
+  "material": "MAT_StreetDecal_Grime"
+ },
+ "DECAL_Litter_A": {
+  "LOD0": 2,
+  "material": "MAT_StreetDecal_Grime"
+ },
+ "SIGN_NamePlate_A": {
+  "LOD0": 12,
+  "material": "MAT_StreetDecal_Grime"
+ },
+ "SIGN_NamePlate_B": {
+  "LOD0": 12,
+  "material": "MAT_StreetDecal_Grime"
+ },
+ "SIGN_NamePlate_C": {
+  "LOD0": 12,
+  "material": "MAT_StreetDecal_Grime"
+ },
+ "SIGN_NamePlate_D": {
+  "LOD0": 12,
+  "material": "MAT_StreetDecal_Grime"
+ }
+}

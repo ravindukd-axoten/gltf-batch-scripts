@@ -1,0 +1,1049 @@
+{
+  "name": "delta_face",
+  "description": "The Delta Face seafront: Delta Road and Delta Face Centre Road along the whole of Delta Face Green, from the south roundabout and seafront hotel to the north fountain roundabout and the colonial assembly building, from about 150 m offshore to about 100 m inland of the road frontage. The Green is about 900 m long in reality, so the area_strip is about 1.5 km to keep true proportions.",
+  "osm_file": "data/delta_face_2026-11-15.osm",
+  "district": "delta_face",
+  "area_strip": {
+    "start": [
+      6.919,
+      79.847
+    ],
+    "end": [
+      6.932,
+      79.842
+    ],
+    "east_m": 160.0,
+    "west_auto": true,
+    "west_m": 150.0,
+    "west_max_m": 420.0,
+    "sea_offshore_m": 150.0
+  },
+  "foreshore_m": 6.0,
+  "promenade_m": 10.0,
+  "landmarks": {
+    "341982691": "LMK_SeafaceHotel",
+    "341982692": "LMK_SeafaceHotel",
+    "341982694": "LMK_SeafaceHotel",
+    "341982695": "LMK_SeafaceHotel",
+    "340617005": "LMK_OldAssemblyHall"
+  },
+  "hero_models": {
+    "HERO_SeafaceHotel": {
+      "builder": "hotel",
+      "landmark": "LMK_SeafaceHotel",
+      "pivot": [
+        72.0,
+        -262.0
+      ],
+      "yaw_deg": 17.0
+    },
+    "HERO_OldAssemblyHall": {
+      "builder": "hall",
+      "landmark": "LMK_OldAssemblyHall",
+      "pivot": [
+        -284.0,
+        935.7
+      ],
+      "yaw_deg": 0.7
+    },
+    "HERO_FountainRoundabout": {
+      "builder": "fountain",
+      "fountain": "Lotus Round About",
+      "pivot": [
+        -366.57,
+        988.87
+      ]
+    },
+    "HERO_DeltaFacePier": {
+      "builder": "pier",
+      "pier": true,
+      "pivot": [
+        -140.2,
+        218.15
+      ],
+      "yaw_deg": 197.95
+    }
+  },
+  "budgets": {
+    "cell_lod0_tris": 60000,
+    "cell_lod1_tris": 15000,
+    "cell_materials": 20
+  },
+  "road_overrides": {
+    "New Baladaksha Mawatha": {
+      "_doc": "A walk path in reality (user, 2026-11-16) though OSM tags it primary: built as a 4 m paved footpath, not a carriageway.",
+      "highway": "pedestrian"
+    },
+    "way/1430312627": {
+      "_doc": "SLICE5: the hotel's one-way service loop off Delta Road. The real Delta Road gate (gf_22) is one narrow cobbled drive between lantern piers, modelled by the hero (hero_hotel.gate_drive); the loop's junction apron spilt herringbone into the road. Dropped (empty highway).",
+      "highway": ""
+    },
+    "Lotus Round About": {
+      "_doc": "Ring 9.6 m. Google Maps measure tool, satellite view (Airbus/Maxar imagery), 2026-11-17: island 32.9 m across (W-E), west ring 10.1 m; Antigravity 2026-11-17 had island 34.4 m, ring 8.6-10.8 (mean 9.6). OSM centreline radius 20.7 m with 9.6 m gives a 31.8 m island and a 25.5 m outer radius (measured 26.5 m): within 1.5 m, kept. Confidence high.",
+      "width": "9.6"
+    },
+    "Slave Island Police Round About": {
+      "_doc": "Ring 9.0 m. Google Maps measure tool, satellite view (Airbus/Maxar imagery), 2026-11-17: island 25.6 m (N-S, with its light apron), ring 9.0 m north, 7.6 m south; Antigravity 8.8-9.5 m, island 26 m. Centreline radius 17.0 m gives a 25 m island: agrees. Confidence high.",
+      "width": "9.0"
+    },
+    "Delta Face Roundabout": {
+      "_doc": "Ring 11.5 m on the OSM centreline (radius 12.0 m); the island is cut down to the measured 6 m by roundabout_islands. Google Maps measure tool, satellite view (Airbus/Maxar imagery), 2026-11-17: island 5.9 m, asphalt from the island to the outer edge 13.0 m (W) and 13.4 m (E) (gf_19, sv_01 agree: a small planted island in a wide plaza). Confidence high for the island, medium for the outer edge (the junction is a flared plaza, not a circle).",
+      "width": "11.5"
+    },
+    "York Street": {
+      "_doc": "York Street 11.5 m (Antigravity, unverified). Google Maps 2026-11-17: the street is in deep building shadow, kerbs not visible: NOT checked.",
+      "width": "11.5"
+    },
+    "Lotus Road": {
+      "_doc": "Lotus Road 13.0 m, 4 lanes one-way. Google Maps measure tool, satellite view (Airbus/Maxar imagery), 2026-11-17: 13.15 m from the north-west kerb to the far lane; three lane lines (4 lanes); the south-east kerb is under tree canopy, so the full width is at least about 13 m. Antigravity 13.0 m. Confidence medium-high.",
+      "width": "13.0"
+    },
+    "Chatham Street": {
+      "_doc": "Chatham Street 11.5 m (Antigravity, unverified). Google Maps 2026-11-17: tall buildings lean over the street in the imagery: NOT checked.",
+      "width": "11.5"
+    },
+    "Bank of Ceylon Road": {
+      "_doc": "Bank of Ceylon Road 7.5 m (Antigravity, unverified). Not checked by hand on 2026-11-17.",
+      "width": "7.5"
+    },
+    "Janadhipathi Mawatha": {
+      "_doc": "Each carriageway 9.2 m. Google Maps measure tool, satellite view (Airbus/Maxar imagery), 2026-11-17: 19.7 m from the west kerb to the east kerb including the median (west part 10.1 m to the median line); Antigravity 9.5 + 1.4 + 9.4 = 20.3 m. (19.7 - 1.4) / 2 = 9.15. The median width (1.4 m) is Antigravity's only: the label covers it in the view. Confidence medium.",
+      "width": "9.2"
+    },
+    "Justice Akbar Mawatha": {
+      "_doc": "Each carriageway 7.25 m, median 1.2 m (Antigravity, 15.7 m overall). CONFLICT: Google Maps measure tool, satellite view (Airbus/Maxar imagery), 2026-11-17 at 6.92388, 79.84996 read 4.1 m + 1.5 m + 7.0 m = 12.6 m; a second station 60 m east was unreadable. Not changed; agent spot-check needed (Google labels the two carriageways Justice Akbar Mawatha and Church St). Confidence low.",
+      "width": "7.25"
+    },
+    "Sir Chittampalam A. Gardiner Mawatha": {
+      "_doc": "North-east (south-east-bound) carriageway 8.8 m; the south-west (north-west-bound) chain is 10.3 m by way overrides below. Google Maps measure tool, satellite view (Airbus/Maxar imagery), 2026-11-17, along the zebra at 6.92887, 79.84856: 10.3 m + refuge about 5.4 m + 8.8 m. Antigravity read 7.2 + 4.6 + 7.2 m at the same crossing and 10.0 + 1.0 + 7.3 m 24 m north-west. Confidence medium (one crossing).",
+      "width": "8.8"
+    },
+    "way/98371187": {
+      "_doc": "Delta Road north-bound (west) carriageway between Delta Face Roundabout and Delta Face Terrace: 7.2 m. Delta Road by the hotel: Google Maps measure tool, satellite view (Airbus/Maxar imagery), 2026-11-17 at 6.91995, 79.84688 read 18.3 m outer kerb to outer kerb, 6.6 m from the west kerb to the median (blurred imagery, +-0.6 m); Antigravity 7.2 + 1.4 + 9.8 = 18.4 m. Totals agree; the split is Antigravity's, within my reading. h10-h14 show the raised median planter. Confidence medium (one station).",
+      "width": "7.2"
+    },
+    "way/98371210": {
+      "_doc": "Delta Road north-bound (west) carriageway between Delta Face Roundabout and Delta Face Terrace: 7.2 m. Delta Road by the hotel: Google Maps measure tool, satellite view (Airbus/Maxar imagery), 2026-11-17 at 6.91995, 79.84688 read 18.3 m outer kerb to outer kerb, 6.6 m from the west kerb to the median (blurred imagery, +-0.6 m); Antigravity 7.2 + 1.4 + 9.8 = 18.4 m. Totals agree; the split is Antigravity's, within my reading. h10-h14 show the raised median planter. Confidence medium (one station).",
+      "width": "7.2"
+    },
+    "way/13858419": {
+      "_doc": "Delta Road south-bound (east) carriageway between Delta Face Roundabout and Delta Face Terrace: 9.8 m. Delta Road by the hotel: Google Maps measure tool, satellite view (Airbus/Maxar imagery), 2026-11-17 at 6.91995, 79.84688 read 18.3 m outer kerb to outer kerb, 6.6 m from the west kerb to the median (blurred imagery, +-0.6 m); Antigravity 7.2 + 1.4 + 9.8 = 18.4 m. Totals agree; the split is Antigravity's, within my reading. h10-h14 show the raised median planter. Confidence medium (one station).",
+      "width": "9.8"
+    },
+    "way/98371204": {
+      "_doc": "Delta Road south-bound (east) carriageway between Delta Face Roundabout and Delta Face Terrace: 9.8 m. Delta Road by the hotel: Google Maps measure tool, satellite view (Airbus/Maxar imagery), 2026-11-17 at 6.91995, 79.84688 read 18.3 m outer kerb to outer kerb, 6.6 m from the west kerb to the median (blurred imagery, +-0.6 m); Antigravity 7.2 + 1.4 + 9.8 = 18.4 m. Totals agree; the split is Antigravity's, within my reading. h10-h14 show the raised median planter. Confidence medium (one station).",
+      "width": "9.8"
+    },
+    "way/24255940": {
+      "_doc": "Sir Chittampalam A. Gardiner Mawatha, south-west (north-west-bound) carriageway: 10.3 m along the zebra at 6.92887, 79.84856 (Google Maps measure tool 2026-11-17); Antigravity 10.0 m 24 m north-west. Confidence medium.",
+      "width": "10.3"
+    },
+    "way/1552091947": {
+      "_doc": "Sir Chittampalam A. Gardiner Mawatha, south-west (north-west-bound) carriageway: 10.3 m along the zebra at 6.92887, 79.84856 (Google Maps measure tool 2026-11-17); Antigravity 10.0 m 24 m north-west. Confidence medium.",
+      "width": "10.3"
+    },
+    "way/24255939": {
+      "_doc": "Sir Chittampalam A. Gardiner Mawatha, south-west (north-west-bound) carriageway: 10.3 m along the zebra at 6.92887, 79.84856 (Google Maps measure tool 2026-11-17); Antigravity 10.0 m 24 m north-west. Confidence medium.",
+      "width": "10.3"
+    },
+    "way/23924485": {
+      "_doc": "Sir Chittampalam A. Gardiner Mawatha, south-west (north-west-bound) carriageway: 10.3 m along the zebra at 6.92887, 79.84856 (Google Maps measure tool 2026-11-17); Antigravity 10.0 m 24 m north-west. Confidence medium.",
+      "width": "10.3"
+    },
+    "way/1113372503": {
+      "_doc": "Sir Mohamed Macan Markar Mawatha oval junction ring: 8.5 m. Google Maps measure tool 2026-11-17: island 37.6 m (W-E) x 22.6 m (N-S), ring 8.9 m W, 9.8 m E, 7.2 m N, 7.9 m S (mean 8.5). OSM already draws the oval (centreline about 44 x 25 m), so the long axis matches; built island 33.3 x 21.0 m (measured in the built layout) against 37.6 x 22.6 m. Antigravity's 28 x 19.5 m island did not hold.",
+      "width": "8.5"
+    },
+    "way/1113372504": {
+      "_doc": "Sir Mohamed Macan Markar Mawatha oval junction ring: 8.5 m. Google Maps measure tool 2026-11-17: island 37.6 m (W-E) x 22.6 m (N-S), ring 8.9 m W, 9.8 m E, 7.2 m N, 7.9 m S (mean 8.5). OSM already draws the oval (centreline about 44 x 25 m), so the long axis matches; built island 33.3 x 21.0 m (measured in the built layout) against 37.6 x 22.6 m. Antigravity's 28 x 19.5 m island did not hold.",
+      "width": "8.5"
+    },
+    "way/1113372505": {
+      "_doc": "Sir Mohamed Macan Markar Mawatha oval junction ring: 8.5 m. Google Maps measure tool 2026-11-17: island 37.6 m (W-E) x 22.6 m (N-S), ring 8.9 m W, 9.8 m E, 7.2 m N, 7.9 m S (mean 8.5). OSM already draws the oval (centreline about 44 x 25 m), so the long axis matches; built island 33.3 x 21.0 m (measured in the built layout) against 37.6 x 22.6 m. Antigravity's 28 x 19.5 m island did not hold.",
+      "width": "8.5"
+    },
+    "way/1328043434": {
+      "_doc": "Sir Mohamed Macan Markar Mawatha oval junction ring: 8.5 m. Google Maps measure tool 2026-11-17: island 37.6 m (W-E) x 22.6 m (N-S), ring 8.9 m W, 9.8 m E, 7.2 m N, 7.9 m S (mean 8.5). OSM already draws the oval (centreline about 44 x 25 m), so the long axis matches; built island 33.3 x 21.0 m (measured in the built layout) against 37.6 x 22.6 m. Antigravity's 28 x 19.5 m island did not hold.",
+      "width": "8.5"
+    }
+  },
+  "levels_file": "delta_face_levels.json",
+  "private_grounds": [
+    {
+      "_doc": "SLICE3 (agent-approved, h03, h04, h06, h18): the hotel's sea lawn, checker terrace and pool run to the rubble seawall; the public promenade and beach end at the hotel's north boundary (v 64). box_uv is in the hero's frame.",
+      "hero": "HERO_SeafaceHotel",
+      "box_uv": [
+        -130.0,
+        -9.4,
+        -80.0,
+        64.0
+      ]
+    }
+  ],
+  "pavement_widening": [
+    {
+      "_doc": "SLICE2 (agent-approved): the wide herringbone brick pavement along the hotel's Delta Road frontage (gf_21, gf_24, agent h08, h16), 5 m from the kerb. Taken from the hotel plot (hero_hotel.STREET_U moved back to match); the carriageway is unchanged. box_uv is in the hero's frame.",
+      "road": "Delta Road",
+      "hero": "HERO_SeafaceHotel",
+      "width_m": 5.0,
+      "paver": "MAT_HerringbonePaver",
+      "box_uv": [
+        44.0,
+        60.0,
+        -82.0,
+        62.0
+      ]
+    }
+  ],
+  "roadside_strips": [
+    {
+      "_doc": "Sea side of the Centre Road along the Green. Google Maps measure tool 2026-11-17: kerb to the back wall of the paved palm strip 15-18 m at the south end (6.92185, 79.84605; no bays), kerb to the lawn 26.5 m in the car-park stretch by the Taj (6.92240, 79.84575) of which 7.5 m are angled bays, about 20 m by the Taj marquee with a row of parked cars. Street View sv_06, sv_09, sv_12 show no bays elsewhere. So: 7.5 m angled bays only in the two parking zones, 16 m paved from the kerb everywhere (8.5 m behind the bays). Zone extents are read from the satellite views (about +-20 m). Was 5 m bays + 9 m strip along the whole Green (ESTIMATE, unverified).",
+      "road": "Delta Face Centre Road",
+      "green": "Delta Face Green",
+      "parking_m": 7.5,
+      "strip_m": 8.5,
+      "near_m": 20.0,
+      "parking_zones": [
+        {
+          "_doc": "Delta Face Car Park, by the Taj Samudra (sv_08, map_refs 01): bays seen from about 60 m south to 105 m north of 6.92255, 79.84555",
+          "near": [
+            0.0,
+            25.0
+          ],
+          "radius_m": 85.0
+        },
+        {
+          "_doc": "By the Taj marquee / ITC: a row of parked cars along the kerb, north end not seen (extent rough)",
+          "near": [
+            -158.0,
+            450.0
+          ],
+          "radius_m": 50.0
+        }
+      ]
+    }
+  ],
+  "shallow_m": 40.0,
+  "surf_m": 5.0,
+  "dressing": {
+    "median_lamp_roads": [
+      "Delta Road"
+    ],
+    "lamp_spacing_m": 32.0,
+    "palm_roads": [
+      "Delta Face Centre Road",
+      "Delta Road"
+    ],
+    "palm_spacing_m": 11.0,
+    "fountains": [
+      "Lotus Round About"
+    ],
+    "cannon_piece": "KIT_SF_CannonPlinth_A",
+    "fountain_piece": "KIT_SF_FountainRoundabout_A",
+    "fountain_base_radius_m": 9.15,
+    "kade_stalls": ["PROP_Kade_Stall_02", "PROP_Kade_Stall_03", "PROP_Kade_Stall_04"],
+    "steps_every_m": 110.0,
+    "planter_spacing_m": 20.0,
+    "food_cart_range": [
+      0.05,
+      0.45
+    ],
+    "food_cart_spacing_m": 7.0,
+    "food_cart_setback_m": 1.4,
+    "terrace_steps_every_m": 60.0,
+    "promenade_lamp_spacing_m": 28.0,
+    "cannon_range": [
+      0.04,
+      0.55
+    ],
+    "cannon_spacing_m": 24.0,
+    "frontage": {
+      "_doc": "SLICE1 pavement-edge rule (citylib/pavement_edge.py): kerb lamps on sides without them, utility cabinets and wall-foot planting at the back of the pavement, kerb-joint tufts (gf_21-gf_25).",
+      "roads": [
+        "Delta Road"
+      ],
+      "step_m": 2.5,
+      "lamp_gap_m": 30.0,
+      "cabinet_every_m": 55.0,
+      "planting": 0.7,
+      "kerb_tufts": 0.12,
+      "junction_clear_m": 5.0,
+      "tree_min_width_m": 4.0,
+      "tree_every_m": 14.0,
+      "tree_scale": 0.6
+    },
+    "median_planters": {
+      "_doc": "SLICE2 raised median planters with a clipped hedge down the middle of Delta Road (agent h10-h14); citylib/pavement_edge.median_planters.",
+      "roads": [
+        "Delta Road"
+      ],
+      "segment_m": 6.0,
+      "min_width_m": 0.9,
+      "max_width_m": 3.0,
+      "junction_clear_m": 8.0
+    },
+    "kerb_lamp_roads": {
+      "_doc": "Single-arm lamps on both kerbs of the two-way Centre Road, staggered (sea kerb on even slots, inland kerb on odd), one lamp every spacing_m along the road in total (catalogue §6, sv_06 sv_13 sv_15).",
+      "names": [
+        "Delta Face Centre Road"
+      ],
+      "spacing_m": 37.0
+    },
+    "monuments": [
+      {
+        "_doc": "Delta Face Roundabout lamp monument: KIT_SF_LampMonument_A (13.4 m, street kit v2; P161) from sv_01, sv_02, gf_19; replaces the V1 PROP_LampMonument_01.",
+        "piece": "KIT_SF_LampMonument_A",
+        "roundabout": "Delta Face Roundabout"
+      }
+    ],
+    "terrace_steps_run_m": 24.0,
+    "_terrace_steps_doc": "Seating steps from the Green down to the promenade: runs of 24 m (one KIT_Steps_TerraceLong_A; four 6 m pieces where a segment is short) every 60 m, a seat-height edge between (gf_10 shows long bleacher-like steps, gf_16 a seat kerb). ESTIMATE: the real run lengths and spacing were not measured."
+  },
+  "dual_carriageways": {
+    "Delta Face Centre Road": {
+      "_doc": "Two-way 2 + 2 lanes, no median (agent, 2026-11-16): the two carriageways are pulled together to meet at a painted solid white centre line (citylib/markings.py draws it).",
+      "median_m": 0.0,
+      "centre_line": true
+    },
+    "Delta Road": {
+      "median_m": 1.4,
+      "_doc": "Raised median 1.4 m (Antigravity; h10-h14 show the planter, about 1.2-1.5 m against a car). Carriageways by the hotel are per way in road_overrides (way/98371187 ... 7.2 m north-bound, 9.8 m south-bound)."
+    },
+    "Janadhipathi Mawatha": {
+      "_doc": "Raised median 1.4 m (Antigravity only; not readable under the map label on 2026-11-17).",
+      "median_m": 1.4
+    },
+    "Justice Akbar Mawatha": {
+      "_doc": "Raised median 1.2 m (Antigravity, unverified).",
+      "median_m": 1.2
+    },
+    "Sir Chittampalam A. Gardiner Mawatha": {
+      "_doc": "Median 3.6 m mid-block (Antigravity); Google Maps 2026-11-17 measured about 5.4 m at the crossing refuge (the refuge is wider than the median).",
+      "median_m": 3.6
+    }
+  },
+  "heroes": {
+    "839411971": {
+      "name": "bld_hero_TwinFinTowers_A_1",
+      "style": "fin_tower"
+    },
+    "839411972": {
+      "name": "bld_hero_TwinFinTowers_A_2",
+      "style": "fin_tower"
+    },
+    "839411964": {
+      "name": "bld_hero_Podium_Mall_A",
+      "style": "kit"
+    },
+    "839411973": {
+      "name": "bld_hero_SlabHotel_A",
+      "style": "kit"
+    },
+    "705103818": {
+      "name": "bld_hero_FinTower_B",
+      "style": "fin_tower"
+    },
+    "839411969": {
+      "name": "bld_hero_CurvedTwins_Skybridge_A_1",
+      "style": "kit"
+    },
+    "839411970": {
+      "name": "bld_hero_CurvedTwins_Skybridge_A_2",
+      "style": "kit"
+    }
+  },
+  "skybridges": [
+    {
+      "name": "bld_hero_CurvedTwins_Skybridge_A_Bridge",
+      "between": [
+        839411969,
+        839411970
+      ],
+      "z_m": [
+        90.0,
+        99.0
+      ],
+      "width_m": 14.0
+    }
+  ],
+  "vegetation": {
+    "_doc": "V4 vegetation placement (citylib/vegetation.py, TDD 'Vegetation as built'). Frames are the hero's own (u along the hotel, v across). Photos: gf_05, gf_09, gf_12, gf_14, gf_16, gf_19, gf_20.",
+    "road_clear_m": 1.0,
+    "green_edge": {
+      "spacing_m": 17.0,
+      "inset_m": 3.5,
+      "road_within_m": 12.0,
+      "min_area_m2": 2000.0
+    },
+    "clusters": [
+      {
+        "_doc": "SLICE3: hotel sea lawn: coconut palms along the low sea balustrade on the seawall and scattered on the lawn and pool deck, leaning to the sea (gf_20, agent h04, h18); heights from the terrain levels",
+        "frame": {
+          "pivot": [
+            72.0,
+            -262.0
+          ],
+          "yaw_deg": 17.0
+        },
+        "species": [
+          "VEG_Palm_Coconut_A",
+          "VEG_Palm_Coconut_B",
+          "VEG_Palm_Coconut_D"
+        ],
+        "points": [
+          [
+            -68.0,
+            55.0
+          ],
+          [
+            -67.5,
+            38.0
+          ],
+          [
+            -63.0,
+            22.0
+          ],
+          [
+            -61.0,
+            4.0
+          ],
+          [
+            -61.0,
+            -12.0
+          ],
+          [
+            -62.0,
+            -26.0
+          ],
+          [
+            -50.0,
+            -30.0
+          ],
+          [
+            -49.0,
+            -4.0
+          ],
+          [
+            -53.0,
+            30.0
+          ],
+          [
+            -42.0,
+            47.0
+          ],
+          [
+            -47.0,
+            -47.0
+          ],
+          [
+            -60.0,
+            -47.5
+          ],
+          [
+            -47.5,
+            -72.0
+          ]
+        ],
+        "lean_to": [
+          -400.0,
+          -250.0
+        ],
+        "z_offset": 0.0,
+        "ignore_buildings": true,
+        "gap_m": 5.0
+      },
+      {
+        "_doc": "hotel lawn: royal palms by the seafront wing (gf_19, gf_20)",
+        "frame": {
+          "pivot": [
+            72.0,
+            -262.0
+          ],
+          "yaw_deg": 17.0
+        },
+        "species": [
+          "VEG_Palm_Royal_A"
+        ],
+        "points": [
+          [
+            -17.0,
+            -42.0
+          ],
+          [
+            -17.0,
+            32.0
+          ],
+          [
+            -17.0,
+            -2.0
+          ]
+        ],
+        "z_offset": 0.0,
+        "ignore_buildings": true,
+        "gap_m": 4.0
+      },
+      {
+        "_doc": "SLICE3: hotel lawn: ixora shrubs at the palm feet and along the terrace edge",
+        "frame": {
+          "pivot": [
+            72.0,
+            -262.0
+          ],
+          "yaw_deg": 17.0
+        },
+        "species": [
+          "VEG_Shrub_Ixora_A"
+        ],
+        "points": [
+          [
+            -66.0,
+            53.0
+          ],
+          [
+            -59.5,
+            4.5
+          ],
+          [
+            -60.0,
+            -25.0
+          ],
+          [
+            -48.0,
+            -31.0
+          ],
+          [
+            -32.0,
+            -33.0
+          ],
+          [
+            -32.0,
+            -19.0
+          ],
+          [
+            -32.0,
+            20.0
+          ],
+          [
+            -20.0,
+            -40.0
+          ],
+          [
+            -20.0,
+            30.0
+          ]
+        ],
+        "z_offset": 0.0,
+        "ignore_buildings": true,
+        "gap_m": 1.2
+      },
+      {
+        "_doc": "hedge between the hotel grounds and the Green (gf_09)",
+        "frame": {
+          "pivot": [
+            72.0,
+            -262.0
+          ],
+          "yaw_deg": 17.0
+        },
+        "species": [
+          "VEG_Hedge_Clipped_A"
+        ],
+        "line": [
+          [
+            -44.0,
+            38.5
+          ],
+          [
+            -12.0,
+            38.5
+          ]
+        ],
+        "spacing_m": 2.0,
+        "ignore_buildings": true
+      },
+      {
+        "_doc": "shade trees (rain tree / mara, kottamba) in the hotel's north grounds and the Green's south corner (gf_05, gf_09, gf_19); world points checked free of roads and footprints",
+        "species": [
+          "VEG_Tree_RainTree_A"
+        ],
+        "points": [
+          [
+            46.0,
+            -174.0
+          ],
+          [
+            64.0,
+            -192.0
+          ],
+          [
+            16.0,
+            -198.0
+          ],
+          [
+            80.0,
+            -210.0
+          ],
+          [
+            58.0,
+            -384.0
+          ],
+          [
+            76.0,
+            -336.0
+          ]
+        ],
+        "gap_m": 8.0
+      },
+      {
+        "_doc": "kottamba (tropical almond) at the Green's south corner by the hotel",
+        "species": [
+          "VEG_Tree_Kottamba_A"
+        ],
+        "points": [
+          [
+            58.0,
+            -144.0
+          ],
+          [
+            28.0,
+            -180.0
+          ],
+          [
+            -2.0,
+            -186.0
+          ]
+        ],
+        "gap_m": 7.0
+      },
+      {
+        "_doc": "roundabout: palms round the island and its corners (gf_01, gf_17, gf_18)",
+        "species": [
+          "VEG_Palm_Coconut_B",
+          "VEG_Palm_Royal_A",
+          "VEG_Palm_Coconut_A"
+        ],
+        "gap_m": 6.0,
+        "points": [
+          [
+            -387.0,
+            1005.0
+          ],
+          [
+            -351.0,
+            987.0
+          ],
+          [
+            -363.0,
+            951.0
+          ],
+          [
+            -399.0,
+            963.0
+          ],
+          [
+            -345.0,
+            1011.0
+          ],
+          [
+            -381.0,
+            939.0
+          ],
+          [
+            -387.0,
+            1023.0
+          ],
+          [
+            -333.0,
+            975.0
+          ],
+          [
+            -411.0,
+            1005.0
+          ],
+          [
+            -375.0,
+            1041.0
+          ]
+        ]
+      },
+      {
+        "species": [
+          "VEG_Shrub_Ixora_A"
+        ],
+        "ring": {
+          "center": [
+            -366.57,
+            988.87
+          ],
+          "radii": [
+            24.0,
+            30.0
+          ],
+          "count": 16
+        },
+        "gap_m": 1.5
+      },
+      {
+        "_doc": "SLICE2: shade trees inside the Delta Road boundary wall, service court and the gap north of the street block (gf_22, gf_24, agent h08, h13)",
+        "frame": {
+          "pivot": [
+            72.0,
+            -262.0
+          ],
+          "yaw_deg": 17.0
+        },
+        "species": [
+          "VEG_Tree_RainTree_A",
+          "VEG_Tree_Kottamba_A"
+        ],
+        "points": [
+          [
+            36.0,
+            -55.0
+          ],
+          [
+            31.0,
+            -34.0
+          ],
+          [
+            40.0,
+            10.5
+          ]
+        ],
+        "gap_m": 7.0,
+        "ignore_buildings": true,
+        "z_offset": 0.15
+      },
+      {
+        "_doc": "SLICE2: SLICE4a: leaf-card hedge masses just inside the boundary wall, spilling over its coping (gf_22, agent h09)",
+        "frame": {
+          "pivot": [
+            72.0,
+            -262.0
+          ],
+          "yaw_deg": 17.0
+        },
+        "species": [
+          "VEG_Hedge_Spill_A"
+        ],
+        "line": [
+          [
+            44.92,
+            -62.0
+          ],
+          [
+            44.92,
+            -51.5
+          ]
+        ],
+        "spacing_m": 2.0,
+        "ignore_buildings": true,
+        "z_offset": 0.12
+      },
+      {
+        "_doc": "SLICE2: hedge inside the wall north of the gate lodge (gf_22)",
+        "frame": {
+          "pivot": [
+            72.0,
+            -262.0
+          ],
+          "yaw_deg": 17.0
+        },
+        "species": [
+          "VEG_Hedge_Spill_A"
+        ],
+        "line": [
+          [
+            44.92,
+            -35.0
+          ],
+          [
+            44.92,
+            -29.5
+          ]
+        ],
+        "spacing_m": 2.0,
+        "ignore_buildings": true,
+        "z_offset": 0.12
+      },
+      {
+        "_doc": "SLICE2: hedge behind the wall between the street block and the east block",
+        "frame": {
+          "pivot": [
+            72.0,
+            -262.0
+          ],
+          "yaw_deg": 17.0
+        },
+        "species": [
+          "VEG_Hedge_Spill_A"
+        ],
+        "line": [
+          [
+            44.92,
+            6.5
+          ],
+          [
+            44.92,
+            14.5
+          ]
+        ],
+        "spacing_m": 2.0,
+        "ignore_buildings": true,
+        "z_offset": 0.12
+      },
+      {
+        "_doc": "SLICE2: ixora at the service-gate piers, inside and at the wall foot (gf_22, gf_23)",
+        "frame": {
+          "pivot": [
+            72.0,
+            -262.0
+          ],
+          "yaw_deg": 17.0
+        },
+        "species": [
+          "VEG_Shrub_Ixora_A"
+        ],
+        "points": [
+          [
+            44.6,
+            -51.6
+          ],
+          [
+            44.6,
+            -39.4
+          ],
+          [
+            47.0,
+            -52.4
+          ],
+          [
+            47.0,
+            -38.6
+          ],
+          [
+            47.0,
+            4.6
+          ],
+          [
+            47.2,
+            36.0
+          ]
+        ],
+        "gap_m": 1.0,
+        "ignore_buildings": true,
+        "z_offset": 0.15
+      },
+      {
+        "_doc": "Slave Island Police Round About island: shade trees and a ring of shrubs (Google Maps 2026-11-17 shows several trees).",
+        "frame": {
+          "pivot": [
+            472.8,
+            557.7
+          ],
+          "yaw_deg": 0.0
+        },
+        "species": [
+          "VEG_Tree_RainTree_A",
+          "VEG_Tree_Kottamba_A"
+        ],
+        "ring": {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "count": 4,
+          "radius": 5.0
+        },
+        "gap_m": 5.0
+      },
+      {
+        "_doc": "Slave Island island edge shrubs",
+        "frame": {
+          "pivot": [
+            472.8,
+            557.7
+          ],
+          "yaw_deg": 0.0
+        },
+        "species": [
+          "VEG_Shrub_Ixora_A"
+        ],
+        "ring": {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "count": 12,
+          "radius": 9.5
+        },
+        "gap_m": 1.5
+      },
+      {
+        "_doc": "Delta Face Roundabout: low planted bed round the lamp monument (sv_01, sv_02: crotons and shrubs, no trees)",
+        "frame": {
+          "pivot": [
+            109.6,
+            -160.7
+          ],
+          "yaw_deg": 0.0
+        },
+        "species": [
+          "VEG_Shrub_Ixora_A"
+        ],
+        "ring": {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "count": 7,
+          "radius": 1.9
+        },
+        "gap_m": 1.0
+      },
+      {
+        "_doc": "Macan Markar oval island: shrubs along the long axis (agent: planted, not paved)",
+        "frame": {
+          "pivot": [
+            269.0,
+            102.4
+          ],
+          "yaw_deg": 0.0
+        },
+        "species": [
+          "VEG_Shrub_Ixora_A",
+          "VEG_Hedge_Spill_A"
+        ],
+        "points": [
+          [
+            -12,
+            0
+          ],
+          [
+            -8,
+            2
+          ],
+          [
+            -4,
+            -1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            12,
+            0
+          ],
+          [
+            -10,
+            -3
+          ],
+          [
+            10,
+            -3
+          ]
+        ],
+        "gap_m": 1.5
+      }
+    ],
+    "edge_trees": [
+      {
+        "_doc": "rain trees and kottamba at the Green's hotel end and along Delta Road there (gf_05, gf_19)",
+        "species": [
+          "VEG_Tree_RainTree_A",
+          "VEG_Tree_Kottamba_A",
+          "VEG_Tree_RainTree_A"
+        ],
+        "near": [
+          60.0,
+          -200.0
+        ],
+        "radius_m": 110.0,
+        "spacing_m": 16.0,
+        "inset_m": 7.0
+      }
+    ]
+  },
+  "markings": {
+    "_doc": "Road paint (citylib/markings.py, catalogue §2 and §9): decals on the street trim and the road-paint atlas, plus parked-vehicle spawn points as data (no baked cars). English legends only.",
+    "yellow_edge_roads": [
+      "Delta Face Centre Road"
+    ],
+    "double_centre_roads": ["New Baladaksha Mawatha", "Baladaksha Mawatha"],
+    "_double_centre_doc": "Agent 2026-11-20 (P156 AGENT_SHOTS, os_16/os_18/os_20): Baladaksha's centre is a plain double solid line, hatching only at junction mouths and kerb tapers; there is no centre_hatch_m strip. The junction-mouth hatch is not placed yet (KIT_MK_HatchedGore_A / BoxJunctionHatch_Yellow_A exist, no rule).",
+    "legends": {
+      "roads": [
+        "Delta Face Centre Road"
+      ],
+      "spacing_m": 150.0,
+      "a2_from_north_end_m": 330.0
+    },
+    "roundabouts": [
+      "Lotus Round About"
+    ],
+    "ring_gap_m": 1.5,
+    "gore_width_m": 2.0,
+    "bus_bay_length_m": 12.0,
+    "bus_bay_width_m": 2.5,
+    "car_park": {
+      "road": "Delta Face Centre Road",
+      "angle_deg": 60.0,
+      "bay_width_m": 2.5,
+      "bay_length_m": 5.0,
+      "near": [
+        -12.0,
+        125.0
+      ],
+      "near_radius_m": 100.0
+    },
+    "tuk_rank": {
+      "count": 8,
+      "start_s_m": 30.0,
+      "pitch_m": 3.2
+    },
+    "van_line": {
+      "count": 8,
+      "end_back_m": 140.0,
+      "pitch_m": 6.5
+    }
+  },
+  "roundabout_islands": {
+    "_doc": "Central islands smaller than the OSM ring centreline leaves (layout.roundabout_fill): the asphalt between the island and the ring's inner edge is filled in. Google Maps measure tool 2026-11-17.",
+    "Delta Face Roundabout": {
+      "_doc": "Island 5.9 m (Google Maps, low planted island with the lamp monument, gf_19, sv_01); the 11.5 m ring on the 12 m centreline left a 12.5 m island. Planted: a low bed of crotons and shrubs round the lamp monument (sv_01, sv_02).",
+      "island_d_m": 6.0,
+      "planted": true,
+      "kerb_m": 0.6
+    },
+    "Slave Island Police Round About": {
+      "_doc": "Planted island with shade trees (Google Maps 2026-11-17: trees and planting, 25.6 m across); was paved red in the build.",
+      "planted": true
+    },
+    "Macan Markar oval": {
+      "_doc": "The Sir Mohamed Macan Markar Mawatha oval (no single named ring, so the island is found round \"at\"). Google Maps 2026-11-17 shows mostly bare reddish ground with a few shrubs and a viewpoint marker; built as lawn with shrubs (planted, not paved) on the agent's request; the bare ground is not modelled.",
+      "at": [
+        269.0,
+        102.4
+      ],
+      "planted": true
+    }
+  },
+  "poles": {
+    "_doc": "P134 pole lines and cable spans (citylib/poles.py). The Delta Face photos (sv_11, sv_13, sv_15, NOTES.md 'Lamps') show tall galvanised single-arm lamps every ~35-40 m on the sea side and NO overhead power lines or wires along Delta Road / Centre Road, so the seafront default is lamps only. Concrete pole lines with LV spans and telecom bundles are switched on for the Fort and Kollupitiya districts (built-up Cityhub streets); no photo in references/ shows them yet, so spacings are estimates to confirm.",
+    "default": {"lamps": true, "lines": false, "wire": "none", "lamp_piece": "POLE_Lamp_Tall", "lamp_spacing": 36.0},
+    "districts": {
+      "fort": {"lamps": false, "lines": true, "wire": "lv_bundle", "spacing": 32.0, "telecom_every": 2},
+      "kollupitiya": {"lamps": true, "lines": true, "wire": "lv", "spacing": 38.0},
+      "delta_face_green": {"lines": false, "wire": "none", "lamp_spacing": 40.0}
+    }
+  }
+}

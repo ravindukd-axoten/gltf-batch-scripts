@@ -1,0 +1,125 @@
+{
+  "extends": "fort_loop.json",
+  "name": "drive_circle",
+  "description": "Vertical Slice M6 first step: the Delta Face drive circle (agent 2026-11-17/18, docs/plans/delta-face-district-area.md 'Agent decisions, round 3'). The Fort loop's cells stay as built scenery; this adds the drivable lake-side road, the 12 m north join, the City of Dreams view-only cells and the blocks on every road that leaves the loop.",
+  "road_overrides": {
+    "New Baladaksha Mawatha": {
+      "_doc": "Drivable two-lane road (agent 2026-11-17: 'yes', it is the loop's lake-side road; Street View at 6.92696, 79.84579 shows two lanes, a dashed centre line, edge lines, kerbs and a car). Replaces delta_face.json's 4 m footpath override. Width 7.0 m = 2 x 3.5 m primary lanes: NOT measured yet (ROAD_WIDTHS_CHECK has no row for it); measure kerb to kerb before final art.",
+      "highway": "primary", "width": "7.0", "lanes": "2"
+    },
+    "way/1105825430": {"_doc": "New Baladaksha Mawatha's one-way arm into the Justice Akbar oval: 6.5 m (estimate between the measured 6.0 m and 9.0 m divided arms on the oval's SSW approach, ROAD_WIDTHS_MEASURED).", "width": "6.5", "lanes": "2"},
+    "way/52936203": {"_doc": "The arm out of the oval onto New Baladaksha Mawatha: 6.5 m, as its partner.", "width": "6.5", "lanes": "2"},
+    "way/18598828": {"_doc": "Sir Mohamed Macan Markar Mawatha south past Taj Samudra: 12.5 m single carriageway (ROAD_WIDTHS_MEASURED, 42 m SSW of the oval: '12.5 m single carriageway', 2 + 2 lanes).", "width": "12.5", "lanes": "4"}
+  },
+  "frontage_rules": [
+    {"_doc": "The drive circle's area_strip (loop buffer) builds the unnamed service drives round the One Delta Face podium (bld_1111779685), and the kit gave that podium 187 shop bays along them: cell_-1_4 went to 68k LOD0 tris (budget 60k). Those drives are drop-off and loading lanes along blank podium walls, not shop streets (ref gf_13 aerial, gf_04 wide): edges that face only service drives or the lake-side road keep plain plaster walls (citylib/layout.py apply_frontage_rules). Edges onto the A2 and Centre Road keep their shopfronts, and only whole-block podiums (footprint 5,000 m2 or more) are touched, so the shophouses on Fort lanes keep their shop bays.",
+     "roads": ["New Baladaksha Mawatha", "Baladaksha Mawatha"], "highways": ["service"], "min_footprint_m2": 5000, "frontage": "plain", "reach_m": 4.0}
+  ],
+  "drive_loop": {
+    "_doc": "Closed one-way-correct cycle, clockwise from the north. Routed only over these ways (and the joins); tools/city/verify_drive_circle.py proves it closed, connected and about 2.6 km, and lists the cells. Way list from the area plan ('The loop traced on OSM ways', 2,641 m).",
+    "id": "LOOP_DeltaFaceDistrict",
+    "asset": "DriveCircle",
+    "direction": "clockwise",
+    "length_m_expected": 2641,
+    "length_tolerance_m": 120,
+    "ways": ["18598833", "749015601", "1105825430", "1113372503", "1113372505", "1328043431", "18598828",
+             "1113374513", "1113374512", "1113374514", "18599046"],
+    "start": "18598833:start",
+    "via": ["18598833:end", "749015601:end", "18598828:end"],
+    "joins": [
+      {"id": "join_north_shangrila", "from": "18598833:end", "to": "749015601:start",
+       "_doc": "OSM leaves the A2 northbound end and New Baladaksha Mawatha's start 12 m apart (area plan 'One gap to resolve'): a short two-lane link across the median at the Shangri-La junction, named as Baladaksha Mawatha so it builds with the lake-side road's widths.",
+       "tags": {"highway": "primary", "name": "Baladaksha Mawatha", "lanes": "2", "width": "7.0"}}
+    ],
+    "lakeside": {
+      "_doc": "Dressing of the lake-side road (citylib/drive_loop.py dress_lakeside). No photo of New Baladaksha Mawatha yet: the rhythm follows the Delta Face refs, sv_05 (coconut palms at the kerb), sv_15 (granite kerb, galvanised single-arm lamps every 35-40 m) and the Street View note in road_overrides (two lanes, kerbs). Palms lean over the water; rain trees and kottamba shade the inland verge.",
+      "roads": ["New Baladaksha Mawatha", "Baladaksha Mawatha"],
+      "palm_spacing_m": 12.0, "palm_offset_m": 4.4,
+      "palms": [],
+      "verge_trees": ["VEG_Tree_StreetYoung_A"],
+      "edge": {
+        "_doc": "Agent 2026-11-20 (P156 AGENT_SHOTS os_10, os_13, os_14, os_20), built as city geometry by citylib/lake_edge.py (P165): from the kerb outwards a yellow kerb line, a red-brown paver strip (measured from the road edge), a grass verge, a low stone walking path with a yellow tactile strip and the lake wall with half-round coping and a green-bar railing (path and wall are measured from the SHORELINE, so they follow the lake on curves). Props (seats, slab stubs, verge shrubs) are KIT_SF and VEG instances placed on the same distance fields. No palm row; small young trees stand in the verge.",
+        "paver_strip_m": 2.5, "kerb_line_m": 0.3, "walking_path_m": 4.0, "tactile_m": 0.4, "path_step_m": 0.12, "reach_m": 20.0,
+        "wall": {"stem_m": 0.3, "coping_r_m": 0.19, "above_path_m": 0.35},
+        "rail": {"height_m": 1.05, "post_pitch_m": 2.0, "bar_pitch_m": 0.3, "bar_m": 0.025, "color": "#2F5D3A"},
+        "seat_pitch_m": 4.2, "seat_row": 6, "seat_gap_m": 22.0, "cube_pitch_m": 1.5, "cube_group": 3, "cube_every_m": 45.0,
+        "stub_pitch_m": 1.4, "stub_row": 5, "stub_every_m": 48.0, "stub_scale_z": 0.6, "shrub_every_m": 14.0,
+        "block_seat_piece": "KIT_SF_BlockSeat_Concrete_A",
+        "pieces": {"block_seat": "KIT_SF_BlockSeat_Concrete_A", "cube_seat": "KIT_SF_BlockSeat_Cube_B", "slab_marker": "KIT_SF_SlabMarker_Rust_A"},
+        "pieces_doc": "Only the props are kit pieces now; the paver strip, path, wall and railing are generated per cell (<cell>_LakeEdge).",
+        "missing": ["paver joints and perforation holes as texture (flat colour on the trim sheet today)", "the grey 3-rail at the water (os_13)"]
+      },
+      "shrubs": ["VEG_Shrub_Ixora_A"],
+      "lamp_spacing_m": 36.0,
+      "tree_spacing_m": 24.0, "tree_offset_m": 2.6,
+      "trees": ["VEG_Tree_RainTree_A", "VEG_Tree_Kottamba_A"]
+    },
+    "block_clear_m": 12.0,
+    "open_spurs": ["1430312632", "1489623868", "794606919", "1489951000"],
+    "_open_spurs_doc": "Delta Face Drive to the hotel gate stays open as a dead-end spur (area plan question 6), with the hotel-ground service drives off it (found by the verifier leak walk; they end inside the hotel grounds, anything past them would still be reported).",
+    "_blocks_doc": "Every road that leaves the loop (area plan block list, re-checked by the verifier: each touches the loop or sits beside it, none crosses the loop). A2 north: the continuing carriageways north of the Shangri-La junction (553338377 NB, 553338380 SB), not the SB carriageway inside the loop. The hotel's Delta Face Drive spur stays open (question 6).",
+    "blocks": [
+      {"id": "blk_north_a2", "ways": ["553338377", "553338380"], "at": [6.930000, 79.842560], "why": "A2 north to the Lotus roundabout and Fort",
+       "taper": {"_doc": "sv_13 (agent's circled crop, 2026-11-19): a diagonal of cones and red barriers closes the sea-side kerb lane next to the parked vans, one lane left open. Here it shuts the NB kerb lane ahead of the closure, funnelling traffic into the lane that turns onto the loop's north join.",
+                 "ways": ["553338377"], "side": "left", "lanes_closed": 1, "lane_m": 3.5, "length_m": 36.0, "spacing_m": 3.0}},
+      {"id": "blk_north_service", "ways": ["1489885621"], "at": [6.929394, 79.843409], "why": "service road off the north end"},
+      {"id": "blk_lake_inlet", "ways": ["1348853551"], "at": [6.926807, 79.846874], "why": "agent mark: the lake inlet road"},
+      {"id": "blk_justice_akbar", "ways": ["1328043435", "1328043433", "696167087", "696167086", "1348762682", "1348762686", "1027260954", "1348762683", "1465827586"], "at": [6.923544, 79.848060], "why": "agent mark: roads east and south off the Justice Akbar roundabout"},
+      {"id": "blk_south_services", "ways": ["1494969540", "794722061", "628093205"], "at": [6.921623, 79.847745], "why": "side streets south of the roundabout"},
+      {"id": "blk_delta_road", "ways": ["13858419", "98371187"], "at": [6.920970, 79.846569], "why": "Delta Road south beyond the roundabout"}
+    ],
+    "cells": {
+      "_doc": "The slice's cells: every 128 m cell within 40 m of the loop centreline plus the City of Dreams box (view-only scenery, area plan 'City of Dreams'), lat 6.9222-6.9266, lon 79.8478-79.8503.",
+      "buffer_m": 40.0,
+      "scenery_boxes": [[[6.9222, 79.8478], [6.9266, 79.8503]]]
+    }
+  },
+  "area_strip": {
+    "route": {"asset": "FortLoop", "export": false,
+              "_export_doc": "The Fort loop corridor only shapes the build area here: the drive loop's road blocks close it (blk_north_a2, blk_justice_akbar), so ROUTE_FortLoop is not exported; the driven route is ROUTE_DriveCircle."},
+    "extra_areas_doc": "Lat/lon rings joined to the build area: the City of Dreams box, so its six missing cells (cell_1_2, 1_3, 2_2, 2_3, 3_2, 4_-1) are built.",
+    "extra_areas": [[[6.9222, 79.8478], [6.9222, 79.8503], [6.9266, 79.8503], [6.9266, 79.8478]]]
+  },
+  "street_life": {
+    "_doc": "P388 street life along the drive circle (citylib/street_life.py). The loop is walked every sample_m; each side is probed for its kerb, pavement width and what lies behind (bld, lake, green, prom, open). A rule matches road names and side contexts; each item repeats every_m along a side at the kerb, the back of the pavement or behind it, sliding up to 40 % of its spacing past taken spots. tier all = every tier (group StreetLife); tier detail = Medium and High only (group StreetLifeDetail), so Low is a strict subset of the same layout. Refs per rule in its _doc; references/delta-face is gitignored.",
+    "sample_m": 2.0,
+    "max_kerb_m": 16.0,
+    "crossings": {"_doc": "White bollard pair at both kerb ends of every zebra within route_reach_m of the loop (gf_18 roundabout crossings; Street Catalogue: bollards at crossings).", "route_reach_m": 25.0, "pair_m": 2.0},
+    "furniture": [
+      {"id": "green_edge", "_doc": "Centre Road's Green side: a wide red-paver strip with scattered trees, a white kiosk, a bus shelter and bin sets (sv_05, sv_07, sv_10; bin sets gf_10; stone bench walls gf_16). Open and airy in the photos: sparse, not a market.", "roads": ["Delta Face Centre Road", "Center Road", "Delta Face Roundabout"], "sides": ["green", "prom"], "items": [
+        {"piece": "PROP_Bin_Set_01", "class": "bin", "every_m": 60, "phase_m": 20, "at": "back", "offset_m": 1.2, "min_pave_m": 2.6, "face": "road", "clear_m": 2.5, "tier": "all"},
+        {"piece": "PROP_Bench_StoneWall_01", "class": "bench", "every_m": 44, "phase_m": 34, "at": "back", "offset_m": 0.9, "min_pave_m": 3.0, "face": "along", "pivot_x_m": 1.5, "clear_m": 3.0, "tier": "detail"},
+        {"piece": "PROP_Kiosk_White_01", "class": "kiosk", "every_m": 280, "phase_m": 140, "at": "back", "offset_m": 2.0, "min_pave_m": 4.5, "face": "road", "clear_m": 4.0, "same_m": 200, "tier": "all"},
+        {"piece": "PROP_Vendor_Balloons_01", "class": "vendor", "every_m": 170, "phase_m": 90, "at": "kerb", "offset_m": 1.3, "min_pave_m": 3.0, "face": "road", "clear_m": 3.0, "tier": "detail"}
+      ]},
+      {"id": "frontage", "_doc": "Building and plot side of Centre Road and Macan Markar Mawatha: galvanised single-arm kerb lamps in the gaps (gf_24, sv_15: every 35-40 m), bin sets at the kerb, feeder-pillar cabinets at the back of the pavement (gf_21 orange, gf_25 grey), bus halts where none stands within 250 m (sv_05, sv_12) and a kade (boutique stall) on open plots behind the pavement (gf_03 stall form; Street Catalogue kiosks).", "roads": ["Delta Face Centre Road", "Center Road", "Delta Face Roundabout", "Sir Mohamed Macan Markar Mawatha", "Sir Mohamed Macan Makar Mawatha", "Justice Akbar Mawatha"], "sides": ["bld", "open", "lake"], "items": [
+        {"piece": "PROP_StreetLamp_SingleArm_01", "class": "lamp", "every_m": 36, "phase_m": 10, "at": "kerb", "offset_m": 0.6, "min_pave_m": 1.5, "face": "away", "clear_m": 2.0, "same_m": 24, "tier": "all"},
+        {"piece": "PROP_Bin_Set_01", "class": "bin", "every_m": 70, "phase_m": 30, "at": "kerb", "offset_m": 1.0, "min_pave_m": 2.2, "face": "away", "clear_m": 2.5, "tier": "all"},
+        {"piece": ["PROP_UtilityCabinet_01", "PROP_UtilityCabinet_02"], "class": "cabinet", "every_m": 120, "phase_m": 55, "at": "back", "offset_m": 0.4, "min_pave_m": 2.2, "face": "road", "clear_m": 2.5, "tier": "detail"},
+        {"piece": "PROP_BusShelter_01", "class": "shelter", "every_m": 450, "phase_m": 200, "at": "back", "offset_m": 0.95, "min_pave_m": 2.2, "face": "road", "clear_m": 4.0, "same_m": 250, "tier": "all"},
+        {"piece": "PROP_Kade_Stall_01", "class": "kade", "every_m": 160, "phase_m": 70, "at": "behind", "offset_m": 1.0, "face": "road", "clear_m": 3.5, "same_m": 90, "tier": "all"}
+      ]},
+      {"id": "lakeside", "_doc": "New Baladaksha Mawatha: bin sets by the lake-side benches (gf_10 bin sets at seating), a kade on open ground inland every ~400 m (no photo of this road yet: rhythm from the Delta Face refs).", "roads": ["New Baladaksha Mawatha", "Baladaksha Mawatha"], "sides": ["lake", "open", "green", "bld", "prom"], "items": [
+        {"piece": "PROP_Bin_Set_01", "class": "bin", "every_m": 80, "phase_m": 22, "at": "kerb", "offset_m": 1.1, "min_pave_m": 2.0, "face": "away", "clear_m": 2.0, "tier": "all"},
+        {"piece": "PROP_Kade_Stall_01", "class": "kade", "every_m": 380, "phase_m": 150, "at": "behind", "offset_m": 1.0, "face": "road", "clear_m": 3.5, "same_m": 200, "tier": "all"}
+      ]}
+    ],
+    "signs": {"_doc": "Signage pass (citylib/street_signs.py) on kit buildings whose edges face the loop within reach_m: blank ground walls get fascia boards over runs of bays (plain_fascia_pct) and painted wall signs (plain_wall_pct), tier all; the first upper floors get boards on their floor lines (upper_board_pct) and shop edges more projecting signs (projecting_pct), tier detail. Refs gf_24 (a board and awning over every opening), sv_03 and sv_04 (boards on the colonial frontages). Text from T_Signage_A: fictional names and generic trades only.", "reach_m": 60.0, "stand_off_m": 0.12, "plain_fascia_pct": 45, "plain_wall_pct": 25, "upper_floors": 2, "upper_board_pct": 30, "projecting_pct": 20},
+    "planting": [
+      {"id": "green_edge", "_doc": "Centre Road's Green side: coconut palms and spreading trees stand on the red-paver strip (sv_05, sv_07, sv_10), frangipani in raised planters (sv_05). Adds palms in the gaps of the existing row, frangipani at the back of the strip and low ixora and croton beds round them (detail).", "roads": ["Delta Face Centre Road", "Center Road", "Delta Face Roundabout"], "sides": ["green", "prom"], "items": [
+        {"piece": ["VEG_Palm_Coconut_A", "VEG_Palm_Coconut_B", "VEG_Palm_Coconut_C", "VEG_Palm_Coconut_D"], "class": "palm", "every_m": 22, "phase_m": 6, "at": "back", "offset_m": 2.2, "min_pave_m": 4.0, "face": "any", "clear_m": 3.0, "same_m": 9, "tier": "all"},
+        {"piece": "VEG_Shrub_Frangipani_A", "class": "frangipani", "every_m": 38, "phase_m": 19, "at": "back", "offset_m": 1.4, "min_pave_m": 3.5, "face": "any", "clear_m": 3.0, "tier": "all"},
+        {"piece": ["VEG_Shrub_Ixora_A", "VEG_CrotonShrub_01", "VEG_CrotonShrub_02", "VEG_PlantBed_A"], "class": "bed", "every_m": 9, "phase_m": 3, "at": "behind", "offset_m": 0.8, "face": "any", "clear_m": 1.6, "tier": "detail"}
+      ]},
+      {"id": "frontage", "_doc": "Inland side of Centre Road and Macan Markar Mawatha: young street trees in galvanised guards on the pavement (gf_24), shade trees and spilling bushes behind the walls and on open plots (sv_07: dense trees and fenced walls on the east side).", "roads": ["Delta Face Centre Road", "Center Road", "Delta Face Roundabout", "Sir Mohamed Macan Markar Mawatha", "Sir Mohamed Macan Makar Mawatha", "Justice Akbar Mawatha"], "sides": ["bld", "open", "lake"], "items": [
+        {"piece": "VEG_Tree_StreetYoung_A", "class": "tree", "every_m": 24, "phase_m": 9, "at": "kerb", "offset_m": 0.9, "min_pave_m": 2.4, "face": "any", "clear_m": 3.0, "same_m": 9, "set": "guard", "tier": "all"},
+        {"piece": ["VEG_Tree_RainTree_A", "VEG_Tree_Kottamba_A"], "class": "tree", "every_m": 36, "phase_m": 14, "at": "behind", "offset_m": 3.5, "face": "any", "clear_m": 5.0, "same_m": 12, "tier": "all"},
+        {"piece": ["VEG_Hedge_Spill_A", "VEG_BougainvilleaMoundWallSpill_01", "VEG_Shrub_Ixora_A"], "class": "bed", "every_m": 8, "phase_m": 2, "at": "behind", "offset_m": 0.9, "face": "along", "clear_m": 1.8, "tier": "detail"}
+      ]},
+      {"id": "lakeside", "_doc": "New Baladaksha Mawatha: palms on both verges (the lake-side row exists, sv_05 rhythm), shade trees inland, and grass and croton clumps along the verges (ground planting; no photo of this road yet).", "roads": ["New Baladaksha Mawatha", "Baladaksha Mawatha"], "sides": ["lake", "open", "green", "bld", "prom"], "items": [
+        {"piece": ["VEG_Palm_Coconut_A", "VEG_Palm_Coconut_C", "VEG_Palm_Coconut_B"], "class": "palm", "every_m": 20, "phase_m": 8, "at": "behind", "offset_m": 1.6, "face": "any", "clear_m": 3.5, "same_m": 8, "tier": "all"},
+        {"piece": ["VEG_GrassClump_A", "VEG_CrotonShrub_01", "VEG_GrassClump_A", "VEG_Shrub_Ixora_A"], "class": "bed", "every_m": 6, "phase_m": 1, "at": "behind", "offset_m": 0.7, "face": "any", "clear_m": 1.4, "tier": "detail"}
+      ]}
+    ]
+  }
+}

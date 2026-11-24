@@ -1,0 +1,25 @@
+{
+  "$schema": "../schemas/collider_bake_policy.schema.json",
+  "_comment": "WP-0314 (Open World Streaming Research gaps 4 and 5). Computed rules, not hand-set numbers: (1) which collider meshes are baked ahead with Physics.BakeMesh in a job (a mesh collider reuses the bake only when cooking options match exactly, scale is not skewed or negative and the mesh is unchanged); (2) the async upload buffer is sized from the largest upload of the region (mesh or texture), times headroom, rounded up to round_mb, clamped to the tier range. Today the project sets 16 MB persistent and a 2 ms slice without checking the largest cell asset. cook_ms_per_ktri is the proposed synchronous cook cost on the Honor X5b class (unmeasured) so the report can show first-activation cost. Proposals until the device streaming report.",
+  "schema_version": 1,
+  "id": "collider_bake_policy",
+  "status": "proposal",
+  "bake": {
+    "min_tris": 24,
+    "max_tris_per_collider": 20000,
+    "cook_ms_per_ktri": 0.9,
+    "required_cooking_options": ["EnableMeshCleaning", "WeldColocatedVertices", "CookForFasterSimulation", "UseFastMidphase"]
+  },
+  "upload_buffer": {
+    "headroom": 1.25,
+    "round_mb": 4,
+    "persistent": true,
+    "tiers": {
+      "floor": { "min_mb": 8, "max_mb": 16, "slice_ms": 2 },
+      "low": { "min_mb": 8, "max_mb": 16, "slice_ms": 2 },
+      "mid": { "min_mb": 8, "max_mb": 32, "slice_ms": 2 },
+      "high": { "min_mb": 16, "max_mb": 48, "slice_ms": 4 },
+      "ultra": { "min_mb": 16, "max_mb": 64, "slice_ms": 4 }
+    }
+  }
+}

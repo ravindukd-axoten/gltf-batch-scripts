@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/streaming_rings.schema.json",
+  "_comment": "WP-1509 PROPOSAL (numbers measured on device and desktop captures later). Ring radii per tier in metres, measured to the cell square (TDD 'Cell streaming as built': near 128/192/256, far 384/512/640 on Low/Medium/High, 32/64 m unload hysteresis). Floor and Low are UNCHANGED from the TDD Low column (a pin test holds them). Desktop is a launch platform (agent 2026-11-22): High is the desktop default tier (agent 2026-11-23), Ultra on request, so Ultra gets the longest rings and the full-resolution texture pack. Textures follow the Art Bible 'Texture maxima per tier': Floor and Low take the half-resolution variant (mip_offset 1, hero uniques 1024), Mid and High the full one (hero 2048), Ultra full plus the optional high-resolution pack (hero 4096). texture_budget_mb is the streamed-texture share of the foreground memory ceiling (AGENTS.md ceilings); Ultra numbers are ESTIMATES. near_cell_mb is the TDD 85 KB map cost plus an ESTIMATE for the cell's own textures.",
+  "schema_version": 1,
+  "id": "streaming_rings",
+  "status": "proposal",
+  "cell_size_m": 128,
+  "tiers": {
+    "floor": { "near_radius_m": 128, "far_radius_m": 384, "unload_hysteresis_m": 32, "texture_mip_offset": 1, "hero_texture_px": 1024, "high_res_pack": false, "texture_budget_mb": 180, "near_cell_mb": 6.0, "far_cell_mb": 1.0, "mip_streaming": true },
+    "low":   { "near_radius_m": 128, "far_radius_m": 384, "unload_hysteresis_m": 32, "texture_mip_offset": 1, "hero_texture_px": 1024, "high_res_pack": false, "texture_budget_mb": 320, "near_cell_mb": 6.0, "far_cell_mb": 1.0, "mip_streaming": true },
+    "mid":   { "near_radius_m": 192, "far_radius_m": 512, "unload_hysteresis_m": 64, "texture_mip_offset": 0, "hero_texture_px": 2048, "high_res_pack": false, "texture_budget_mb": 520, "near_cell_mb": 10.0, "far_cell_mb": 1.5, "mip_streaming": true },
+    "high":  { "near_radius_m": 256, "far_radius_m": 640, "unload_hysteresis_m": 64, "texture_mip_offset": 0, "hero_texture_px": 2048, "high_res_pack": false, "texture_budget_mb": 800, "near_cell_mb": 10.0, "far_cell_mb": 1.5, "mip_streaming": true },
+    "ultra": { "near_radius_m": 384, "far_radius_m": 896, "unload_hysteresis_m": 96, "texture_mip_offset": 0, "hero_texture_px": 4096, "high_res_pack": true,  "texture_budget_mb": 1600, "near_cell_mb": 14.0, "far_cell_mb": 2.0, "mip_streaming": true }
+  }
+}

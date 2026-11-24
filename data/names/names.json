@@ -1,0 +1,1887 @@
+{
+  "schema_version": 1,
+  "languages": [
+    "en",
+    "si",
+    "tn"
+  ],
+  "entries": [
+    {
+      "id": "place.green",
+      "kind": "place",
+      "status": "approved",
+      "name": {
+        "en": "Delta Face Green",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "The Green"
+      },
+      "long": {
+        "en": "Delta Face Green"
+      },
+      "signage": {
+        "en": "DELTA FACE GREEN"
+      },
+      "pronunciation": {
+        "en": "gall FACE green"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Real public park; real name kept (public geography)."
+      }
+    },
+    {
+      "id": "place.hotel_seaface",
+      "kind": "building",
+      "status": "approved",
+      "name": {
+        "en": "Seaface Hotel",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Seaface Hotel"
+      },
+      "long": {
+        "en": "Seaface Hotel, Batch City"
+      },
+      "signage": {
+        "en": "SEAFACE HOTEL"
+      },
+      "pronunciation": {
+        "en": "SEE-face hotel"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Delta Face Hotel; shape and colonial white kept."
+      }
+    },
+    {
+      "id": "place.assembly_house",
+      "kind": "building",
+      "status": "approved",
+      "name": {
+        "en": "Assembly House",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Assembly House"
+      },
+      "long": {
+        "en": "Assembly House"
+      },
+      "signage": {
+        "en": "ASSEMBLY HOUSE"
+      },
+      "pronunciation": {
+        "en": "uh-SEM-blee house"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Old Parliament block."
+      }
+    },
+    {
+      "id": "place.secretariat",
+      "kind": "building",
+      "status": "approved",
+      "name": {
+        "en": "Secretariat Building",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Secretariat"
+      },
+      "long": {
+        "en": "Secretariat Building"
+      },
+      "signage": {
+        "en": "SECRETARIAT BUILDING"
+      },
+      "pronunciation": {
+        "en": "sek-ruh-TAIR-ee-ut"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Presidential Secretariat; no seal or office name."
+      }
+    },
+    {
+      "id": "place.batch_city",
+      "kind": "district",
+      "status": "approved",
+      "name": {
+        "en": "Batch City",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Batch City"
+      },
+      "long": {
+        "en": "Batch City"
+      },
+      "signage": {
+        "en": "BATCH CITY"
+      },
+      "pronunciation": {
+        "en": "perl CIT-ee"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Port City reclaimed district. In-game name only; never write the real name in shipped text.",
+        "agent_flag": "Agent 2026-11-19: Batch City is the whole capital (not only the reclaimed district)."
+      }
+    },
+    {
+      "id": "place.green_court",
+      "kind": "building",
+      "status": "approved",
+      "name": {
+        "en": "Green Court",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Green Court"
+      },
+      "long": {
+        "en": "Green Court Mall"
+      },
+      "signage": {
+        "en": "GREEN COURT"
+      },
+      "pronunciation": {
+        "en": "green kort"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "One Delta Face podium mall."
+      }
+    },
+    {
+      "id": "tower.green_court",
+      "kind": "tower",
+      "status": "approved",
+      "name": {
+        "en": "Green Court Towers",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Green Court"
+      },
+      "long": {
+        "en": "Green Court Towers"
+      },
+      "signage": {
+        "en": "GREEN COURT TOWERS"
+      },
+      "pronunciation": {
+        "en": "green kort TOW-erz"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "One Delta Face towers."
+      }
+    },
+    {
+      "id": "tower.seaview",
+      "kind": "tower",
+      "status": "approved",
+      "name": {
+        "en": "Seaview Towers",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Seaview"
+      },
+      "long": {
+        "en": "Seaview Towers, twin glass residential"
+      },
+      "signage": {
+        "en": "SEAVIEW TOWERS"
+      },
+      "pronunciation": {
+        "en": "SEE-vyoo TOW-erz"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Twin glass towers near the Green; no hotel brand."
+      }
+    },
+    {
+      "id": "tower.curve",
+      "kind": "tower",
+      "status": "approved",
+      "name": {
+        "en": "Curve Towers",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Curve Towers"
+      },
+      "long": {
+        "en": "Curve Towers"
+      },
+      "signage": {
+        "en": "CURVE TOWERS"
+      },
+      "pronunciation": {
+        "en": "curve TOW-erz"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Curved twin towers with skybridge."
+      }
+    },
+    {
+      "id": "tower.bloom",
+      "kind": "tower",
+      "status": "approved",
+      "name": {
+        "en": "Bloom Tower",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Bloom Tower"
+      },
+      "long": {
+        "en": "Bloom Tower"
+      },
+      "signage": {
+        "en": "BLOOM TOWER"
+      },
+      "pronunciation": {
+        "en": "BLOOM TOW-er"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Real state landmark (Lotus Tower), renamed Bloom Tower by the agent 2026-11-19 (real layout, fictional names). Generic flower motif, no logo."
+      }
+    },
+    {
+      "id": "road.delta_road",
+      "kind": "road",
+      "status": "approved",
+      "name": {
+        "en": "Delta Road",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Delta Road"
+      },
+      "long": {
+        "en": "Delta Road"
+      },
+      "signage": {
+        "en": "DELTA ROAD"
+      },
+      "pronunciation": {
+        "en": "gall road"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "A2 coast road; public name kept."
+      }
+    },
+    {
+      "id": "road.lotus_road",
+      "kind": "road",
+      "status": "approved",
+      "name": {
+        "en": "Lotus Road",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Lotus Road"
+      },
+      "long": {
+        "en": "Lotus Road"
+      },
+      "signage": {
+        "en": "LOTUS ROAD"
+      },
+      "pronunciation": {
+        "en": "LOH-tus road"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Public road; never shown closed for protests."
+      }
+    },
+    {
+      "id": "road.baladaksha_mawatha",
+      "kind": "road",
+      "status": "approved",
+      "name": {
+        "en": "Baladaksha Mawatha",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Baladaksha Mawatha"
+      },
+      "long": {
+        "en": "Baladaksha Mawatha"
+      },
+      "signage": {
+        "en": "BALADAKSHA MAWATHA"
+      },
+      "pronunciation": {
+        "en": "buh-luh-DUKSH-uh muh-WUH-tuh"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Public road incl. flyover; already in data."
+      }
+    },
+    {
+      "id": "road.centre_road",
+      "kind": "road",
+      "status": "approved",
+      "name": {
+        "en": "Centre Road",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Centre Road"
+      },
+      "long": {
+        "en": "Centre Road"
+      },
+      "signage": {
+        "en": "CENTRE ROAD"
+      },
+      "pronunciation": {
+        "en": "CEN-ter road"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Delta Face Centre Road."
+      }
+    },
+    {
+      "id": "place.beira_lake",
+      "kind": "place",
+      "status": "approved",
+      "name": {
+        "en": "Beira Lake",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Beira Lake"
+      },
+      "long": {
+        "en": "Beira Lake"
+      },
+      "signage": {
+        "en": "BEIRA LAKE"
+      },
+      "pronunciation": {
+        "en": "BAY-ruh lake"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Public water; name kept."
+      }
+    },
+    {
+      "id": "place.lake_pavilion",
+      "kind": "building",
+      "status": "approved",
+      "name": {
+        "en": "Lake Pavilion",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Lake Pavilion"
+      },
+      "long": {
+        "en": "Lake Pavilion"
+      },
+      "signage": {
+        "en": "LAKE PAVILION"
+      },
+      "pronunciation": {
+        "en": "lake puh-VIL-yun"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Generic hall on platforms; no temple name or imagery."
+      }
+    },
+    {
+      "id": "place.beira_yard",
+      "kind": "place",
+      "status": "approved",
+      "name": {
+        "en": "Beira Yard",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Beira Yard"
+      },
+      "long": {
+        "en": "Beira Yard"
+      },
+      "signage": {
+        "en": "BEIRA YARD"
+      },
+      "pronunciation": {
+        "en": "BAY-ruh yard"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Old Army Hospital lot; no military signage."
+      }
+    },
+    {
+      "id": "district.fort",
+      "kind": "district",
+      "status": "approved",
+      "name": {
+        "en": "The Fort",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Fort"
+      },
+      "long": {
+        "en": "The Fort"
+      },
+      "signage": {
+        "en": "THE FORT"
+      },
+      "pronunciation": {
+        "en": "the fort"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Cityhub Fort district; generic."
+      }
+    },
+    {
+      "id": "district.pettah",
+      "kind": "district",
+      "status": "approved",
+      "name": {
+        "en": "Pettah",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Pettah"
+      },
+      "long": {
+        "en": "Pettah"
+      },
+      "signage": {
+        "en": "PETTAH"
+      },
+      "pronunciation": {
+        "en": "PET-tah"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "District name kept; out of the slice."
+      }
+    },
+    {
+      "id": "district.kompanna_veediya",
+      "kind": "district",
+      "status": "approved",
+      "name": {
+        "en": "Kompanna Veediya",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Kompanna Veediya"
+      },
+      "long": {
+        "en": "Kompanna Veediya (Company Street)"
+      },
+      "signage": {
+        "en": "KOMPANNA VEEDIYA"
+      },
+      "pronunciation": {
+        "en": "kom-PUN-nuh vee-DEE-yuh"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Replaces the colonial English name for Slave Island."
+      }
+    },
+    {
+      "id": "place.old_hospital_row",
+      "kind": "place",
+      "status": "approved",
+      "name": {
+        "en": "Old Hospital Row",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Old Hospital Row"
+      },
+      "long": {
+        "en": "Old Hospital Row"
+      },
+      "signage": {
+        "en": "OLD HOSPITAL ROW"
+      },
+      "pronunciation": {
+        "en": "old HOS-pit-ul row"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Dutch Hospital precinct; low roofs, arches, verandas."
+      }
+    },
+    {
+      "id": "place.old_lighthouse",
+      "kind": "building",
+      "status": "approved",
+      "name": {
+        "en": "Old Lighthouse",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Old Lighthouse"
+      },
+      "long": {
+        "en": "Old Lighthouse"
+      },
+      "signage": {
+        "en": "OLD LIGHTHOUSE"
+      },
+      "pronunciation": {
+        "en": "old LITE-house"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Old Cityhub Lighthouse."
+      }
+    },
+    {
+      "id": "place.clock_tower",
+      "kind": "building",
+      "status": "approved",
+      "name": {
+        "en": "Clock Tower",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Clock Tower"
+      },
+      "long": {
+        "en": "Clock Tower"
+      },
+      "signage": {
+        "en": "CLOCK TOWER"
+      },
+      "pronunciation": {
+        "en": "clock TOW-er"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Old lighthouse clock; no maker name on the face."
+      }
+    },
+    {
+      "id": "place.hotel_roundabout",
+      "kind": "junction",
+      "status": "approved",
+      "name": {
+        "en": "Hotel Roundabout",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Hotel Roundabout"
+      },
+      "long": {
+        "en": "Hotel Roundabout"
+      },
+      "signage": {
+        "en": "HOTEL ROUNDABOUT"
+      },
+      "pronunciation": {
+        "en": "hoh-TEL ROWND-uh-bowt"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Delta Face roundabout; island 5.9 m, ring 11.5 m."
+      }
+    },
+    {
+      "id": "place.kollupitiya_junction",
+      "kind": "junction",
+      "status": "approved",
+      "name": {
+        "en": "Kollupitiya Junction",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Kollupitiya Junction"
+      },
+      "long": {
+        "en": "Kollupitiya Junction"
+      },
+      "signage": {
+        "en": "KOLLUPITIYA JUNCTION"
+      },
+      "pronunciation": {
+        "en": "kol-LOO-pit-ee-yuh JUNK-shun"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Public neighbourhood name."
+      }
+    },
+    {
+      "id": "halt.green",
+      "kind": "halt",
+      "status": "approved",
+      "name": {
+        "en": "Green Halt",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Green Halt"
+      },
+      "long": {
+        "en": "Green Halt"
+      },
+      "signage": {
+        "en": "GREEN HALT"
+      },
+      "pronunciation": {
+        "en": "green halt"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Bus halt by the Green; no operator logo."
+      }
+    },
+    {
+      "id": "halt.hotel",
+      "kind": "halt",
+      "status": "approved",
+      "name": {
+        "en": "Hotel Halt",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Hotel Halt"
+      },
+      "long": {
+        "en": "Hotel Halt"
+      },
+      "signage": {
+        "en": "HOTEL HALT"
+      },
+      "pronunciation": {
+        "en": "hotel halt"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Bus halt by the hotel; no operator logo."
+      }
+    },
+    {
+      "id": "halt.lake",
+      "kind": "halt",
+      "status": "approved",
+      "name": {
+        "en": "Lake Halt",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Lake Halt"
+      },
+      "long": {
+        "en": "Lake Halt"
+      },
+      "signage": {
+        "en": "LAKE HALT"
+      },
+      "pronunciation": {
+        "en": "lake halt"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Bus halt by Beira Lake; no operator logo."
+      }
+    },
+    {
+      "id": "halt.fort",
+      "kind": "halt",
+      "status": "approved",
+      "name": {
+        "en": "Fort Halt",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Fort Halt"
+      },
+      "long": {
+        "en": "Fort Halt"
+      },
+      "signage": {
+        "en": "FORT HALT"
+      },
+      "pronunciation": {
+        "en": "fort halt"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Bus halt in the Fort; no operator logo."
+      }
+    },
+    {
+      "id": "brand.island_trust_bank",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Island Trust Bank",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Island Trust Bank"
+      },
+      "long": {
+        "en": "Island Trust Bank"
+      },
+      "signage": {
+        "en": "ISLAND TRUST BANK"
+      },
+      "pronunciation": {
+        "en": "island trust bank"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Blue, serious; plain shield-free lockup"
+      },
+      "category": "bank",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.harbour_savings",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Harbour Savings",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Harbour Savings"
+      },
+      "long": {
+        "en": "Harbour Savings"
+      },
+      "signage": {
+        "en": "HARBOUR SAVINGS"
+      },
+      "pronunciation": {
+        "en": "harbour savings"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Teal, calm"
+      },
+      "category": "bank",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.muthu_net",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Muthu Net",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Muthu Net"
+      },
+      "long": {
+        "en": "Muthu Net"
+      },
+      "signage": {
+        "en": "MUTHU NET"
+      },
+      "pronunciation": {
+        "en": "MOO-thoo net"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Bright flat colour, loud",
+        "agent_flag": "Agent 2026-11-19: replaces Wavelink (conflicted with a registered class 9 mark). muthu = batch (Sinhala): the word needs native Sinhala review (form, spelling, connotation). Proposal source: docs/research/title-and-brand-proposals.md."
+      },
+      "category": "telco",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.tuk_mobile",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Tuk Mobile",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Tuk Mobile"
+      },
+      "long": {
+        "en": "Tuk Mobile"
+      },
+      "signage": {
+        "en": "TUK MOBILE"
+      },
+      "pronunciation": {
+        "en": "tuk mobile"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Bright flat colour"
+      },
+      "category": "telco",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.roadside_fuel",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Roadside Fuel",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Roadside Fuel"
+      },
+      "long": {
+        "en": "Roadside Fuel"
+      },
+      "signage": {
+        "en": "ROADSIDE FUEL"
+      },
+      "pronunciation": {
+        "en": "roadside fuel"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Plain canopy; matches STN_Fuel_DeltaFace"
+      },
+      "category": "fuel",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.lanka_fizz",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Lanka Fizz",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Lanka Fizz"
+      },
+      "long": {
+        "en": "Lanka Fizz"
+      },
+      "signage": {
+        "en": "LANKA FIZZ"
+      },
+      "pronunciation": {
+        "en": "lanka fizz"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Cola-style bottle shape, plain",
+        "agent_flag": "Agent 2026-11-19: empty sponsor slots show the fictional FICT_LankaFizz placeholder."
+      },
+      "category": "beverage",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.hill_tea",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Hill Tea",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Hill Tea"
+      },
+      "long": {
+        "en": "Hill Tea"
+      },
+      "signage": {
+        "en": "HILL TEA"
+      },
+      "pronunciation": {
+        "en": "hill tea"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Tea valley theme"
+      },
+      "category": "beverage",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.green_ginger",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Green Ginger",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Green Ginger"
+      },
+      "long": {
+        "en": "Green Ginger"
+      },
+      "signage": {
+        "en": "GREEN GINGER"
+      },
+      "pronunciation": {
+        "en": "green ginger"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Ginger beer style"
+      },
+      "category": "beverage",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.fort_mart",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Fort Mart",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Fort Mart"
+      },
+      "long": {
+        "en": "Fort Mart"
+      },
+      "signage": {
+        "en": "FORT MART"
+      },
+      "pronunciation": {
+        "en": "fort mart"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Supermarket"
+      },
+      "category": "retail",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.cityhub_fresh",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Cityhub Fresh",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Cityhub Fresh"
+      },
+      "long": {
+        "en": "Cityhub Fresh"
+      },
+      "signage": {
+        "en": "CITYHUB FRESH"
+      },
+      "pronunciation": {
+        "en": "cityhub fresh"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Supermarket"
+      },
+      "category": "retail",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.batch_ride",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Batch Ride",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Batch Ride"
+      },
+      "long": {
+        "en": "Batch Ride"
+      },
+      "signage": {
+        "en": "BATCH RIDE"
+      },
+      "pronunciation": {
+        "en": "batch ride"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Ties to Batch brand; plain-shape app icon"
+      },
+      "category": "ride",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.kurulu_air",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Kurulu Air",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Kurulu Air"
+      },
+      "long": {
+        "en": "Kurulu Air"
+      },
+      "signage": {
+        "en": "KURULU AIR"
+      },
+      "pronunciation": {
+        "en": "koo-ROO-loo air"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Billboards only",
+        "agent_flag": "Agent 2026-11-19: replaces Island Air (a known real airline name). kurulu = bird (Sinhala): the word needs native Sinhala review (form, spelling, connotation). Proposal source: docs/research/title-and-brand-proposals.md."
+      },
+      "category": "travel",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.island_bus",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Island Bus",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Island Bus"
+      },
+      "long": {
+        "en": "Island Bus"
+      },
+      "signage": {
+        "en": "ISLAND BUS"
+      },
+      "pronunciation": {
+        "en": "island bus"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Fictional livery and route boards",
+        "agent_flag": "Open decision (2026-11-19): fictional Island Bus routes IB1-IB3 on the 4.4 km loop are recommended (docs/research/transit-physical-plan-and-modern-ideas.md) but the agent has not decided."
+      },
+      "category": "transport",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.green_line",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Green Line",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Green Line"
+      },
+      "long": {
+        "en": "Green Line"
+      },
+      "signage": {
+        "en": "GREEN LINE"
+      },
+      "pronunciation": {
+        "en": "green line"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Fictional livery"
+      },
+      "category": "transport",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.lakeside_cinema",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Lakeside Cinema",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Lakeside Cinema"
+      },
+      "long": {
+        "en": "Lakeside Cinema"
+      },
+      "signage": {
+        "en": "LAKESIDE CINEMA"
+      },
+      "pronunciation": {
+        "en": "lakeside cinema"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Cinema"
+      },
+      "category": "media",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.batch_fm",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Batch FM",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Batch FM"
+      },
+      "long": {
+        "en": "Batch FM"
+      },
+      "signage": {
+        "en": "BATCH FM"
+      },
+      "pronunciation": {
+        "en": "batch fm"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Radio"
+      },
+      "category": "media",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.green_court_cafe",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Green Court Cafe",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Green Court Cafe"
+      },
+      "long": {
+        "en": "Green Court Cafe"
+      },
+      "signage": {
+        "en": "GREEN COURT CAFE"
+      },
+      "pronunciation": {
+        "en": "green court cafe"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Makeover Guide section 3 scheme: Cafe in the mall"
+      },
+      "category": "hospitality",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "brand.batch_metro",
+      "kind": "brand",
+      "status": "proposed",
+      "name": {
+        "en": "Batch Metro",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Batch Metro"
+      },
+      "long": {
+        "en": "Batch Metro City Bus"
+      },
+      "signage": {
+        "en": "BATCH METRO"
+      },
+      "pronunciation": {
+        "en": "batch metro"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "P342: fictional state-style city bus operator (12 m low-floor AC buses, card and QR fares); kind inspired by the 2026 state metro fleet, but no real name, logo, livery or colours (own batch white, plum and coral)"
+      },
+      "category": "transport",
+      "sponsor_slot_default": null
+    },
+    {
+      "id": "monument.green_plaque_stone",
+      "kind": "monument",
+      "status": "proposed",
+      "name": {
+        "en": "Green Plaque Stone",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Green Plaque Stone"
+      },
+      "long": {
+        "en": "Green Plaque Stone"
+      },
+      "signage": {
+        "en": "GREEN PLAQUE STONE"
+      },
+      "pronunciation": {
+        "en": ""
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Fictional; see docs/Batch City History and Monuments.md"
+      },
+      "location": "place.green: spot to be chosen (the statue plinth goes to the Pilots' Memorial, agent 2026-11-19)",
+      "plaque": {
+        "en": "This Green is for everyone who walks it.",
+        "si": null,
+        "tn": null
+      }
+    },
+    {
+      "id": "monument.pilots_memorial",
+      "kind": "monument",
+      "status": "approved",
+      "name": {
+        "en": "Pilots' Memorial",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Pilots' Memorial"
+      },
+      "long": {
+        "en": "Pilots' Memorial"
+      },
+      "signage": {
+        "en": "PILOTS' MEMORIAL"
+      },
+      "pronunciation": {
+        "en": ""
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Fictional; see docs/Batch City History and Monuments.md",
+        "agent_flag": "Agent 2026-11-19: the real statue spot is this fictional sea-pilot memorial."
+      },
+      "location": "place.green: the old statue plinth position, centre of the Green (agent 2026-11-19)",
+      "plaque": {
+        "en": "In memory of the sea pilots who brought the ships in.",
+        "si": null,
+        "tn": null
+      }
+    },
+    {
+      "id": "monument.quay_bollard",
+      "kind": "monument",
+      "status": "proposed",
+      "name": {
+        "en": "Founders' Quay Bollard",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Founders' Quay Bollard"
+      },
+      "long": {
+        "en": "Founders' Quay Bollard"
+      },
+      "signage": {
+        "en": "FOUNDERS' QUAY BOLLARD"
+      },
+      "pronunciation": {
+        "en": ""
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Fictional; see docs/Batch City History and Monuments.md"
+      },
+      "location": "place.beira_yard: edge of the yard by the water",
+      "plaque": {
+        "en": "The first quay of Batch City stood here.",
+        "si": null,
+        "tn": null
+      }
+    },
+    {
+      "id": "monument.zero_milestone",
+      "kind": "monument",
+      "status": "proposed",
+      "name": {
+        "en": "Zero Milestone",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Zero Milestone"
+      },
+      "long": {
+        "en": "Zero Milestone"
+      },
+      "signage": {
+        "en": "ZERO MILESTONE"
+      },
+      "pronunciation": {
+        "en": ""
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Fictional; see docs/Batch City History and Monuments.md"
+      },
+      "location": "district.fort: beside the Fort Halt",
+      "plaque": {
+        "en": "All roads of the island are measured from this stone.",
+        "si": null,
+        "tn": null
+      }
+    },
+    {
+      "id": "monument.lighthouse_tablet",
+      "kind": "monument",
+      "status": "proposed",
+      "name": {
+        "en": "Lighthouse Tablet",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Lighthouse Tablet"
+      },
+      "long": {
+        "en": "Lighthouse Tablet"
+      },
+      "signage": {
+        "en": "LIGHTHOUSE TABLET"
+      },
+      "pronunciation": {
+        "en": ""
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Fictional; see docs/Batch City History and Monuments.md"
+      },
+      "location": "place.old_lighthouse: base wall",
+      "plaque": {
+        "en": "Lit for the first time to guide the evening ships home.",
+        "si": null,
+        "tn": null
+      }
+    },
+    {
+      "id": "monument.clock_tower_tablet",
+      "kind": "monument",
+      "status": "proposed",
+      "name": {
+        "en": "Clock Tower Tablet",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Clock Tower Tablet"
+      },
+      "long": {
+        "en": "Clock Tower Tablet"
+      },
+      "signage": {
+        "en": "CLOCK TOWER TABLET"
+      },
+      "pronunciation": {
+        "en": ""
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Fictional; see docs/Batch City History and Monuments.md"
+      },
+      "location": "place.clock_tower: base plinth",
+      "plaque": {
+        "en": "The town's hours were first rung from this tower.",
+        "si": null,
+        "tn": null
+      }
+    },
+    {
+      "id": "monument.kite_flyers_post",
+      "kind": "monument",
+      "status": "proposed",
+      "name": {
+        "en": "Kite Flyers' Post",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Kite Flyers' Post"
+      },
+      "long": {
+        "en": "Kite Flyers' Post"
+      },
+      "signage": {
+        "en": "KITE FLYERS' POST"
+      },
+      "pronunciation": {
+        "en": ""
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Fictional; see docs/Batch City History and Monuments.md"
+      },
+      "location": "place.green: kite and play zone",
+      "plaque": {
+        "en": "Where the sky belongs to the kites.",
+        "si": null,
+        "tn": null
+      }
+    },
+    {
+      "id": "monument.tide_column",
+      "kind": "monument",
+      "status": "proposed",
+      "name": {
+        "en": "Tidemark Column",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Tidemark Column"
+      },
+      "long": {
+        "en": "Tidemark Column"
+      },
+      "signage": {
+        "en": "TIDEMARK COLUMN"
+      },
+      "pronunciation": {
+        "en": ""
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Fictional; see docs/Batch City History and Monuments.md"
+      },
+      "location": "place.green: seawall level",
+      "plaque": {
+        "en": "High-water marks, kept by the harbour keepers.",
+        "si": null,
+        "tn": null
+      }
+    },
+    {
+      "id": "monument.vendors_lamp",
+      "kind": "monument",
+      "status": "proposed",
+      "name": {
+        "en": "Vendors' Lamp",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Vendors' Lamp"
+      },
+      "long": {
+        "en": "Vendors' Lamp"
+      },
+      "signage": {
+        "en": "VENDORS' LAMP"
+      },
+      "pronunciation": {
+        "en": ""
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Fictional; see docs/Batch City History and Monuments.md"
+      },
+      "location": "place.green: promenade level, vendor strip",
+      "plaque": {
+        "en": "Lit each evening for those who feed the Green.",
+        "si": null,
+        "tn": null
+      }
+    },
+    {
+      "id": "monument.reclamation_stone",
+      "kind": "monument",
+      "status": "proposed",
+      "name": {
+        "en": "Land From the Sea Stone",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Land From the Sea Stone"
+      },
+      "long": {
+        "en": "Land From the Sea Stone"
+      },
+      "signage": {
+        "en": "LAND FROM THE SEA STONE"
+      },
+      "pronunciation": {
+        "en": ""
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Fictional; see docs/Batch City History and Monuments.md"
+      },
+      "location": "place.batch_city: marina promenade",
+      "plaque": {
+        "en": "Batch City was built on the sea, one load at a time.",
+        "si": null,
+        "tn": null
+      }
+    },
+    {
+      "id": "monument.lake_landing_stone",
+      "kind": "monument",
+      "status": "proposed",
+      "name": {
+        "en": "Lake Landing Stone",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Lake Landing Stone"
+      },
+      "long": {
+        "en": "Lake Landing Stone"
+      },
+      "signage": {
+        "en": "LAKE LANDING STONE"
+      },
+      "pronunciation": {
+        "en": ""
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Fictional; see docs/Batch City History and Monuments.md"
+      },
+      "location": "place.lake_pavilion: jetty",
+      "plaque": {
+        "en": "Boats gathered here long before the roads.",
+        "si": null,
+        "tn": null
+      }
+    },
+    {
+      "id": "road.macan_markar_mawatha",
+      "kind": "road",
+      "status": "approved",
+      "name": {
+        "en": "Macan Markar Mawatha",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Macan Markar Mw"
+      },
+      "long": {
+        "en": "Macan Markar Mawatha"
+      },
+      "signage": {
+        "en": "MACAN MARKAR MW"
+      },
+      "pronunciation": {
+        "en": "ma-KAN MAR-kar ma-WA-tha"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Sir Mohamed Macan Markar Mawatha, east arm of the Delta Face roundabout (real public road name; agent 2026-11-20)."
+      }
+    },
+    {
+      "id": "road.delta_face_drive",
+      "kind": "road",
+      "status": "approved",
+      "name": {
+        "en": "Delta Face Drive",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Delta Face Drive"
+      },
+      "long": {
+        "en": "Delta Face Drive"
+      },
+      "signage": {
+        "en": "DELTA FACE DRIVE"
+      },
+      "pronunciation": {
+        "en": "GAWL face drive"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Hotel spur west of the roundabout (real public road name; agent 2026-11-20)."
+      }
+    },
+    {
+      "id": "road.justice_akbar_mawatha",
+      "kind": "road",
+      "status": "approved",
+      "name": {
+        "en": "Justice Akbar Mawatha",
+        "si": null,
+        "tn": null
+      },
+      "short": {
+        "en": "Justice Akbar Mw"
+      },
+      "long": {
+        "en": "Justice Akbar Mawatha"
+      },
+      "signage": {
+        "en": "JUSTICE AKBAR MW"
+      },
+      "pronunciation": {
+        "en": "JUS-tis AK-bar ma-WA-tha"
+      },
+      "review": {
+        "si": "needs-review",
+        "tn": "needs-review"
+      },
+      "internal": {
+        "inspiration": "Road at the Slave Island oval (real public road name; agent 2026-11-20). Not on circle boards yet."
+      }
+    }
+  ]
+}

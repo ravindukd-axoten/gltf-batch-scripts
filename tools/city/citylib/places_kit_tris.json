@@ -1,0 +1,927 @@
+{
+ "DEC_ServiceFloor_A": {
+  "bbox_unity": {
+   "x": [
+    -1.86,
+    1.86
+   ],
+   "y": [
+    0.012,
+    0.018
+   ],
+   "z": [
+    -2.5,
+    2.56
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 42,
+  "tris_core": 42,
+  "tris_lod1": 32
+ },
+ "KIT_BayOpen_A": {
+  "bbox_unity": {
+   "x": [
+    -0.12,
+    4.72
+   ],
+   "y": [
+    -0.002,
+    3.71
+   ],
+   "z": [
+    -0.798,
+    7.59
+   ]
+  },
+  "draws": 3,
+  "draws_core": 3,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Concrete_Weathered",
+   "MAT_Lamp_Emissive"
+  ],
+  "tris": 4686,
+  "tris_core": 4686
+ },
+ "KIT_FuelCanopy_A": {
+  "bbox_unity": {
+   "x": [
+    -8.0,
+    11.0
+   ],
+   "y": [
+    -0.002,
+    6.03
+   ],
+   "z": [
+    -30.005,
+    11.0
+   ]
+  },
+  "draws": 3,
+  "draws_core": 3,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive",
+   "MAT_Concrete_Weathered"
+  ],
+  "merged": {
+   "Island1": 1414,
+   "Island2": 1414
+  },
+  "tris": 5138,
+  "tris_core": 5138,
+  "tris_lod1": 1816,
+  "tris_lod2": 1374
+ },
+ "KIT_FuelCanopy_B": {
+  "bbox_unity": {
+   "x": [
+    -7.5,
+    10.51
+   ],
+   "y": [
+    -0.002,
+    6.03
+   ],
+   "z": [
+    -28.005,
+    10.0
+   ]
+  },
+  "draws": 3,
+  "draws_core": 3,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive",
+   "MAT_Concrete_Weathered"
+  ],
+  "merged": {
+   "Island1": 1526,
+   "Island2": 1526
+  },
+  "tris": 5660,
+  "tris_core": 5660,
+  "tris_lod1": 2534,
+  "tris_lod2": 2126
+ },
+ "KIT_FuelCanopy_C": {
+  "bbox_unity": {
+   "x": [
+    -5.66,
+    7.6
+   ],
+   "y": [
+    -0.002,
+    5.88
+   ],
+   "z": [
+    -14.005,
+    7.0
+   ]
+  },
+  "draws": 3,
+  "draws_core": 3,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive",
+   "MAT_Concrete_Weathered"
+  ],
+  "merged": {
+   "Island1": 1562
+  },
+  "tris": 4035,
+  "tris_core": 4035,
+  "tris_lod1": 1752,
+  "tris_lod2": 1470
+ },
+ "KIT_FuelCones_A": {
+  "bbox_unity": {
+   "x": [
+    -0.19,
+    2.645
+   ],
+   "y": [
+    0.0,
+    1.0
+   ],
+   "z": [
+    -0.19,
+    6.19
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 702,
+  "tris_core": 702,
+  "tris_lod1": 262,
+  "tris_lod2": 190
+ },
+ "KIT_FuelPavers_A": {
+  "bbox_unity": {
+   "x": [
+    -4.0,
+    4.0
+   ],
+   "y": [
+    -0.002,
+    0.162
+   ],
+   "z": [
+    -0.005,
+    8.0
+   ]
+  },
+  "draws": 2,
+  "draws_core": 2,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_GreyCobble"
+  ],
+  "tris": 466,
+  "tris_core": 466,
+  "tris_lod1": 102,
+  "tris_lod2": 102
+ },
+ "KIT_FuelProps_A": {
+  "bbox_unity": {
+   "x": [
+    -0.49,
+    0.49
+   ],
+   "y": [
+    0.0,
+    2.0
+   ],
+   "z": [
+    0.17,
+    2.56
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 936,
+  "tris_core": 936,
+  "tris_lod1": 328,
+  "tris_lod2": 220
+ },
+ "KIT_FuelProps_B": {
+  "bbox_unity": {
+   "x": [
+    -0.165,
+    2.57
+   ],
+   "y": [
+    0.0,
+    1.0
+   ],
+   "z": [
+    -0.113,
+    4.17
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 398,
+  "tris_core": 398,
+  "tris_lod1": 161,
+  "tris_lod2": 161
+ },
+ "KIT_FuelPylon_L": {
+  "bbox_unity": {
+   "x": [
+    -1.05,
+    1.05
+   ],
+   "y": [
+    0.0,
+    7.4
+   ],
+   "z": [
+    -0.35,
+    0.35
+   ]
+  },
+  "draws": 2,
+  "draws_core": 2,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive"
+  ],
+  "tris": 642,
+  "tris_core": 642,
+  "tris_lod1": 266,
+  "tris_lod2": 260
+ },
+ "KIT_FuelPylon_M": {
+  "bbox_unity": {
+   "x": [
+    -0.85,
+    0.85
+   ],
+   "y": [
+    0.0,
+    5.4
+   ],
+   "z": [
+    -0.325,
+    0.325
+   ]
+  },
+  "draws": 2,
+  "draws_core": 2,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive"
+  ],
+  "tris": 450,
+  "tris_core": 450,
+  "tris_lod1": 198,
+  "tris_lod2": 198
+ },
+ "KIT_FuelPylon_P": {
+  "bbox_unity": {
+   "x": [
+    -1.13,
+    1.13
+   ],
+   "y": [
+    0.0,
+    7.6
+   ],
+   "z": [
+    -0.255,
+    0.255
+   ]
+  },
+  "draws": 2,
+  "draws_core": 2,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive"
+  ],
+  "tris": 566,
+  "tris_core": 566,
+  "tris_lod1": 246,
+  "tris_lod2": 240
+ },
+ "KIT_FuelPylon_S": {
+  "bbox_unity": {
+   "x": [
+    -0.65,
+    0.65
+   ],
+   "y": [
+    0.0,
+    3.6
+   ],
+   "z": [
+    -0.3,
+    0.3
+   ]
+  },
+  "draws": 2,
+  "draws_core": 2,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive"
+  ],
+  "tris": 369,
+  "tris_core": 369,
+  "tris_lod1": 162,
+  "tris_lod2": 162
+ },
+ "KIT_FuelShop_A": {
+  "bbox_unity": {
+   "x": [
+    -6.66,
+    5.31
+   ],
+   "y": [
+    -0.005,
+    5.69
+   ],
+   "z": [
+    -2.85,
+    6.123
+   ]
+  },
+  "draws": 3,
+  "draws_core": 3,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive",
+   "MAT_Signage_A"
+  ],
+  "tris": 1188,
+  "tris_core": 1188,
+  "tris_lod1": 512,
+  "tris_lod2": 491
+ },
+ "KIT_FuelWall_A": {
+  "bbox_unity": {
+   "x": [
+    -0.22,
+    6.22
+   ],
+   "y": [
+    0.0,
+    1.38
+   ],
+   "z": [
+    -0.732,
+    0.22
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 172,
+  "tris_core": 172,
+  "tris_lod1": 66,
+  "tris_lod2": 66
+ },
+ "KIT_HandWashBay_A": {
+  "bbox_unity": {
+   "x": [
+    -2.25,
+    2.25
+   ],
+   "y": [
+    0.0,
+    3.27
+   ],
+   "z": [
+    -0.503,
+    8.403
+   ]
+  },
+  "draws": 2,
+  "draws_core": 2,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Concrete_Weathered"
+  ],
+  "tris": 536,
+  "tris_core": 536,
+  "tris_lod1": 220,
+  "tris_lod2": 212
+ },
+ "KIT_Reception_A": {
+  "bbox_unity": {
+   "x": [
+    -4.41,
+    4.41
+   ],
+   "y": [
+    0.0,
+    3.35
+   ],
+   "z": [
+    -1.61,
+    5.2
+   ]
+  },
+  "draws": 2,
+  "draws_core": 2,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive"
+  ],
+  "tris": 818,
+  "tris_core": 818,
+  "tris_lod1": 220,
+  "tris_lod2": 216
+ },
+ "KIT_TrussShed_Module_A": {
+  "bbox_unity": {
+   "x": [
+    -2.15,
+    2.0
+   ],
+   "y": [
+    0.0,
+    5.94
+   ],
+   "z": [
+    -5.56,
+    5.49
+   ]
+  },
+  "draws": 3,
+  "draws_core": 3,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive",
+   "MAT_Concrete_Weathered"
+  ],
+  "tris": 687,
+  "tris_core": 687,
+  "tris_lod1": 304,
+  "tris_lod2": 286
+ },
+ "KIT_TrussShed_Module_B": {
+  "bbox_unity": {
+   "x": [
+    -2.15,
+    2.15
+   ],
+   "y": [
+    0.0,
+    5.94
+   ],
+   "z": [
+    -5.56,
+    5.49
+   ]
+  },
+  "draws": 3,
+  "draws_core": 3,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive",
+   "MAT_Concrete_Weathered"
+  ],
+  "tris": 1003,
+  "tris_core": 1003,
+  "tris_lod1": 350,
+  "tris_lod2": 332
+ },
+ "KIT_TrussShed_Module_C": {
+  "bbox_unity": {
+   "x": [
+    -2.15,
+    2.0
+   ],
+   "y": [
+    0.0,
+    7.54
+   ],
+   "z": [
+    -13.56,
+    13.49
+   ]
+  },
+  "draws": 3,
+  "draws_core": 3,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive",
+   "MAT_Concrete_Weathered"
+  ],
+  "tris": 1294,
+  "tris_core": 1294,
+  "tris_lod1": 510,
+  "tris_lod2": 460
+ },
+ "KIT_TukWorks_Shed_A": {
+  "bbox_unity": {
+   "x": [
+    -5.8,
+    7.7
+   ],
+   "y": [
+    0.0,
+    3.77
+   ],
+   "z": [
+    -1.28,
+    12.9
+   ]
+  },
+  "draws": 3,
+  "draws_core": 3,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Concrete_Weathered",
+   "MAT_Lamp_Emissive"
+  ],
+  "tris": 856,
+  "tris_core": 856,
+  "tris_lod1": 340,
+  "tris_lod2": 270
+ },
+ "KIT_WashTunnel_A": {
+  "bbox_unity": {
+   "x": [
+    -2.61,
+    2.67
+   ],
+   "y": [
+    0.0,
+    3.7
+   ],
+   "z": [
+    -1.95,
+    18.51
+   ]
+  },
+  "draws": 3,
+  "draws_core": 3,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Concrete_Weathered",
+   "MAT_Lamp_Emissive"
+  ],
+  "tris": 2904,
+  "tris_core": 2904,
+  "tris_lod1": 782,
+  "tris_lod2": 726
+ },
+ "PROP_Compressor_A": {
+  "bbox_unity": {
+   "x": [
+    -0.4,
+    0.85
+   ],
+   "y": [
+    0.12,
+    1.08
+   ],
+   "z": [
+    -0.25,
+    0.25
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 104,
+  "tris_core": 104,
+  "tris_lod1": 46
+ },
+ "PROP_FasciaSign_Service_A": {
+  "bbox_unity": {
+   "x": [
+    -1.405,
+    1.805
+   ],
+   "y": [
+    4.387,
+    5.007
+   ],
+   "z": [
+    -13.7,
+    -13.56
+   ]
+  },
+  "draws": 2,
+  "draws_core": 2,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive"
+  ],
+  "tris": 244,
+  "tris_core": 244,
+  "tris_lod1": 60
+ },
+ "PROP_Lift_BikeScissor_A": {
+  "bbox_unity": {
+   "x": [
+    -0.5,
+    0.5
+   ],
+   "y": [
+    0.0,
+    0.22
+   ],
+   "z": [
+    -2.05,
+    1.1
+   ]
+  },
+  "draws": 3,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "nodes": {
+   "Deck": {
+    "lod0": 56,
+    "lod1": 20
+   },
+   "Legs": {
+    "lod0": 100,
+    "lod1": 32
+   }
+  },
+  "tris": 172,
+  "tris_core": 16,
+  "tris_lod1": 68
+ },
+ "PROP_Lift_SinglePost_A": {
+  "bbox_unity": {
+   "x": [
+    -0.55,
+    1.321
+   ],
+   "y": [
+    0.0,
+    0.12
+   ],
+   "z": [
+    -1.3,
+    1.3
+   ]
+  },
+  "draws": 3,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "nodes": {
+   "Frame": {
+    "lod0": 160,
+    "lod1": 46
+   },
+   "Ram": {
+    "lod0": 28,
+    "lod1": 20
+   }
+  },
+  "tris": 248,
+  "tris_core": 60,
+  "tris_lod1": 88
+ },
+ "PROP_Lift_TwoPost_A": {
+  "bbox_unity": {
+   "x": [
+    -1.95,
+    1.61
+   ],
+   "y": [
+    0.0,
+    3.62
+   ],
+   "z": [
+    -0.36,
+    0.36
+   ]
+  },
+  "draws": 2,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "nodes": {
+   "Carriage": {
+    "lod0": 264,
+    "lod1": 116
+   }
+  },
+  "tris": 466,
+  "tris_core": 202,
+  "tris_lod1": 172
+ },
+ "PROP_OilDrainer_A": {
+  "bbox_unity": {
+   "x": [
+    -0.3,
+    0.3
+   ],
+   "y": [
+    0.075,
+    1.27
+   ],
+   "z": [
+    -0.3,
+    0.3
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 82,
+  "tris_core": 82,
+  "tris_lod1": 29
+ },
+ "PROP_OilDrum_A": {
+  "bbox_unity": {
+   "x": [
+    -0.3,
+    0.3
+   ],
+   "y": [
+    0.25,
+    1.32
+   ],
+   "z": [
+    -0.3,
+    0.3
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 84,
+  "tris_core": 84,
+  "tris_lod1": 20
+ },
+ "PROP_Pylon_Service_A": {
+  "bbox_unity": {
+   "x": [
+    -1.225,
+    1.225
+   ],
+   "y": [
+    -0.005,
+    8.5
+   ],
+   "z": [
+    -0.6,
+    0.6
+   ]
+  },
+  "draws": 2,
+  "draws_core": 2,
+  "materials": [
+   "MAT_StreetKit_A",
+   "MAT_Lamp_Emissive"
+  ],
+  "tris": 886,
+  "tris_core": 886,
+  "tris_lod1": 294
+ },
+ "PROP_ToolCart_A": {
+  "bbox_unity": {
+   "x": [
+    -0.39,
+    0.39
+   ],
+   "y": [
+    0.0,
+    0.925
+   ],
+   "z": [
+    -0.28,
+    0.26
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 107,
+  "tris_core": 107,
+  "tris_lod1": 32
+ },
+ "PROP_TrolleyJack_A": {
+  "bbox_unity": {
+   "x": [
+    -0.17,
+    0.17
+   ],
+   "y": [
+    0.05,
+    0.514
+   ],
+   "z": [
+    -0.714,
+    0.4
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 60,
+  "tris_core": 60,
+  "tris_lod1": 22
+ },
+ "PROP_TyreRack_A": {
+  "bbox_unity": {
+   "x": [
+    -1.4,
+    1.4
+   ],
+   "y": [
+    0.0,
+    1.805
+   ],
+   "z": [
+    -0.3,
+    0.3
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 408,
+  "tris_core": 408,
+  "tris_lod1": 168
+ },
+ "PROP_TyreStack_A": {
+  "bbox_unity": {
+   "x": [
+    -0.3,
+    0.32
+   ],
+   "y": [
+    0.1,
+    0.712
+   ],
+   "z": [
+    -0.3,
+    0.3
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 144,
+  "tris_core": 144,
+  "tris_lod1": 20
+ },
+ "PROP_WorkshopWall_A": {
+  "bbox_unity": {
+   "x": [
+    -1.85,
+    1.92
+   ],
+   "y": [
+    0.0,
+    2.578
+   ],
+   "z": [
+    -1.3,
+    0.3
+   ]
+  },
+  "draws": 1,
+  "draws_core": 1,
+  "materials": [
+   "MAT_StreetKit_A"
+  ],
+  "tris": 709,
+  "tris_core": 709,
+  "tris_lod1": 166
+ }
+}

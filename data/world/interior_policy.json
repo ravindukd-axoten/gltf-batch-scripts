@@ -1,0 +1,13 @@
+{
+  "$schema": "../schemas/interior_policy.schema.json",
+  "_comment": "PROPOSED (P356; BH-0261). From TDD line 90, Interiors; kinds from the TDD (homes, shops, bank vault) and the train carriage.",
+  "schema_version": 1,
+  "id": "interior_policy",
+  "status": "proposed",
+  "scene_per_interior": true,
+  "load": "on_entry",
+  "max_lod_levels": 1,
+  "collision": "per_room",
+  "kinds": ["home", "shop", "bank_vault", "train_carriage"],
+  "inventory_rows": ["BH-0261"]
+}

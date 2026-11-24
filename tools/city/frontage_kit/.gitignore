@@ -1,0 +1,5 @@
+# P96 frontage kit build outputs and scratch
+*.blend1
+__pycache__/
+bakes/
+export/

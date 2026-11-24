@@ -1,0 +1,332 @@
+{
+ "_comment": "Spec-to-piece name map (P143): inventory row name -> generated pieces. Read by tools/inventory/build_row_manifest.py; rewritten by the generator, do not edit.",
+ "args": "blender -b --factory-startup -P tools/city/frontage_kit/build_generated.py -- --set fe",
+ "generator": "tools/city/frontage_kit/elements.py",
+ "outputs_dir": "unity/BatchIsland/Assets/BatchIsland/Art/World/Kit/Frontage",
+ "rows": {
+  "FE_ACUnit_Bracket": [
+   "KIT_FE_ACUnit_Bracket_A"
+  ],
+  "FE_Awning_CanvasPlain": [
+   "KIT_FE_Awning_CanvasPlain_A"
+  ],
+  "FE_Awning_CanvasStriped": [
+   "KIT_FE_Awning_CanvasStriped_A",
+   "KIT_FE_Awning_CanvasStriped_B"
+  ],
+  "FE_Awning_SheetMetalLeanTo": [
+   "KIT_FE_Awning_SheetMetalLeanTo_A"
+  ],
+  "FE_Balconette_Rail": [
+   "KIT_FE_Balconette_Rail_A"
+  ],
+  "FE_Balcony_SlabRail": [
+   "KIT_FE_Balcony_SlabRail_A"
+  ],
+  "FE_BoundaryWall_Spikes": [
+   "KIT_FE_BoundaryWall_Spikes_A",
+   "KIT_FE_BoundaryWall_Gate_B"
+  ],
+  "FE_Canopy_Concrete": [
+   "KIT_FE_Canopy_Concrete_A"
+  ],
+  "FE_Curtain_Window": [
+   "KIT_FE_Curtain_Window_A"
+  ],
+  "FE_Door_ArchedTimberPanelled": [
+   "KIT_FE_Door_ArchedTimberPanelled_A",
+   "KIT_FE_Door_ArchedTimberPanelled_B"
+  ],
+  "FE_Door_GlazedShop": [
+   "KIT_FE_Door_GlazedShop_A"
+  ],
+  "FE_Door_Wicket": [
+   "KIT_FE_Door_Wicket_A"
+  ],
+  "FE_Drainpipe": [
+   "KIT_FE_Drainpipe_A"
+  ],
+  "FE_Fanlight_Arched": [
+   "KIT_FE_Fanlight_Arched_A"
+  ],
+  "FE_GrilledGate": [
+   "KIT_FE_GrilledGate_A"
+  ],
+  "FE_HandPaintedShutterName": [
+   "KIT_FE_HandPaintedShutterName_A"
+  ],
+  "FE_Parapet_Balustrade": [
+   "KIT_FE_Parapet_Balustrade_A"
+  ],
+  "FE_Parapet_DatePlaque": [
+   "KIT_FE_Parapet_DatePlaque_A"
+  ],
+  "FE_Pilaster_Pair": [
+   "KIT_FE_Pilaster_Pair_A"
+  ],
+  "FE_RollerShutter": [
+   "KIT_FE_RollerShutter_A",
+   "KIT_FE_RollerShutter_B",
+   "KIT_FE_RollerShutter_C"
+  ],
+  "FE_RoofStubs_Rebar": [
+   "KIT_FE_RoofStubs_Rebar_A"
+  ],
+  "FE_RusticatedPier_Plinth": [
+   "KIT_FE_RusticatedPier_Plinth_A"
+  ],
+  "FE_SecurityGrille_Window": [
+   "KIT_FE_SecurityGrille_Window_A"
+  ],
+  "FE_ShopGlass_InteriorCard": [
+   "KIT_FE_ShopGlass_InteriorCard_A"
+  ],
+  "FE_ShopSign_NeonLED": [
+   "KIT_FE_ShopSign_LightBox_A",
+   "KIT_FE_ShopSign_FlexBanner_B"
+  ],
+  "FE_ShopThreshold_Step": [
+   "KIT_FE_ShopThreshold_Step_A"
+  ],
+  "FE_ShutterLeaf_Louvred": [
+   "KIT_FE_ShutterLeaf_Louvred_A",
+   "KIT_FE_ShutterLeaf_Louvred_B"
+  ],
+  "FE_Signboard_Frame": [
+   "KIT_FE_Signboard_Frame_A"
+  ],
+  "FE_Sill_Lintel_Hood": [
+   "KIT_FE_Sill_Lintel_Hood_A"
+  ],
+  "FE_SpallPatch_Brick": [
+   "KIT_FE_SpallPatch_Brick_A"
+  ],
+  "FE_StringCourse_Cornice": [
+   "KIT_FE_StringCourse_Cornice_A",
+   "KIT_FE_StringCourse_Cornice_B"
+  ],
+  "FE_Sunshade_Concrete": [
+   "KIT_FE_Sunshade_Concrete_A"
+  ],
+  "FE_WallVent": [
+   "KIT_FE_WallVent_A",
+   "KIT_FE_WallVent_B"
+  ],
+  "FE_Window_Grilled": [
+   "KIT_FE_Window_Grilled_A"
+  ],
+  "FE_Window_Strip": [
+   "KIT_FE_Window_Strip_A"
+  ],
+  "FE_Window_TallArched": [
+   "KIT_FE_Window_TallArched_A",
+   "KIT_FE_Window_TallArched_B"
+  ],
+  "FE_Window_TwinFlatHead": [
+   "KIT_FE_Window_TwinFlatHead_A",
+   "KIT_FE_Window_TwinFlatHead_B"
+  ],
+  "FE_WiringMeterBox": [
+   "KIT_FE_WiringMeterBox_A"
+  ]
+ },
+ "tris": {
+  "KIT_FE_ACUnit_Bracket_A": {
+   "lod0": 156,
+   "lod1": 100
+  },
+  "KIT_FE_Awning_CanvasPlain_A": {
+   "lod0": 644,
+   "lod1": 516
+  },
+  "KIT_FE_Awning_CanvasStriped_A": {
+   "lod0": 1528,
+   "lod1": 960
+  },
+  "KIT_FE_Awning_CanvasStriped_B": {
+   "lod0": 1104,
+   "lod1": 784
+  },
+  "KIT_FE_Awning_SheetMetalLeanTo_A": {
+   "lod0": 1256,
+   "lod1": 184
+  },
+  "KIT_FE_Balconette_Rail_A": {
+   "lod0": 544,
+   "lod1": 108
+  },
+  "KIT_FE_Balcony_SlabRail_A": {
+   "lod0": 628,
+   "lod1": 108
+  },
+  "KIT_FE_BoundaryWall_Gate_B": {
+   "lod0": 340,
+   "lod1": 232
+  },
+  "KIT_FE_BoundaryWall_Spikes_A": {
+   "lod0": 278,
+   "lod1": 140
+  },
+  "KIT_FE_Canopy_Concrete_A": {
+   "lod0": 176,
+   "lod1": 48
+  },
+  "KIT_FE_Curtain_Window_A": {
+   "lod0": 260,
+   "lod1": 140
+  },
+  "KIT_FE_Door_ArchedTimberPanelled_A": {
+   "lod0": 462,
+   "lod1": 148
+  },
+  "KIT_FE_Door_ArchedTimberPanelled_B": {
+   "lod0": 418,
+   "lod1": 136
+  },
+  "KIT_FE_Door_GlazedShop_A": {
+   "lod0": 216,
+   "lod1": 128
+  },
+  "KIT_FE_Door_Wicket_A": {
+   "lod0": 632,
+   "lod1": 236
+  },
+  "KIT_FE_Drainpipe_A": {
+   "lod0": 244,
+   "lod1": 88
+  },
+  "KIT_FE_Fanlight_Arched_A": {
+   "lod0": 514,
+   "lod1": 204
+  },
+  "KIT_FE_GrilledGate_A": {
+   "lod0": 252,
+   "lod1": 204
+  },
+  "KIT_FE_HandPaintedShutterName_A": {
+   "lod0": 612,
+   "lod1": 180
+  },
+  "KIT_FE_Parapet_Balustrade_A": {
+   "lod0": 792,
+   "lod1": 72
+  },
+  "KIT_FE_Parapet_DatePlaque_A": {
+   "lod0": 800,
+   "lod1": 248
+  },
+  "KIT_FE_Pilaster_Pair_A": {
+   "lod0": 408,
+   "lod1": 104
+  },
+  "KIT_FE_RollerShutter_A": {
+   "lod0": 468,
+   "lod1": 160
+  },
+  "KIT_FE_RollerShutter_B": {
+   "lod0": 700,
+   "lod1": 196
+  },
+  "KIT_FE_RollerShutter_C": {
+   "lod0": 328,
+   "lod1": 160
+  },
+  "KIT_FE_RoofStubs_Rebar_A": {
+   "lod0": 290,
+   "lod1": 120
+  },
+  "KIT_FE_RusticatedPier_Plinth_A": {
+   "lod0": 456,
+   "lod1": 48
+  },
+  "KIT_FE_SecurityGrille_Window_A": {
+   "lod0": 180,
+   "lod1": 96
+  },
+  "KIT_FE_ShopGlass_InteriorCard_A": {
+   "lod0": 204,
+   "lod1": 84
+  },
+  "KIT_FE_ShopSign_FlexBanner_B": {
+   "lod0": 100,
+   "lod1": 100
+  },
+  "KIT_FE_ShopSign_LightBox_A": {
+   "lod0": 104,
+   "lod1": 48
+  },
+  "KIT_FE_ShopThreshold_Step_A": {
+   "lod0": 124,
+   "lod1": 36
+  },
+  "KIT_FE_ShutterLeaf_Louvred_A": {
+   "lod0": 332,
+   "lod1": 92
+  },
+  "KIT_FE_ShutterLeaf_Louvred_B": {
+   "lod0": 664,
+   "lod1": 184
+  },
+  "KIT_FE_Signboard_Frame_A": {
+   "lod0": 228,
+   "lod1": 68
+  },
+  "KIT_FE_Sill_Lintel_Hood_A": {
+   "lod0": 352,
+   "lod1": 72
+  },
+  "KIT_FE_SpallPatch_Brick_A": {
+   "lod0": 104,
+   "lod1": 82
+  },
+  "KIT_FE_StringCourse_Cornice_A": {
+   "lod0": 132,
+   "lod1": 12
+  },
+  "KIT_FE_StringCourse_Cornice_B": {
+   "lod0": 220,
+   "lod1": 12
+  },
+  "KIT_FE_Sunshade_Concrete_A": {
+   "lod0": 204,
+   "lod1": 48
+  },
+  "KIT_FE_WallVent_A": {
+   "lod0": 92,
+   "lod1": 92
+  },
+  "KIT_FE_WallVent_B": {
+   "lod0": 132,
+   "lod1": 132
+  },
+  "KIT_FE_Window_Grilled_A": {
+   "lod0": 376,
+   "lod1": 212
+  },
+  "KIT_FE_Window_Strip_A": {
+   "lod0": 400,
+   "lod1": 112
+  },
+  "KIT_FE_Window_TallArched_A": {
+   "lod0": 950,
+   "lod1": 256
+  },
+  "KIT_FE_Window_TallArched_B": {
+   "lod0": 666,
+   "lod1": 244
+  },
+  "KIT_FE_Window_TwinFlatHead_A": {
+   "lod0": 1000,
+   "lod1": 328
+  },
+  "KIT_FE_Window_TwinFlatHead_B": {
+   "lod0": 1528,
+   "lod1": 328
+  },
+  "KIT_FE_WiringMeterBox_A": {
+   "lod0": 120,
+   "lod1": 56
+  }
+ },
+ "validator": "blender_qa:kit:low"
+}

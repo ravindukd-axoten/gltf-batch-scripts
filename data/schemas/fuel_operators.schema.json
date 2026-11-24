@@ -1,0 +1,29 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "fuel_operators.schema.json",
+ "title": "Fictional fuel operators for the fuel kit (P207): palette and mark shape per operator",
+ "description": "data/places/fuel_operators.json. Paint keys are sRGB hex read by tools/city/citylib/fuel_kit.py into COLOR_0. Names are placeholders (people decide what players read); never a real operator's name, logo or full trade dress.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": ["schema_version", "operators"],
+ "properties": {
+  "$schema": {"type": "string"},
+  "schema_version": {"const": 1},
+  "note": {"type": "string"},
+  "operators": {"type": "object", "minProperties": 1, "additionalProperties": {"$ref": "#/$defs/operator"}}
+ },
+ "$defs": {
+  "hex": {"type": "string", "pattern": "^#[0-9A-F]{6}$"},
+  "operator": {"type": "object", "additionalProperties": false,
+   "required": ["name", "look", "fascia", "stripe", "accent", "soffit", "column", "band", "band2", "body", "skirt", "letter", "mark", "mark_paint"],
+   "properties": {
+    "name": {"type": "string"}, "look": {"type": "string"},
+    "fascia": {"$ref": "#/$defs/hex"}, "stripe": {"$ref": "#/$defs/hex"}, "accent": {"$ref": "#/$defs/hex"},
+    "soffit": {"$ref": "#/$defs/hex"}, "column": {"$ref": "#/$defs/hex"}, "band": {"$ref": "#/$defs/hex"},
+    "band2": {"$ref": "#/$defs/hex"}, "body": {"$ref": "#/$defs/hex"}, "skirt": {"$ref": "#/$defs/hex"},
+    "letter": {"$ref": "#/$defs/hex"},
+    "wordmark": {"type": "string", "pattern": "^[ACEGLNOPR]{3,8}$", "description": "Placeholder fascia wordmark drawn as block letters (fuel_kit.FONT has only these letters); people decide the final name."},
+    "mark": {"enum": ["disc", "diamond", "wedge"]}, "mark_paint": {"$ref": "#/$defs/hex"}
+   }}
+ }
+}

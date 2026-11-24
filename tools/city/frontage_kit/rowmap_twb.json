@@ -1,0 +1,179 @@
+{
+ "_comment": "Spec-to-piece name map (P143): inventory row name -> generated pieces. Read by tools/inventory/build_row_manifest.py; rewritten by the generator, do not edit.",
+ "args": "blender -b --factory-startup -P tools/city/frontage_kit/build_generated.py -- --set twb",
+ "generator": "tools/city/frontage_kit/towerbase.py",
+ "outputs_dir": "unity/BatchIsland/Assets/BatchIsland/Art/World/Kit/TowerBase",
+ "rows": {
+  "TWB_BasementRampMouth": [
+   "KIT_TWB_BasementRampMouth_A"
+  ],
+  "TWB_Bollards_Entrance": [
+   "KIT_TWB_Bollard_A"
+  ],
+  "TWB_BoomBarrierKiosk": [
+   "KIT_TWB_BoomBarrierKiosk_A"
+  ],
+  "TWB_GreenCourt_AtriumGlazing": [
+   "KIT_TWB_GreenCourt_AtriumGlazing_A"
+  ],
+  "TWB_GreenCourt_Cladding": [
+   "KIT_TWB_GreenCourt_Cladding_A"
+  ],
+  "TWB_GreenCourt_DriveThroughPorteCochere": [
+   "KIT_TWB_GreenCourt_PorteCochere_A"
+  ],
+  "TWB_GreenCourt_FasciaOverhang": [
+   "KIT_TWB_GreenCourt_FasciaOverhang_A"
+  ],
+  "TWB_GreenCourt_LEDScreen": [
+   "KIT_TWB_GreenCourt_LEDScreen_A"
+  ],
+  "TWB_GreenCourt_NorthEntrance": [
+   "KIT_TWB_GreenCourt_NorthEntrance_A"
+  ],
+  "TWB_GreenCourt_ShopfrontBays": [
+   "KIT_TWB_GreenCourt_ShopfrontBay_A"
+  ],
+  "TWB_HotelForecourt_OvalIsland": [
+   "KIT_TWB_HotelForecourt_OvalIsland_A"
+  ],
+  "TWB_HotelGatehouse": [
+   "KIT_TWB_HotelGatehouse_A"
+  ],
+  "TWB_HotelPodium_Pilotis": [
+   "KIT_TWB_HotelPodium_Pilotis_A"
+  ],
+  "TWB_HotelPodium_TensileTerrace": [
+   "KIT_TWB_HotelPodium_TensileTerrace_A"
+  ],
+  "TWB_ITC_SharedPodium": [
+   "KIT_TWB_ITC_SharedPodium_A"
+  ],
+  "TWB_NameBoard_Crown": [
+   "KIT_TWB_NameBoard_Crown_A"
+  ],
+  "TWB_OfficeBase_StoneBlock": [
+   "KIT_TWB_OfficeBase_StoneBlock_A"
+  ],
+  "TWB_OfficeCanopy": [
+   "KIT_TWB_OfficeCanopy_A"
+  ],
+  "TWB_OfficeForecourt_Apron": [
+   "KIT_TWB_OfficeForecourt_Apron_A"
+  ],
+  "TWB_ParkingWing_OpenDecks": [
+   "KIT_TWB_ParkingWing_OpenDecks_A"
+  ],
+  "TWB_PlanterBeds_Palms": [
+   "KIT_TWB_PlanterBed_A"
+  ],
+  "TWB_PodiumRoof_PoolDeck": [
+   "KIT_TWB_PodiumRoof_PoolDeck_A"
+  ],
+  "TWB_Residences_SideStreetPorteCochere": [
+   "KIT_TWB_Residences_PorteCochere_A"
+  ],
+  "TWB_Wayfinding_Tenant": [
+   "KIT_TWB_Wayfinding_A"
+  ]
+ },
+ "tris": {
+  "KIT_TWB_BasementRampMouth_A": {
+   "lod0": 220,
+   "lod1": 148
+  },
+  "KIT_TWB_Bollard_A": {
+   "lod0": 128,
+   "lod1": 104
+  },
+  "KIT_TWB_BoomBarrierKiosk_A": {
+   "lod0": 324,
+   "lod1": 228
+  },
+  "KIT_TWB_GreenCourt_AtriumGlazing_A": {
+   "lod0": 464,
+   "lod1": 368
+  },
+  "KIT_TWB_GreenCourt_Cladding_A": {
+   "lod0": 248,
+   "lod1": 48
+  },
+  "KIT_TWB_GreenCourt_FasciaOverhang_A": {
+   "lod0": 444,
+   "lod1": 284
+  },
+  "KIT_TWB_GreenCourt_LEDScreen_A": {
+   "lod0": 164,
+   "lod1": 52
+  },
+  "KIT_TWB_GreenCourt_NorthEntrance_A": {
+   "lod0": 430,
+   "lod1": 334
+  },
+  "KIT_TWB_GreenCourt_PorteCochere_A": {
+   "lod0": 328,
+   "lod1": 296
+  },
+  "KIT_TWB_GreenCourt_ShopfrontBay_A": {
+   "lod0": 240,
+   "lod1": 60
+  },
+  "KIT_TWB_HotelForecourt_OvalIsland_A": {
+   "lod0": 392,
+   "lod1": 392
+  },
+  "KIT_TWB_HotelGatehouse_A": {
+   "lod0": 380,
+   "lod1": 164
+  },
+  "KIT_TWB_HotelPodium_Pilotis_A": {
+   "lod0": 1016,
+   "lod1": 792
+  },
+  "KIT_TWB_HotelPodium_TensileTerrace_A": {
+   "lod0": 352,
+   "lod1": 320
+  },
+  "KIT_TWB_ITC_SharedPodium_A": {
+   "lod0": 1652,
+   "lod1": 1044
+  },
+  "KIT_TWB_NameBoard_Crown_A": {
+   "lod0": 168,
+   "lod1": 88
+  },
+  "KIT_TWB_OfficeBase_StoneBlock_A": {
+   "lod0": 1182,
+   "lod1": 348
+  },
+  "KIT_TWB_OfficeCanopy_A": {
+   "lod0": 644,
+   "lod1": 548
+  },
+  "KIT_TWB_OfficeForecourt_Apron_A": {
+   "lod0": 428,
+   "lod1": 396
+  },
+  "KIT_TWB_ParkingWing_OpenDecks_A": {
+   "lod0": 2644,
+   "lod1": 1492
+  },
+  "KIT_TWB_PlanterBed_A": {
+   "lod0": 286,
+   "lod1": 126
+  },
+  "KIT_TWB_PodiumRoof_PoolDeck_A": {
+   "lod0": 448,
+   "lod1": 384
+  },
+  "KIT_TWB_Residences_PorteCochere_A": {
+   "lod0": 596,
+   "lod1": 340
+  },
+  "KIT_TWB_Wayfinding_A": {
+   "lod0": 96,
+   "lod1": 96
+  }
+ },
+ "validator": "blender_qa:kit:low"
+}

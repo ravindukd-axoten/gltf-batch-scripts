@@ -1,0 +1,24 @@
+{
+  "$schema": "../schemas/lod_policy.schema.json",
+  "_comment": "WP-1411 (UA-09a) world LOD policy as data, read by BatchIsland.Cores.World.LodPolicy and later by CellBuilder (editor glue). Rules (RAP 3.4, PHI 4, CT T14): Mesh LOD on props over 150 triangles; LODGroup only on heroes, vehicles and characters; layerCullDistances Character 80 / Vehicle 160 / Prop 100 scaled per tier; LOD bias 0.7 on Floor; no cross-fade on Floor (haze hides the edge). lod_ratios are the triangle share of each step after LOD0 (proposal). cell_tris_max is the per-cell LOD0 triangle ceiling (row: within 60k per cell). Proposals until measured on the Honor X5b.",
+  "schema_version": 1,
+  "id": "lod_policy",
+  "status": "proposal",
+  "mesh_lod_min_tris": 150,
+  "lod_ratios": [0.5, 0.2],
+  "cell_tris_max": 60000,
+  "classes": {
+    "prop": { "mode": "mesh_lod_over_min", "cull_m": 100.0 },
+    "kit": { "mode": "mesh_lod_over_min", "cull_m": 100.0 },
+    "hero": { "mode": "lod_group", "cull_m": 160.0 },
+    "vehicle": { "mode": "lod_group", "cull_m": 160.0 },
+    "character": { "mode": "lod_group", "cull_m": 80.0 }
+  },
+  "tiers": {
+    "floor": { "lod_bias": 0.7, "cull_scale": 1.0, "cross_fade": false },
+    "low": { "lod_bias": 0.8, "cull_scale": 1.0, "cross_fade": false },
+    "mid": { "lod_bias": 1.0, "cull_scale": 1.25, "cross_fade": true },
+    "high": { "lod_bias": 1.5, "cull_scale": 1.5, "cross_fade": true },
+    "ultra": { "lod_bias": 2.0, "cull_scale": 2.0, "cross_fade": true }
+  }
+}

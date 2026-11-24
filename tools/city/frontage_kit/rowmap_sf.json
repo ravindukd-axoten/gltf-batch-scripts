@@ -1,0 +1,280 @@
+{
+ "_comment": "Spec-to-piece name map (P143): inventory row name -> generated pieces. Read by tools/inventory/build_row_manifest.py; rewritten by the generator, do not edit.",
+ "args": "blender -b --factory-startup -P tools/city/frontage_kit/build_generated.py -- --set sf",
+ "generator": "tools/city/frontage_kit/streetset.py",
+ "outputs_dir": "unity/BatchIsland/Assets/BatchIsland/Art/World/Kit/StreetFurniture",
+ "rows": {
+  "Baladaksha footways: red paver east, wide concrete west (ITC podium)": [
+   "KIT_SF_PaverStrip_YellowKerb_A"
+  ],
+  "Baladaksha lake edge (agent shots 2026-11-20)": [
+   "KIT_SF_BlockSeat_Concrete_A",
+   "KIT_SF_BlockSeat_Cube_B",
+   "KIT_SF_SlabMarker_Rust_A",
+   "KIT_SF_Railing_GreenBar_A",
+   "KIT_SF_Railing_Tube3_A",
+   "KIT_SF_WalkPath_Stone_A",
+   "KIT_SF_LakeWall_Straight_A",
+   "KIT_SF_LakeWall_Curve_R24_A"
+  ],
+  "Beach stairs at 186, 390, 430, 935 m": [
+   "KIT_SF_BeachStairs_A"
+  ],
+  "Beached fishing boat (oruwa / fibreglass)": [
+   "KIT_SF_BeachedOruwa_A"
+  ],
+  "Event tents (Green)": [
+   "KIT_SF_EventTent_A"
+  ],
+  "Framed steel service cover 0.8 m in promenade pavers": [
+   "KIT_SF_ServiceCover_Framed_A"
+  ],
+  "Kerb ramp from footway to the Green": [
+   "KIT_SF_KerbRamp_Green_A"
+  ],
+  "Lamp monument (PROP_LampMonument_01)": [
+   "KIT_SF_LampMonument_A"
+  ],
+  "Lifeguard / police watch tower": [
+   "KIT_SF_WatchTower_A"
+  ],
+  "North end short wide flight (~3 risers, 10-15 m)": [
+   "KIT_SF_NorthWideFlight_A"
+  ],
+  "Open roadside U-drain with slab covers": [
+   "KIT_SF_UDrain_Straight_A",
+   "KIT_SF_UDrain_End_B",
+   "KIT_SF_UDrain_MissingSlab_C"
+  ],
+  "PROP_Cannon_Plinth_01": [
+   "KIT_SF_CannonPlinth_A"
+  ],
+  "Painted tree trunk band (white/lime wash)": [
+   "KIT_SF_TreeBand_A"
+  ],
+  "Pedestrian guard railing (junction corners / medians)": [
+   "KIT_SF_PedGuardRail_A"
+  ],
+  "Pedestrian push-button box": [
+   "KIT_SF_PushButtonBox_A"
+  ],
+  "Pedestrian signal head (red/green figure)": [
+   "KIT_SF_PedSignalHead_A"
+  ],
+  "Power cable pit cover": [
+   "KIT_SF_PowerPitCover_A"
+  ],
+  "Promenade step from the Green: 0.65-0.8 m, 4-5 risers": [
+   "KIT_SF_PromenadeStep_4m"
+  ],
+  "Roadside step flight (8 flights at 78 m)": [
+   "KIT_SF_RoadsideFlight_A"
+  ],
+  "Rock revetment (north end) - KIT_Revetment_Rock_A": [
+   "KIT_SF_RevetmentRock_A"
+  ],
+  "Roundabout fountain (PROP_Fountain_Roundabout_01 / HERO_FountainRoundabout)": [
+   "KIT_SF_FountainRoundabout_A"
+  ],
+  "Roundabout island kerb ring (0.25 m concrete)": [
+   "KIT_SF_IslandKerb_R14_Q"
+  ],
+  "Roundabout island sponsor boards (x2, fictional)": [
+   "KIT_SF_SponsorBoards_A"
+  ],
+  "Seawall balustrade / parapet 0.45-0.6 m": [
+   "KIT_SF_SeawallBalustrade_A"
+  ],
+  "Seawall body 2.6-3.0 m above sand, pale concrete cap 0.6-0.9 m rounded": [
+   "KIT_SF_SeawallBody_Cap_A"
+  ],
+  "Signal controller cabinet": [
+   "KIT_SF_ControllerCabinet_A"
+  ],
+  "Signal countdown display": [
+   "KIT_SF_CountdownDisplay_A"
+  ],
+  "Splitter islands (kerbed) at roundabout entries": [
+   "KIT_SF_SplitterIsland_A"
+  ],
+  "Storm outfall pipe across the rock shelf": [
+   "KIT_SF_StormOutfall_A"
+  ],
+  "Tactile guidance ridge band (footpath)": [
+   "KIT_SF_TactileBand_A"
+  ],
+  "Telecom two-part rectangular cover": [
+   "KIT_SF_TelecomCover_A"
+  ],
+  "Water valve box (small 0.2 m)": [
+   "KIT_SF_ValveBox_A"
+  ]
+ },
+ "tris": {
+  "KIT_SF_BeachStairs_A": {
+   "lod0": 792,
+   "lod1": 216
+  },
+  "KIT_SF_BeachedOruwa_A": {
+   "lod0": 188,
+   "lod1": 188
+  },
+  "KIT_SF_BlockSeat_Concrete_A": {
+   "lod0": 44,
+   "lod1": 12
+  },
+  "KIT_SF_BlockSeat_Cube_B": {
+   "lod0": 44,
+   "lod1": 12
+  },
+  "KIT_SF_CannonPlinth_A": {
+   "lod0": 308,
+   "lod1": 212
+  },
+  "KIT_SF_ControllerCabinet_A": {
+   "lod0": 140,
+   "lod1": 108
+  },
+  "KIT_SF_CountdownDisplay_A": {
+   "lod0": 52,
+   "lod1": 52
+  },
+  "KIT_SF_EventTent_A": {
+   "lod0": 166,
+   "lod1": 166
+  },
+  "KIT_SF_FountainRoundabout_A": {
+   "lod0": 7864,
+   "lod1": 7434
+  },
+  "KIT_SF_IslandKerb_R14_Q": {
+   "lod0": 1084,
+   "lod1": 292
+  },
+  "KIT_SF_KerbRamp_Green_A": {
+   "lod0": 216,
+   "lod1": 120
+  },
+  "KIT_SF_LakeWall_Curve_R24_A": {
+   "lod0": 528,
+   "lod1": 336
+  },
+  "KIT_SF_LakeWall_Straight_A": {
+   "lod0": 88,
+   "lod1": 56
+  },
+  "KIT_SF_LampMonument_A": {
+   "lod0": 3276,
+   "lod1": 2388
+  },
+  "KIT_SF_NorthWideFlight_A": {
+   "lod0": 220,
+   "lod1": 60
+  },
+  "KIT_SF_PaverStrip_YellowKerb_A": {
+   "lod0": 80,
+   "lod1": 48
+  },
+  "KIT_SF_PedGuardRail_A": {
+   "lod0": 340,
+   "lod1": 340
+  },
+  "KIT_SF_PedSignalHead_A": {
+   "lod0": 152,
+   "lod1": 152
+  },
+  "KIT_SF_PowerPitCover_A": {
+   "lod0": 96,
+   "lod1": 96
+  },
+  "KIT_SF_PromenadeStep_4m": {
+   "lod0": 308,
+   "lod1": 84
+  },
+  "KIT_SF_PushButtonBox_A": {
+   "lod0": 80,
+   "lod1": 80
+  },
+  "KIT_SF_Railing_GreenBar_A": {
+   "lod0": 476,
+   "lod1": 348
+  },
+  "KIT_SF_Railing_Tube3_A": {
+   "lod0": 140,
+   "lod1": 140
+  },
+  "KIT_SF_RevetmentRock_A": {
+   "lod0": 352,
+   "lod1": 96
+  },
+  "KIT_SF_RoadsideFlight_A": {
+   "lod0": 440,
+   "lod1": 120
+  },
+  "KIT_SF_SeawallBalustrade_A": {
+   "lod0": 400,
+   "lod1": 272
+  },
+  "KIT_SF_SeawallBody_Cap_A": {
+   "lod0": 116,
+   "lod1": 52
+  },
+  "KIT_SF_ServiceCover_Framed_A": {
+   "lod0": 108,
+   "lod1": 108
+  },
+  "KIT_SF_SlabMarker_Rust_A": {
+   "lod0": 514,
+   "lod1": 144
+  },
+  "KIT_SF_SplitterIsland_A": {
+   "lod0": 376,
+   "lod1": 184
+  },
+  "KIT_SF_SponsorBoards_A": {
+   "lod0": 136,
+   "lod1": 136
+  },
+  "KIT_SF_StormOutfall_A": {
+   "lod0": 716,
+   "lod1": 220
+  },
+  "KIT_SF_TactileBand_A": {
+   "lod0": 492,
+   "lod1": 492
+  },
+  "KIT_SF_TelecomCover_A": {
+   "lod0": 96,
+   "lod1": 96
+  },
+  "KIT_SF_TreeBand_A": {
+   "lod0": 108,
+   "lod1": 108
+  },
+  "KIT_SF_UDrain_End_B": {
+   "lod0": 192,
+   "lod1": 96
+  },
+  "KIT_SF_UDrain_MissingSlab_C": {
+   "lod0": 172,
+   "lod1": 108
+  },
+  "KIT_SF_UDrain_Straight_A": {
+   "lod0": 196,
+   "lod1": 132
+  },
+  "KIT_SF_ValveBox_A": {
+   "lod0": 84,
+   "lod1": 84
+  },
+  "KIT_SF_WalkPath_Stone_A": {
+   "lod0": 96,
+   "lod1": 96
+  },
+  "KIT_SF_WatchTower_A": {
+   "lod0": 376,
+   "lod1": 280
+  }
+ },
+ "validator": "blender_qa:kit:low"
+}

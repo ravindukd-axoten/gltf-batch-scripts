@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://batchisland.local/schemas/wear_rules.schema.json",
+  "title": "Batch Island wear rules",
+  "description": "Per district and street class condition (age, dirt, damp, rust, edge wear, decal counts) read by tools/city. Data, not code: a new district is a new entry. Cross-rules the schema cannot state (every district has every street class; condition_order lists exactly the districts; dirt, damp, mean age and total decals never decrease along condition_order) are enforced by tools/world/validate_wear_rules.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "status",
+    "street_classes",
+    "jitter",
+    "low_tier_road_decal_quads_per_cell",
+    "projected_decals_visible",
+    "condition_order",
+    "districts"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "approved"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "street_classes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$"
+      }
+    },
+    "jitter": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 0.5,
+      "description": "Per-instance +/- variation of a level, seeded by the instance id"
+    },
+    "low_tier_road_decal_quads_per_cell": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000
+    },
+    "projected_decals_visible": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "properties": {
+        "low": {
+          "const": 0
+        },
+        "medium": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "high": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "condition_order": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      },
+      "description": "District ids from best kept to worst"
+    },
+    "districts": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-z][a-z0-9_]*$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "condition_rank",
+          "classes"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "names_id": {
+            "type": "string",
+            "description": "Optional id in data/names/names.json"
+          },
+          "condition_rank": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "classes": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "age_years",
+                "dirt",
+                "damp",
+                "rust",
+                "edge_wear",
+                "decals_per_100m"
+              ],
+              "properties": {
+                "age_years": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 200
+                  },
+                  "description": "[min, max] age in years; the seeded age of an instance falls inside"
+                },
+                "dirt": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1,
+                  "description": "COLOR_1.R base level (grime, foot splash, ledge streaks)"
+                },
+                "damp": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1,
+                  "description": "COLOR_1.B on walls (damp, mould, algae)"
+                },
+                "rust": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1,
+                  "description": "COLOR_1.B on metal (rust)"
+                },
+                "edge_wear": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1,
+                  "description": "COLOR_1.G base level (edge chip, kerb wear)"
+                },
+                "decals_per_100m": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "road",
+                    "kerb",
+                    "wall",
+                    "metal"
+                  ],
+                  "properties": {
+                    "road": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 40
+                    },
+                    "kerb": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 40
+                    },
+                    "wall": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 40
+                    },
+                    "metal": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 40
+                    }
+                  },
+                  "description": "Upper bound of wear decals per 100 m of street; the Low per-cell cap still applies"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

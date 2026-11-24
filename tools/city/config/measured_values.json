@@ -1,0 +1,299 @@
+{
+  "_doc": "Measured values for the Delta Face vertical slice (P93, 2026-11-19). Each entry: value, unit, confidence (high/medium/low), method, sources, and config_key (the key it should replace; 'p87:' = branch claude/p87-delta-face-levels delta_face_levels.json). Nothing reads this file yet: a builder applies a value by editing the config key and citing the entry id. Methods and caveats: docs/research/delta-face-measurements.md. Satellite widths are Google Maps 21z pixel profiles (10.9 px/m in the saved frame, about +-0.5 m); Street View widths are perspective estimates (+-1.5 m); OSM values are from ways and tags read through the Overpass API on 2026-11-19.",
+  "_doc_round2": "Round 2 (P98, 2026-11-19): entries prefixed r2. carry 'round': 2. A round-1 entry with 'superseded_by' is replaced by the named entry. Methods: docs/research/delta-face-measurements.md, 'Round 2'.",
+  "_doc_round5": "Round 5 (P122, 2026-11-20): entries prefixed r5. measure the Centre Road cross-section from the agent aerial (scale bar). Method: Agent phone aerial (828x1792) of the Delta Face seafront road, scale bar 10 m = 130 px (bar rule x 552-681 at y 1415-1417, 129-131 px; 13.0 px/m, +-1%). Image cropped y 300-1400 and rotated 23.5 deg so the road axis is vertical (axis from the two median islands, dx/dy 0.43). Perpendicular widths from median-of-120-rows luminance profiles at stations A (rot y 200-320), B (600-720, between the medians) and C (850-970). Mild oblique foreshortening is unknown (aerial may be tilted), so add +-5%.",
+  "version": 2,
+  "measured_on": "2026-11-19",
+  "values": {
+    "centre_road.nb_carriageway_m": {
+      "value": 6.6, "unit": "m", "confidence": "medium",
+      "method": "Satellite pixel profile across Delta Face Centre Road at 6.9248, 79.8449 (21z, bearing -22 deg): NB solid edge line to centre double line, with one dashed lane line between them.",
+      "sources": ["https://www.google.com/maps/@6.9248,79.84492,21z/data=!3m1!1e3", "OSM way 18598833 (lanes=2, oneway=yes)"],
+      "config_key": "delta_face.json road_overrides / dual_carriageways 'Delta Face Centre Road' (NB half); was 2 x 3.5 = 7.0",
+      "note": "2 lanes of about 3.3 m. The angled-bay strip is outside the edge line."
+    },
+    "centre_road.sb_carriageway_m": {
+      "value": 9.4, "unit": "m", "confidence": "medium-low",
+      "method": "Same profile: centre double line to the land-side kerb, read where the kerb is visible between trees.",
+      "sources": ["https://www.google.com/maps/@6.9248,79.84492,21z/data=!3m1!1e3", "OSM way 553338379 (lanes=2, oneway=yes)"],
+      "config_key": "delta_face.json dual_carriageways 'Delta Face Centre Road' (SB half)",
+      "note": "Wider than NB: 2 lanes plus about 2.5 m kerbside space (bus stop or stopping lane). Tree canopy overhangs the kerb, so read it again in Street View."
+    },
+    "centre_road.median_m": {
+      "value": 0.0, "unit": "m", "confidence": "medium",
+      "method": "Satellite: a painted centre double line, no raised median, at 6.9248 N. OSM draws the two carriageways 7.8-9.4 m apart (centreline to centreline), which agrees with a painted divide.",
+      "sources": ["https://www.google.com/maps/@6.9248,79.84492,21z/data=!3m1!1e3", "OSM ways 18598833, 553338379"],
+      "config_key": "delta_face.json dual_carriageways 'Delta Face Centre Road' median_m 0 + centre_line (keep)",
+      "note": "Confirms the config."
+    },
+    "centre_road.lanes_each_way": {
+      "value": 2, "unit": "lanes", "confidence": "high",
+      "method": "OSM lanes=2 on both carriageways; a dashed lane line visible in each half on the satellite image; Street View (Jun 2020) shows lane lines.",
+      "sources": ["OSM ways 18598833, 553338379", "Street View 6.92530, 79.84487 (Dotcom Systems, Jun 2020)"],
+      "config_key": "delta_face.json lanes on Delta Face Centre Road (keep)"
+    },
+    "centre_road.angled_parking_strip_m": {
+      "value": 7.0, "unit": "m", "confidence": "medium",
+      "method": "Satellite profile: the bay strip west of the NB edge line is about 7 m deep; Street View at 6.92530 and 6.927 shows diagonal bays along the whole Green.",
+      "sources": ["https://www.google.com/maps/@6.9248,79.84492,21z/data=!3m1!1e3", "OSM parking ways 1488713376 (739 m), 1488713374 (292 m)"],
+      "config_key": "delta_face.json roadside_strips parking_m 7.5",
+      "note": "Within the error of the config's 7.5 m; keep 7.5 or set 7.0. The bays run about 1.0 km of the Green, not only the south end."
+    },
+    "centre_road.sea_side_paver_strip_m": {
+      "value": 16.0, "unit": "m", "confidence": "medium-low",
+      "method": "Satellite profile: red paver and planter strip between the bay strip and the Green, about 15-17 m; Street View shows red pavers, planters and a pay station, with the Green about level with it.",
+      "sources": ["https://www.google.com/maps/@6.9248,79.84492,21z/data=!3m1!1e3", "Street View 6.92530, 79.84487 (Jun 2020)", "OSM sidewalk way 1489623836"],
+      "config_key": "delta_face.json roadside_strips strip_m 8.5",
+      "note": "Range 15-17 m includes the planter line. Wider than the config's 8.5 m; check the build does not eat the Green."
+    },
+    "green.road_side_steps_spacing_m": {
+      "value": 78, "unit": "m", "confidence": "high",
+      "method": "OSM: eight highway=steps incline=down flights from sea-side sidewalk 1489623836 into the Green, at chainage 98, 176, 251, 330, 406, 484, 562 and 642 m from the south end of Centre Road (gaps 75-80 m).",
+      "sources": ["OSM steps ways off sidewalk 1489623836 (Overpass, 2026-11-19)"],
+      "config_key": "delta_face.json dressing terrace_steps_every_m 60 (or steps_every_m 110)",
+      "note": "The flights are 5.6-8.7 m long on plan: short flights, not the 24 m terrace_steps_run_m."
+    },
+    "green.road_side_drop_m": {
+      "confirmed_by": "r2.green.road_side_drop_m",
+      "value": 0.3, "unit": "m", "confidence": "low",
+      "method": "Inferred: OSM maps 'down' steps from the roadside pavement into the Green, but Street View at mid-Green and at 6.927 shows the Green about level with the paver strip. Range 0-0.45 m.",
+      "sources": ["OSM steps ways off 1489623836", "Street View 6.92530, 79.84487 and 6.927, 79.8443 (Jun 2020)"],
+      "config_key": "p87: north_steps_foot.dz -0.45",
+      "note": "Ask a local (question 1)."
+    },
+    "north_steps.exists_as_flight": {
+      "superseded_by": "r2.north_steps.form",
+      "value": "unconfirmed", "unit": "-", "confidence": "low",
+      "method": "No OSM steps way along the p87 north-steps line (6.926275, 79.844341 to 6.927762, 79.843561); satellite at 20z shows no long shadowed flight there; Street View at 6.927 shows the Green about level with the paver strip.",
+      "sources": ["https://www.google.com/maps/@6.92652,79.8441,20z/data=!3m1!1e3", "OSM (Overpass, 2026-11-19)"],
+      "config_key": "p87: step_runs[north_end_steps_one_delta_face] (3 steps x 0.4 m tread, 205 m)",
+      "note": "A 205 m continuous flight is not in the data. Keep it as an ESTIMATE until a local confirms; the measured pattern is short flights every 78 m.",
+      "agent_decision": "2026-11-19: drop the 205 m north-end flight on the Green (see r2.north_steps.form)."
+    },
+    "promenade.seawall_to_green_m": {
+      "value": 15.5, "unit": "m", "confidence": "medium",
+      "method": "Satellite pixel profile at the pier (6.9244, 79.8442, 21z): seawall top edge to the Green edge 14-17 m (29 m at the flag-post plaza).",
+      "sources": ["https://www.google.com/maps/@6.9244,79.8442,21z/data=!3m1!1e3"],
+      "config_key": "delta_face.json seafront promenade_m 10.0",
+      "note": "This is the whole sea-side band: the Drive asphalt plus the kiosk/paver strip. The config's 10 m is short."
+    },
+    "promenade.drive_asphalt_m": {
+      "value": 6.5, "unit": "m", "confidence": "medium-low",
+      "method": "Satellite profile at the pier: asphalt strip next to the seawall 6-7 m wide. OSM Delta Face Drive (way 18599197, highway=pedestrian, asphalt, lit, maxspeed 40) runs 2.3-3.9 m (median 2.7 m) from the barrier=wall line 1489623826, which agrees with a strip of about 5.5-7 m.",
+      "sources": ["https://www.google.com/maps/@6.9244,79.8442,21z/data=!3m1!1e3", "OSM ways 18599197, 1489623826"],
+      "config_key": "p87: contact_shade.promenade_drive_m 4.0",
+      "note": "Delta Face Drive is pedestrian with service traffic (maxspeed 40)."
+    },
+    "seawall.height_above_beach_m": {
+      "superseded_by": "r2.seawall.height_above_beach_m",
+      "value": 2.6, "unit": "m", "confidence": "low",
+      "method": "Carried from DELTA_FACE_MEASURED.md (photos, 2.3-3.0 m). The shadow band at the pier is a steady 2.0-2.2 m wide, but the sun angle of the image is unknown, so it does not give a height.",
+      "sources": ["tools/city/DELTA_FACE_MEASURED.md", "https://www.google.com/maps/@6.9244,79.8442,21z/data=!3m1!1e3"],
+      "config_key": "delta_face_levels.json seawall/beach level (built 2.9 m)",
+      "note": "No new number; the sea side by the pier is armour rock, not sand."
+    },
+    "seawall.beach_steps_chainage_m": {
+      "value": [186, 390, 430, 935], "unit": "m", "confidence": "high",
+      "method": "OSM steps ways crossing the barrier=wall line 1489623826, chainage from its south end; runs 2-7 m on plan.",
+      "sources": ["OSM ways 1466183275, 1466183273, 553338376, 1489625886"],
+      "config_key": "delta_face.json dressing steps_every_m 110",
+      "note": "Four beach stairs, irregular, not every 110 m."
+    },
+    "seawall.foreshore_m": {
+      "value": [7, 27], "unit": "m (range)", "confidence": "medium",
+      "method": "OSM natural=coastline is 7-27 m beyond the wall line.",
+      "sources": ["OSM coastline and way 1489623826"],
+      "config_key": "delta_face.json seafront foreshore_m 6.0",
+      "note": "Varies along the wall; 6 m is the low end."
+    },
+    "new_baladaksha.carriageway_m": {
+      "value": 13.2, "unit": "m", "confidence": "medium",
+      "method": "Design figure from the contractor's completion notice: four lanes of 3.3 m. Street View (Feb 2022) perspective estimate at 6.92696, 79.84574 gives about 10.5 m +-1.5 m kerb to kerb.",
+      "sources": ["https://www.ft.lk/PropertyConstruction/Access-Engineering-completes-construction-of-new-road-along-west-bank-of-west-Beira-Lake/10516-663670", "https://www.dailymirror.lk/other/Access-Engineering-spurs-construction-of-new-road-along-Beira-Lake/117-140589", "Street View pano 6.9269629, 79.845739 (Google, Feb 2022)"],
+      "config_key": "drive_circle.json road_overrides 'New Baladaksha Mawatha' width 7.0, lanes 2",
+      "note": "Clearly wider than 7.0 m. Use 13.2 m / 4 lanes unless a local says lanes are coned off; the Street View estimate leans narrower (10.5 m).",
+      "agent_decision": "2026-11-19: slice era 2026; New Baladaksha Mawatha is a real 4-lane road, build it at about 13.2 m."
+    },
+    "new_baladaksha.footpaths_m": {
+      "value": {"right": 1.8, "left": 0.75}, "unit": "m", "confidence": "medium",
+      "method": "Design figures from the same notice (right and left of chainage direction, Delta Road 0+000 to Justice Akbar 1+186). Street View: east side red paver footway with a yellow tactile strip about 1.5-2 m; west side a wide concrete pavement along the ITC podium.",
+      "sources": ["https://www.ft.lk/PropertyConstruction/Access-Engineering-completes-construction-of-new-road-along-west-bank-of-west-Beira-Lake/10516-663670", "Street View pano 6.9269629, 79.845739 (Feb 2022)"],
+      "config_key": "rules pavement default for primary (2.5 m)"
+    },
+    "new_baladaksha.is_road": {
+      "value": true, "unit": "-", "confidence": "high",
+      "method": "Street View (Google car, Feb 2022): asphalt, white edge lines, a solid lane line, arrows and 'Baladaksha' road text, kerbs. Built by Access Engineering for the CMC (2018) as a four-lane road.",
+      "sources": ["Street View pano 6.9269629, 79.845739 (Feb 2022)", "https://www.ft.lk/PropertyConstruction/Access-Engineering-completes-construction-of-new-road-along-west-bank-of-west-Beira-Lake/10516-663670"],
+      "config_key": "delta_face.json road_overrides 'New Baladaksha Mawatha' highway pedestrian (superseded by drive_circle.json)",
+      "note": "OSM still tags part of it as a walk path. Whether it is open to traffic every day is a local question (question 4).",
+      "agent_decision": "2026-11-19: a road (drivable in the slice), not a walk path."
+    },
+    "new_baladaksha.delta_road_connector_m": {
+      "value": 7.0, "unit": "m", "confidence": "medium",
+      "method": "Design figure: a 7 m two-lane connector to Delta Road.",
+      "sources": ["https://www.ft.lk/PropertyConstruction/Access-Engineering-completes-construction-of-new-road-along-west-bank-of-west-Beira-Lake/10516-663670"],
+      "config_key": "drive_circle.json joins join_north_shangrila width 7.0 (keep; it is the north link, check it is the same connector)"
+    },
+    "macan_markar.carriageway_m": {
+      "value": 12.5, "unit": "m", "confidence": "low-medium",
+      "method": "Kept from ROAD_WIDTHS_MEASURED (Antigravity). Satellite blocked by tree canopy. Street View (Jun 2020) at 6.9216038, 79.8476981 shows a two-way road with white edge lines and a short centre line.",
+      "sources": ["tools/city/ROAD_WIDTHS_CHECK.md", "Street View 6.9216038, 79.8476981 (Dotcom Systems, Jun 2020)"],
+      "config_key": "drive_circle.json road_overrides way/18598828 width 12.5, lanes 4",
+      "note": "Street View reads as 2 marked lanes plus parking edges, not 4 marked lanes; lanes 2 + parking is the safer read."
+    },
+    "macan_markar.pavements_m": {
+      "value": {"west": 2.75, "east": 3.0}, "unit": "m", "confidence": "low",
+      "method": "Street View perspective: west a shaded footway about 2.5-3 m behind a cream boundary wall about 2.4 m high with piers; east about 3 m pavement with palms in front of a 5-storey office with green-trimmed bands and ground-floor parking.",
+      "sources": ["Street View 6.9216038, 79.8476981 (Jun 2020)"],
+      "config_key": "rules pavement default"
+    },
+    "delta_road.by_hotel_m": {
+      "value": {"nb": 7.2, "median": 1.4, "sb": 9.8, "total": 18.3}, "unit": "m", "confidence": "medium",
+      "method": "Carried from ROAD_WIDTHS_CHECK.md (Google Maps measure).",
+      "sources": ["tools/city/ROAD_WIDTHS_CHECK.md"],
+      "config_key": "delta_face.json dual_carriageways 'Delta Road' median 1.4 (keep)"
+    },
+    "roundabout.delta_face.island_m": {
+      "value": 5.9, "unit": "m", "confidence": "medium",
+      "method": "Carried from ROAD_WIDTHS_CHECK.md.",
+      "sources": ["tools/city/ROAD_WIDTHS_CHECK.md"],
+      "config_key": "Delta Face Roundabout (way 18599046) island"
+    },
+    "roundabout.delta_face.ring_m": {
+      "value": 11.5, "unit": "m", "confidence": "medium",
+      "method": "Carried from ROAD_WIDTHS_CHECK.md.",
+      "sources": ["tools/city/ROAD_WIDTHS_CHECK.md"],
+      "config_key": "Delta Face Roundabout (way 18599046) width"
+    },
+    "hotel.north_wing_frontage_m": {
+      "value": 101, "unit": "m", "confidence": "medium-high",
+      "method": "OSM building 341982692 (Heritage/north wing) footprint 101 x 45 m, building:levels 4.",
+      "sources": ["OSM way 341982692"],
+      "config_key": "hero HERO_SeafaceHotel main facade width"
+    },
+    "hotel.storeys": {
+      "value": 4, "unit": "storeys", "confidence": "medium-high",
+      "method": "OSM building:levels 4 on wings 341982692, 341982691, 341982694; 2 on the south block 341982695 (80 x 38 m). Site 147 x 118 m.",
+      "sources": ["OSM ways 341982691, 341982692, 341982694, 341982695"],
+      "config_key": "hero HERO_SeafaceHotel storeys"
+    },
+    "hotel.facade_height_m": {
+      "value": null, "unit": "m", "confidence": "none",
+      "method": "Not measured: no OSM height tag on the hotel; 4 colonial storeys suggest about 18-20 m to the parapet, an estimate only.",
+      "sources": [],
+      "config_key": "hero HERO_SeafaceHotel height"
+    },
+    "delta_road.opposite_block_storeys": {
+      "value": {"529639570": {"levels": 5, "height_m": 25}, "529639569": {"levels": 4}}, "unit": "storeys", "confidence": "medium",
+      "method": "OSM building:levels and height on the blocks across Delta Road from the hotel (77 x 55 m and 24 x 50 m).",
+      "sources": ["OSM ways 529639570, 529639569"],
+      "config_key": "city kit storey rules for these footprints"
+    },
+    "levels.dem": {
+      "value": null, "unit": "m", "confidence": "none",
+      "method": "Tried SRTM, ASTER and Mapzen through opentopodata: 0-16 m with buildings and canopy mixed in, useless for 0.5 m level steps.",
+      "sources": ["https://www.opentopodata.org/"],
+      "config_key": "delta_face_levels.json datum road 3.8 (keep as ESTIMATE)"
+    },
+    "r2.green.road_side_drop_m": {
+      "value": 0.3, "unit": "m", "confidence": "medium", "round": 2,
+      "method": "Dotcom Systems Street View panorama (captured Mar 2020) at 6.92507, 79.84500, looking 255-292 deg: sand runs on from the paver strip with people standing at the strip's level, no wall face beside OSM step way at 6.92516, 79.84472. Agrees with round 1 (Jun 2020 panorama).",
+      "sources": ["https://www.google.com/maps/@6.9250658,79.8449968,3a,35y,292h,84t/data=!3m1!1e1", "OSM highway=steps incline=down ways off sidewalk 1489623836", "Daily FT 2018-03-06 column (says about 1.5 m stepped wall: not seen at mid-Green)"],
+      "config_key": "p87 areas[north_steps_foot].dz -0.45 (within range); green roadside drop",
+      "note": "Confirms round 1 green.road_side_drop_m (range 0-0.45) and raises its confidence. The 2018 FT figure is open: question 1."
+    },
+    "r2.green.road_side_step_risers": {
+      "value": {"count": [2, 3], "riser_m": 0.15}, "unit": "risers", "confidence": "low", "round": 2,
+      "method": "Inferred: a drop of 0.45 m or less divided by a 0.15 m riser. Tread not measurable from the air or the panoramas.",
+      "sources": ["r2.green.road_side_drop_m"],
+      "config_key": "delta_face.json dressing.terrace_steps_run_m 24 (too long for a 0.3-0.45 m drop)"
+    },
+    "r2.north_steps.form": {
+      "value": "paver strip + one short flight", "unit": "form", "confidence": "medium-low", "round": 2,
+      "method": "Elevated photo of the One Delta Face front: a level paver strip with a low edge runs along the road, and one short, wide flight of about 3 risers (0.45-0.5 m) leads down to the Green opposite the entrance. Esri 2026 shows a square plaza at the north tip and no terrace or long flight.",
+      "sources": ["references/delta-face/map_refs_2026-11-16/03_one_delta_face_front.webp", "references/delta-face/map_refs_2026-11-16/04_one_delta_face_wide.webp", "Esri World Imagery z19 (Vantor Legion LG05, 2026-02-26, 0.34 m, accuracy 8.47 m per the World Imagery identify service); tiles kept in the session scratch folder only"],
+      "config_key": "p87 step_runs[north_end_steps_one_delta_face] (3 x 0.4 m, 205 m) -> one flight of about 10-15 m; keep areas[north_steps_foot].dz -0.45",
+      "note": "Supersedes north_steps.exists_as_flight (round 1, unconfirmed). Flight width and exact riser count: question 2.",
+      "agent_decision": "2026-11-19: the 205 m flight is dropped; build the paver strip and one short flight."
+    },
+    "r2.promenade.step_from_green_m": {
+      "value": [0.65, 0.8], "unit": "m", "confidence": "medium", "round": 2,
+      "method": "Photo scale in gf_10 (1.7 m walkers: the top step is at hip height of a man on the promenade), 4-5 risers; DELTA_FACE_MEASURED.md read 0.6-0.7 m from gf_10 and gf_19.",
+      "sources": ["references/delta-face/gf_10_promenade_steps_bins_lamps.webp", "tools/city/DELTA_FACE_MEASURED.md layers table"],
+      "config_key": "p87 datum.promenade_step -0.65 (keep)"
+    },
+    "r2.seawall.retaining_wall_m": {
+      "value": {"near_hotel": 4.0, "near_old_parliament": 3.0}, "unit": "m", "confidence": "medium-low", "round": 2,
+      "method": "Published: Daily FT engineering column on the Marine Drive proposal: the sea boundary road sits on a retaining wall about 4 m high near the Delta Face Hotel, falling to 3 m near Parliament. This is the whole wall, including the part below the sand.",
+      "sources": ["https://www.ft.lk/columns/Marine-Drive-under-Delta-Face-Green-needs-professional-discussion/4-650606"],
+      "config_key": "seawall height configs (delta_face.json seafront, p87 levels)"
+    },
+    "r2.seawall.height_above_beach_m": {
+      "value": [2.6, 3.0], "unit": "m", "confidence": "medium", "round": 2,
+      "method": "Two methods: photo scale 2.3-3.0 m (gf_03, gf_04, two 1.7 m walkers), and the published 3-4 m wall less the 0.4-1.0 m of sand at its foot. Lower toward the north end, where a rock revetment replaces the wall. Shadow method failed: the afternoon sun from the SW lights the west face, and the sensor looks from the ENE.",
+      "sources": ["https://www.ft.lk/columns/Marine-Drive-under-Delta-Face-Green-needs-professional-discussion/4-650606", "references/delta-face/gf_03_seawall_promenade_stalls.webp", "references/delta-face/gf_04_seawall_beach_towers.webp"],
+      "config_key": "built 2.9 m (promenade 3.3 - beach_top 0.4): keep",
+      "note": "Supersedes seawall.height_above_beach_m (round 1, 2.6 low). Height above the armour rock at the pier: question 3."
+    },
+    "r2.levels.road_above_msl_m": {
+      "value": 4.5, "unit": "m", "confidence": "low", "round": 2,
+      "method": "Published: the same FT column says Centre Road is nearly 4.5 m higher than the sea edge, 100 m away, and the Kollupitiya railway is about 1.5 m above sea level. This is one reading of a single column, not a survey.",
+      "sources": ["https://www.ft.lk/columns/Marine-Drive-under-Delta-Face-Green-needs-professional-discussion/4-650606"],
+      "config_key": "p87 datum.road 3.8 (ESTIMATE): change only with the agent's agreement",
+      "note": "Stack relative to the road: paver strip +0.15; Green 0 to -0.3; promenade -0.8 to -1.1; sand at the wall foot 2.6-3.0 below the wall top; wall foundation about at sea level."
+    },
+    "r2.justice_akbar.carriageway_m": {
+      "value": 12.5, "unit": "m", "confidence": "medium-low", "round": 2,
+      "method": "OSM: a pair of one-way carriageways (1328043436 EB; 98046409 and 1328043438 WB) 6.4-6.6 m apart centre to centre at 79.8490-79.8500. Esri 2026 crop: one deck with parapets, crossing the railway at about 79.8494, about 12-13.5 m across, with dashed lane lines and a zebra.",
+      "sources": ["OSM ways 1328043436, 98046409, 1328043438", "Esri World Imagery z19 (Vantor Legion LG05, 2026-02-26, 0.34 m, accuracy 8.47 m per the World Imagery identify service); tiles kept in the session scratch folder only"],
+      "config_key": "Justice Akbar oval width (12.6 vs 15.7 m conflict)",
+      "note": "12.6 m holds; 15.7 m is rejected. About 2 lanes of 3.1 m each way, two-way overall. The section east of the oval is off the loop (drive_circle blk_justice_akbar)."
+    },
+    "r2.justice_akbar.flyover_planned": {
+      "value": {"length_m": 207, "width_m": 8.4}, "unit": "m", "confidence": "low", "round": 2,
+      "method": "Project page lists a Justice Akbar Mw flyover (207 x 8.4 m) and an Uttarananda Mw flyover (396 x 10.4 m) in Slave Island. No build date.",
+      "sources": ["https://maga.lk/?p=7058"],
+      "config_key": "none (watch)"
+    },
+    "r2.baladaksha.flyover_m": {
+      "value": {"length_m": [320, 340], "width_m": 11}, "unit": "m", "confidence": "medium", "round": 2,
+      "method": "News: opened 19 Jan 2026, one-way from Delta Face toward Kompannavidiya via Sir Chittampalam A. Gardiner Mw.",
+      "sources": ["https://www.adaderana.lk/news/117309/baladaksha-mawatha-flyover-declared-open-", "https://english.newsfirst.lk/2026/01/19/320%E2%80%91meter-flyover-opens-in-cityhub-after-long-delay"],
+      "config_key": "drive_circle north join (check whether the ramps touch the loop)",
+      "note": "Supersedes the 330 m note in round 1."
+    },
+    "r2.towers.heights_m": {
+      "value": {"one_delta_face_residential_x2": 194, "shangri_la_hotel": 134, "one_delta_face_office": [158, 165], "itc_sapphire": [223, 225], "itc_hotel": [135, 140], "itc_skybridge_above_ground": 100}, "unit": "m", "confidence": "high (office tower and ITC hotel medium)", "round": 2,
+      "method": "Published heights cross-checked with OSM height tags and an Esri roof-shift regression. Roof shift = 0.316 m E-W and 0.148 m N-S per metre of height, residual about +-3 m across ITC 225/135, OGF T2 194, Cinnamon Life Suites 136 and Taj 50, so the tags hold to about +-10 m.",
+      "sources": ["https://en.wikipedia.org/wiki/One_Delta_Face", "https://www.skyscrapercenter.com/building/shangri-la-cityhub-hotel-tower/28075", "https://www.skyscrapercenter.com/building/b/26132", "https://www.thorntontomasetti.com/project/itc-ratnadipa", "https://en.wikipedia.org/wiki/ITC_Ratnadipa", "https://www.adaderana.lk/news/98832", "OSM ways 839411969-72, 705103818", "Esri World Imagery z19 (Vantor Legion LG05, 2026-02-26, 0.34 m, accuracy 8.47 m per the World Imagery identify service); tiles kept in the session scratch folder only"],
+      "config_key": "tower heights from OSM height tags (rules.building_levels: height wins): keep",
+      "note": "Floors: residential towers 51, Shangri-La 32 (Wikipedia 31), office 32-35, Sapphire 55, ITC hotel 29-33."
+    },
+    "r2.hotel.facade_height_m": {
+      "value": null, "unit": "m", "confidence": "none", "round": 2,
+      "method": "Still not measured. Storey-rule estimate 18-20 m to the eaves (4 storeys: about 5 m ground floor plus 3 x 4.3 m), with towers and roofs 4-6 m above that. Tried and rejected: Esri relief and shadow strips (8 m and 12 m, which disagree); a Dotcom panorama at 6.92125, 79.84625 whose facade base sits about 19 px below the horizon (+-50%).",
+      "sources": ["Esri World Imagery z19 (Vantor Legion LG05, 2026-02-26, 0.34 m, accuracy 8.47 m per the World Imagery identify service); tiles kept in the session scratch folder only", "https://www.google.com/maps/@6.92125,79.84625,3a,80y,205h,90t/data=!3m1!1e1"],
+      "config_key": "hero hotel facade height",
+      "note": "Question 4."
+    },
+    "r2.hotel.street_door_m": {
+      "value": 3.8, "unit": "m", "confidence": "low", "round": 2,
+      "method": "Dotcom panorama (Jul 2022 post) at 6.92050, 79.84666, pitch 0: the camera height is 2.2-2.3 m from a 0.7 m traffic cone, and a Delta Road door with its transom measures about 3.8 m against the horizon.",
+      "sources": ["https://www.google.com/maps/@6.9205025,79.8466608,3a,90y,262h,90t/data=!3m1!1e1"],
+      "config_key": "hero hotel street doors (2.7 m centres, round 6)"
+    },
+    "agent.delta_road.colonial_ground_storey_m": {
+      "value": 4.5, "unit": "m", "confidence": "agent", "round": 2,
+      "method": "Agent decision 2026-11-19 (not a measurement): the colonial ground storey on Delta Road frontage is 4.5 m. Light decay only on the frontage next to the Delta Face Hotel; empty sponsor slots show the fictional FICT_LankaFizz placeholder.",
+      "sources": ["agent, 2026-11-19"],
+      "config_key": "p96 frontage kit v2 ground storey height (Delta Road colonial pieces)"
+    },
+    "r5.centre_rd.carriageway_edge_to_edge_m": {"value": 14.3, "unit": "m", "tolerance": 0.6, "confidence": "high", "round": 5, "method": "Solid white edge line at rot x 636 (A, B; 631 at C) to the right edge line at 823 (816 at C): 187/185 px = 14.4/14.2 m, same at all three stations. Includes the median (2.0 m) at A and C. Scale and rotation: agent aerial, 13.0 px/m, road rotated 23.5 deg to vertical.", "sources": ["/src/references/delta-face/agent_area_2026-11-20/agent_aerial_centre_rd_scalebar.png", "references/delta-face/streetview_2026-11-16 (sv_06, sv_07, sv_08)"], "config_key": "centre_road.nb/sb_carriageway_m (6.6 + 9.4 = 16.0 incl. kerbside, painted centre line); Centre Road name override 6.9 x 2 = 13.8", "note": "Agrees with 13.8 and with the 14.6 m station at 6.92811 (delta_face_circle.json Centre Road _doc). This stretch is 4 lanes with RAISED medians, not a painted double line."},
+    "r5.centre_rd.driving_lane_width_m": {"value": 3.1, "unit": "m", "tolerance": 0.2, "confidence": "medium", "round": 5, "method": "Lane lines (dashes) at rot x 676 and 784. Left half 636-715 = 79 px = 6.1 m = 2 x 3.05; right half 741-823 = 82 px = 6.3 m = 2 x 3.15. 4 lanes total: (187 - 26 median)/4 = 40 px = 3.1 m. Between the medians (B) lane 2 and 3 widen to fill the 8.3 m between dashes at 676 and 784 (no centre line). Scale and rotation: agent aerial, 13.0 px/m, road rotated 23.5 deg to vertical.", "sources": ["/src/references/delta-face/agent_area_2026-11-20/agent_aerial_centre_rd_scalebar.png", "references/delta-face/streetview_2026-11-16 (sv_06, sv_07, sv_08)"], "config_key": "delta_face_circle.json way/18598833 width 6.6 (2 x 3.3); way/553338379 9.4 (2 lanes + 2.5 m kerbside)", "note": "NB is 2 x 3.1 here (6.2 m), not 6.6; the SB 'kerbside strip' of 2.5 m is not seen here: right of the edge line is a 2.2 m footpath, no parking or bus lane."},
+    "r5.centre_rd.median_width_m": {"value": 2.0, "unit": "m", "tolerance": 0.3, "confidence": "medium", "round": 5, "method": "Raised island outlined by white paint: outer edges 715 to 741 (A) and 711 to 737 (C) = 26 px = 2.0 m over paint; island interior about 1.7 m. Scale and rotation: agent aerial, 13.0 px/m, road rotated 23.5 deg to vertical.", "sources": ["/src/references/delta-face/agent_area_2026-11-20/agent_aerial_centre_rd_scalebar.png", "references/delta-face/streetview_2026-11-16 (sv_06, sv_07, sv_08)"], "config_key": "centre_road.median_m 0 (painted double line)", "note": "Config has no median; agent image shows two raised islands with rounded ends."},
+    "r5.centre_rd.median_length_and_gap_m": {"value": {"median_1_length_m": 32, "gap_between_medians_m": 19, "median_2_length_m": 35}, "unit": "m", "tolerance": {"each": 4}, "confidence": "medium-low", "round": 5, "method": "Median 1 spans rot y 120-540 = 420 px = 32 m (both ends rounded). Median 2 starts at y 790 and runs 460+ px (>= 35 m) to the bottom of the crop, so its end is not visible. Gap 540-790 = 250 px = 19 m (centre of the gap is a lighter worn strip with no median). Scale and rotation: agent aerial, 13.0 px/m, road rotated 23.5 deg to vertical.", "sources": ["/src/references/delta-face/agent_area_2026-11-20/agent_aerial_centre_rd_scalebar.png", "references/delta-face/streetview_2026-11-16 (sv_06, sv_07, sv_08)"], "config_key": "none", "note": "Two staggered islands, rounded ends; centre of the road is open between them."},
+    "r5.centre_rd.parking_band_m": {"value": {"kerb_line_to_edge_line_m": 8.4, "angled_bay_depth_m": 5.8, "outer_buffer_m": 2.6}, "unit": "m", "tolerance": {"depth": 0.7}, "confidence": "medium", "round": 5, "method": "Kerb line at rot x 527 (profile peak at 523-527 in B and C), edge line (parking/driving boundary) at 636: 109 px = 8.4 m. White bay marks occupy x 560-602 (outer marks centred 572, inner 596). Bay depth kerb line to inner mark end 602 = 75 px = 5.8 m; the 2.6 m between 602 and the 636 edge line is plain asphalt (aisle/buffer). Bay surface is pinkish, aisle grey. Scale and rotation: agent aerial, 13.0 px/m, road rotated 23.5 deg to vertical.", "sources": ["/src/references/delta-face/agent_area_2026-11-20/agent_aerial_centre_rd_scalebar.png", "references/delta-face/streetview_2026-11-16 (sv_06, sv_07, sv_08)"], "config_key": "delta_face_circle.json roadside_strips parking_m 7.0 + strip_m 9.0 = 16.0; centre_road.angled_parking_strip_m 7.0", "note": "Whole parking band 8.4 m vs 7.0 (+1.4): bays themselves 5.8 m (OSM-era note said about 5 m). Agent: parking is the 5th lane and part of the road."},
+    "r5.centre_rd.bay_angle_and_pitch": {"value": {"angle_deg_to_kerb": 45, "pitch_along_kerb_m": 3.5, "stall_width_perp_m": 2.5}, "unit": "deg/m", "tolerance": {"angle_deg": 10}, "confidence": "medium-low", "round": 5, "method": "Paired marks per stall: outer mark x 572, inner x 596 (24 px = 1.85 m across) and offset 24 px along the road (cross-correlation lag 24): 45 deg. Mark pitch by autocorrelation 46 and 45 px = 3.5 m along the kerb (ac 0.46 and 0.66); 3.5 x sin 45 = 2.5 m perpendicular stall width, a normal bay width, which supports the 45 deg read. Scale and rotation: agent aerial, 13.0 px/m, road rotated 23.5 deg to vertical.", "sources": ["/src/references/delta-face/agent_area_2026-11-20/agent_aerial_centre_rd_scalebar.png", "references/delta-face/streetview_2026-11-16 (sv_06, sv_07, sv_08)"], "config_key": "none", "note": "Bays angled about 45 deg, 3.5 m pitch along the road; direction of the lean (head-in towards the south or the north) is not fixed by this image."},
+    "r5.centre_rd.footpath_kerb_zones_m": {"value": {"promenade_wall_to_first_line_m": 15.9, "first_to_second_line_m": 1.6, "second_line_to_bay_kerb_m": 1.5, "right_edge_line_to_footpath_line_m": 2.2, "right_verge_beyond_m": 2.6}, "unit": "m", "tolerance": {"each": 0.5}, "confidence": "medium-low", "round": 5, "method": "Left: wall/grass edge at rot x about 280, paving lines at 487, 508, 527 (peaks 487/489, 505-511, 523-527). Right: edge line 823, footpath line 851 (28 px = 2.2 m), dirt verge to about 885 then dense trees. The 15.9 m left zone includes palms, planters and the building bumps, so it is only the extent to the first paving line. Scale and rotation: agent aerial, 13.0 px/m, road rotated 23.5 deg to vertical.", "sources": ["/src/references/delta-face/agent_area_2026-11-20/agent_aerial_centre_rd_scalebar.png", "references/delta-face/streetview_2026-11-16 (sv_06, sv_07, sv_08)"], "config_key": "roadside_strips strip_m 9.0 (sea side); sidewalk:width 2.0 (land side)", "note": "Right footpath 2.2 m agrees with 2.0. Left footpath/paver zone beside the bays is two bands of 1.5-1.6 m before the bays, inside the existing 9.0 m strip."}
+  }
+}

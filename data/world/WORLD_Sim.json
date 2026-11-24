@@ -1,0 +1,139 @@
+{
+  "$schema": "../schemas/world.schema.json",
+  "schema_version": 1,
+  "id": "WORLD_Sim",
+  "version": 1,
+  "status": "proposed",
+  "proposed": true,
+  "description": "Vertical-slice world clock, weather and sunset event. All numbers proposed (Economy doc 'World simulation numbers'); people decide.",
+  "clock": {
+    "day_length_s": 2880,
+    "epoch_unix_ms": 1763337600000,
+    "epoch_hour": 6.0
+  },
+  "phases": [
+    {
+      "name": "dawn",
+      "from_hour": 5.0
+    },
+    {
+      "name": "morning",
+      "from_hour": 7.0
+    },
+    {
+      "name": "noon",
+      "from_hour": 11.0
+    },
+    {
+      "name": "afternoon",
+      "from_hour": 15.0
+    },
+    {
+      "name": "golden_hour",
+      "from_hour": 17.0
+    },
+    {
+      "name": "sunset",
+      "from_hour": 18.0
+    },
+    {
+      "name": "blue_hour",
+      "from_hour": 18.75
+    },
+    {
+      "name": "night",
+      "from_hour": 19.75
+    }
+  ],
+  "sunset_hour": 18.25,
+  "weather": {
+    "slot_s": 600,
+    "seed": 20261117,
+    "timezone_offset_min": 330,
+    "states": [
+      {
+        "id": "clear",
+        "rain_level": 0
+      },
+      {
+        "id": "partly_cloudy",
+        "rain_level": 0
+      },
+      {
+        "id": "overcast",
+        "rain_level": 0
+      },
+      {
+        "id": "light_rain",
+        "rain_level": 1
+      },
+      {
+        "id": "heavy_rain",
+        "rain_level": 2
+      },
+      {
+        "id": "thunderstorm",
+        "rain_level": 3
+      }
+    ],
+    "seasons": {
+      "northeast_monsoon": {
+        "clear": 40,
+        "partly_cloudy": 30,
+        "overcast": 15,
+        "light_rain": 10,
+        "heavy_rain": 4,
+        "thunderstorm": 1
+      },
+      "first_inter_monsoon": {
+        "clear": 25,
+        "partly_cloudy": 30,
+        "overcast": 15,
+        "light_rain": 15,
+        "heavy_rain": 8,
+        "thunderstorm": 7
+      },
+      "southwest_monsoon": {
+        "clear": 10,
+        "partly_cloudy": 20,
+        "overcast": 25,
+        "light_rain": 25,
+        "heavy_rain": 17,
+        "thunderstorm": 3
+      },
+      "second_inter_monsoon": {
+        "clear": 15,
+        "partly_cloudy": 20,
+        "overcast": 15,
+        "light_rain": 20,
+        "heavy_rain": 15,
+        "thunderstorm": 15
+      }
+    },
+    "months": [
+      "northeast_monsoon",
+      "northeast_monsoon",
+      "first_inter_monsoon",
+      "first_inter_monsoon",
+      "southwest_monsoon",
+      "southwest_monsoon",
+      "southwest_monsoon",
+      "southwest_monsoon",
+      "southwest_monsoon",
+      "second_inter_monsoon",
+      "second_inter_monsoon",
+      "northeast_monsoon"
+    ]
+  },
+  "events": [
+    {
+      "id": "EVT_DeltaFace_Sunset",
+      "name_key": "event.delta_face_sunset.name",
+      "kind": "sunset",
+      "district": "delta_face",
+      "window_before_h": 1.0,
+      "window_after_h": 1.0,
+      "collection_item": "COL_Sunset_DeltaFace"
+    }
+  ]
+}

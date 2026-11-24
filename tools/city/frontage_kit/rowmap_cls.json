@@ -1,0 +1,179 @@
+{
+ "_comment": "Spec-to-piece name map (P143): inventory row name -> generated pieces. Read by tools/inventory/build_row_manifest.py; rewritten by the generator, do not edit.",
+ "args": "blender -b --factory-startup -P tools/city/frontage_kit/build_generated.py -- --set cls",
+ "generator": "tools/city/frontage_kit/classes.py",
+ "outputs_dir": "unity/BatchIsland/Assets/BatchIsland/Art/World/Buildings/Classes",
+ "rows": {
+  "CLS_Bank_Branch": [
+   "BLD_CLS_Bank_Branch_A"
+  ],
+  "CLS_CityOfDreams_Lookalike": [
+   "BLD_CLS_CityOfDreams_Lookalike_A"
+  ],
+  "CLS_ColonialArcade": [
+   "BLD_CLS_ColonialArcade_A"
+  ],
+  "CLS_Colonial_DeltaRoad": [
+   "BLD_CLS_Colonial_DeltaRoad_A"
+  ],
+  "CLS_Compound_FormerArmyHQ": [
+   "BLD_CLS_Compound_FormerArmyHQ_A"
+  ],
+  "CLS_DutchColonial_OldHospitalRow": [
+   "BLD_CLS_DutchColonial_OldHospitalRow_A"
+  ],
+  "CLS_FuelStation_Roadside": [
+   "BLD_CLS_FuelStation_Roadside_A"
+  ],
+  "CLS_Government_AssemblyHouse": [
+   "BLD_CLS_Government_AssemblyHouse_A"
+  ],
+  "CLS_Government_Secretariat": [
+   "BLD_CLS_Government_Secretariat_A"
+  ],
+  "CLS_HotelLookalike_Samudra": [
+   "BLD_CLS_HotelLookalike_Samudra_A"
+  ],
+  "CLS_LaneHouse": [
+   "BLD_CLS_LaneHouse_A"
+  ],
+  "CLS_MallPodium_GreenCourt": [
+   "BLD_CLS_MallPodium_GreenCourt_A"
+  ],
+  "CLS_ModernConcrete_MidRise": [
+   "BLD_CLS_ModernConcrete_MidRise_A"
+  ],
+  "CLS_OfficeBlock_Generic": [
+   "BLD_CLS_OfficeBlock_Generic_A"
+  ],
+  "CLS_PartsShop": [
+   "BLD_CLS_PartsShop_A"
+  ],
+  "CLS_PolicePost_Generic": [
+   "BLD_CLS_PolicePost_Generic_A"
+  ],
+  "CLS_RepairGarage": [
+   "BLD_CLS_RepairGarage_A"
+  ],
+  "CLS_SacredExterior_Generic": [
+   "BLD_CLS_SacredExterior_Generic_A"
+  ],
+  "CLS_School": [
+   "BLD_CLS_School_A"
+  ],
+  "CLS_Shophouse_DeltaRoad": [
+   "BLD_CLS_Shophouse_DeltaRoad_A"
+  ],
+  "CLS_TukDealer_Showroom": [
+   "BLD_CLS_TukDealer_Showroom_A"
+  ]
+ },
+ "tris": {
+  "BLD_CLS_Bank_Branch_A": {
+   "lod0": 3492,
+   "lod1": 1576,
+   "lod2": 288
+  },
+  "BLD_CLS_CityOfDreams_Lookalike_A": {
+   "lod0": 12016,
+   "lod1": 8032,
+   "lod2": 5256
+  },
+  "BLD_CLS_ColonialArcade_A": {
+   "lod0": 9406,
+   "lod1": 3428,
+   "lod2": 312
+  },
+  "BLD_CLS_Colonial_DeltaRoad_A": {
+   "lod0": 14955,
+   "lod1": 4920,
+   "lod2": 420
+  },
+  "BLD_CLS_Compound_FormerArmyHQ_A": {
+   "lod0": 6572,
+   "lod1": 2532,
+   "lod2": 1092
+  },
+  "BLD_CLS_DutchColonial_OldHospitalRow_A": {
+   "lod0": 8970,
+   "lod1": 2128,
+   "lod2": 516
+  },
+  "BLD_CLS_FuelStation_Roadside_A": {
+   "lod0": 3508,
+   "lod1": 1372,
+   "lod2": 516
+  },
+  "BLD_CLS_Government_AssemblyHouse_A": {
+   "lod0": 17196,
+   "lod1": 6764,
+   "lod2": 824
+  },
+  "BLD_CLS_Government_Secretariat_A": {
+   "lod0": 17605,
+   "lod1": 6996,
+   "lod2": 612
+  },
+  "BLD_CLS_HotelLookalike_Samudra_A": {
+   "lod0": 14992,
+   "lod1": 4248,
+   "lod2": 3056
+  },
+  "BLD_CLS_LaneHouse_A": {
+   "lod0": 4792,
+   "lod1": 1292,
+   "lod2": 472
+  },
+  "BLD_CLS_MallPodium_GreenCourt_A": {
+   "lod0": 6300,
+   "lod1": 2848,
+   "lod2": 588
+  },
+  "BLD_CLS_ModernConcrete_MidRise_A": {
+   "lod0": 11188,
+   "lod1": 4440,
+   "lod2": 708
+  },
+  "BLD_CLS_OfficeBlock_Generic_A": {
+   "lod0": 10756,
+   "lod1": 5668,
+   "lod2": 1164
+  },
+  "BLD_CLS_PartsShop_A": {
+   "lod0": 3424,
+   "lod1": 1288,
+   "lod2": 228
+  },
+  "BLD_CLS_PolicePost_Generic_A": {
+   "lod0": 496,
+   "lod1": 192,
+   "lod2": 120
+  },
+  "BLD_CLS_RepairGarage_A": {
+   "lod0": 1600,
+   "lod1": 688,
+   "lod2": 168
+  },
+  "BLD_CLS_SacredExterior_Generic_A": {
+   "lod0": 5632,
+   "lod1": 1092,
+   "lod2": 660
+  },
+  "BLD_CLS_School_A": {
+   "lod0": 14306,
+   "lod1": 4020,
+   "lod2": 660
+  },
+  "BLD_CLS_Shophouse_DeltaRoad_A": {
+   "lod0": 12148,
+   "lod1": 5232,
+   "lod2": 384
+  },
+  "BLD_CLS_TukDealer_Showroom_A": {
+   "lod0": 3816,
+   "lod1": 1492,
+   "lod2": 396
+  }
+ },
+ "validator": "blender_qa:building:low"
+}

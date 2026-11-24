@@ -1,0 +1,124 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "service_operators.schema.json",
+ "title": "Fictional service-centre operators for the service kit (P224): palette and mark shape per operator",
+ "description": "data/places/service_operators.json. Paint keys are sRGB hex read by tools/city/citylib/service_kit.py into COLOR_0. Names are placeholders; never a real operator's name, logo or trade dress.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "schema_version",
+  "operators"
+ ],
+ "properties": {
+  "$schema": {
+   "type": "string"
+  },
+  "schema_version": {
+   "const": 1
+  },
+  "note": {
+   "type": "string"
+  },
+  "operators": {
+   "type": "object",
+   "minProperties": 1,
+   "additionalProperties": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "name",
+     "site_type",
+     "look",
+     "mark",
+     "lift",
+     "frame",
+     "mast",
+     "fascia",
+     "accent",
+     "cream",
+     "portal",
+     "portal_d",
+     "neon",
+     "blue",
+     "white",
+     "mark_paint"
+    ],
+    "properties": {
+     "lift": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "frame": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "mast": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "fascia": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "accent": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "cream": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "portal": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "portal_d": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "neon": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "blue": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "white": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "wordmark": {
+      "type": "string",
+      "pattern": "^[A-Z]{2,8}$",
+      "description": "Placeholder block-letter wordmark (fuel_kit.FONT); people decide the real name and text."
+     },
+     "mark_paint": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "look": {
+      "type": "string"
+     },
+     "site_type": {
+      "enum": [
+       "garage",
+       "car_wash",
+       "tuk_works"
+      ]
+     },
+     "mark": {
+      "enum": [
+       "disc",
+       "diamond",
+       "wedge"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,105 @@
+name: build
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "full = one job, same result as a local build; shards = quick parallel preview"
+        default: full
+        type: choice
+        options: [full, shards]
+  push:
+    branches: [main]
+
+env:
+  CONFIG: tools/city/config/delta_face_circle.json
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      shards: ${{ steps.p.outputs.shards }}
+      mode: ${{ steps.p.outputs.mode }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: |
+          MODE="${{ github.event.inputs.mode || 'full' }}"
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          python3 -c "import json;print('shards='+json.dumps(list(range(len(json.load(open('shards.json')))))))" >> "$GITHUB_OUTPUT"
+
+  full:
+    needs: plan
+    if: needs.plan.outputs.mode == 'full'
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/blender
+      - name: build
+        run: |
+          mkdir -p out
+          blender/blender -b --factory-startup -P tools/city/build_city.py -- \
+            --config "$CONFIG" --cells-out out/cells --kit-out out/kit --maps-out out/maps \
+            --routes-out out/routes --out out/work --no-provenance
+      - uses: actions/upload-artifact@v4
+        with:
+          name: merged
+          path: |
+            out/cells
+            out/kit
+            out/maps
+            out/routes
+          retention-days: 7
+          compression-level: 6
+
+  shard:
+    needs: plan
+    if: needs.plan.outputs.mode == 'shards'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJson(needs.plan.outputs.shards) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/blender
+      - name: build shard
+        run: |
+          ONLY=$(python3 -c "import json;print(','.join(json.load(open('shards.json'))[${{ matrix.shard }}]))")
+          mkdir -p out
+          blender/blender -b --factory-startup -P tools/city/build_city.py -- \
+            --config "$CONFIG" --only "$ONLY" --cells-out out/cells --kit-out out/kit --maps-out out/maps \
+            --routes-out out/routes --out out/work --no-provenance
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.shard }}
+          path: |
+            out/cells
+            out/kit
+            out/maps
+            out/routes
+          retention-days: 7
+
+  merge:
+    needs: [plan, shard]
+    if: needs.plan.outputs.mode == 'shards'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: shard-*
+          path: parts
+      - name: merge
+        run: |
+          mkdir -p merged
+          for d in parts/*; do cp -R "$d"/. merged/; done
+          ls merged/cells | wc -l
+      - uses: actions/upload-artifact@v4
+        with:
+          name: merged
+          path: merged
+          retention-days: 7
